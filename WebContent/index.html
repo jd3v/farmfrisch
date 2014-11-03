@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+			
+
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m, sap.ui.unified"
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-xx-bindingSyntax="complex"
+				data-sap-ui-resourceroots='{
+				"testApp": "./"
+			}' >
+		</script>
+		<script type="text/javascript"  src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=weather">
+		</script>
+		<script>jQuery.sap.require("sap.ui.core.IconPool");
+				jQuery.sap.require("testApp.Router");
+				jQuery.sap.require("testApp.Component");</script>
+		
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+		
+		<link rel="stylesheet" type="text/css" href="./testlayout/farmfrisch.css">
+		<script>
+				
+				sap.ui.getCore().attachInit(function(){new sap.ui.unified.Shell("Shell", {
+					icon: "./img/farmfrisch_logo_250x80.png",
+					headItems: [new sap.ui.unified.ShellHeadItem({icon: sap.ui.core.IconPool.getIconURI("home"), press: function(){
+						
+						//back button hack because no way to acces router
+						var url = window.location.toString();						
+						var homeurl = url.split('#')[0]+"#";						
+						window.location.href = homeurl;
+					}})],					
+					user: new sap.ui.unified.ShellHeadUserItem({image: "./img/user.png",username: "Joe Mengler"	}),
+					search: new sap.m.SearchField(),
+					content: [new sap.ui.core.ComponentContainer({name: "testApp"})]
+				}).placeAt('content');
+				});
+		</script>
+		
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>

@@ -1,0 +1,1190 @@
+{
+  "Farmfrisch" :
+	{
+    
+		"Farmers" : [			
+		{
+			"farmerID"					:"0",
+			"surname"					:	"Theresa",
+			"lastname"					: "Riley",
+			"gender"					:	"Female",
+			"street"					:	"Mühlweg",
+			"streetnumber"				: "11",
+			"postalcode"				: "68199",
+			"city"						: "Mannheim",
+			"companyname"				: "A Mi Inc.",
+			
+			"website"					: "http://ami.com",
+			"email"						: "triley0@gmx.de",
+			"phone"						: "(049) 0550401",
+			"mobile"					: "(049) 60567511540",
+			
+			"working_hours"			: "Monday-Friday; 8:00-17:00",
+		
+			"facebookurl"			: "https://www.facebook.com/triley",
+			"twitterurl"			: "https://twitter.com/triley",
+			
+			"description"			:	"NO Hormones - NO Pesticides - NO GMO. Fresh meats, real milk, yogurt, kefir and cheese from 100% grass-fed/grass-finished cows, goat and sheep. Delicious Eggs and meats from happy free-roaming ducks and chickens",
+			"profile_picture"	: "",
+			"slideshow"				: [ 
+				{
+					"url" : ""
+				}],
+			"rating"					: "5",
+			"createdate"			: "Nov 1, 2014",
+			"locations"				:[{
+										"locName": "Marktplatz MA",
+										"lat": "49.4882017",
+										"lng": "8.4661298"
+			
+			
+									},
+									{
+										"locName": "Gasthaus Ochsen",
+										"lat": "49.4888873",
+										"lng":  "8.5346501"
+									},
+									{
+										"locName": "Eintracht",
+										"lat": "49.4150704",
+										"lng":  "8.5238168"
+									}],
+									
+			"reviews"               :[{
+										"ReviewId" : "0",
+										"Sender" : "Giselle Ashante-Ramirez",
+										"Icon" : "img/Sender1.jpg",
+										"Info" : "Request",
+										"Timestamp" : "March 03, 2013",
+										"Text" :"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. At vero eos et accusam et justo duo dolores et ea rebum."	
+									} ,
+									
+									{
+										"ReviewId" : "1",
+										"Sender" : "johannes Schaffensteiger",
+										"Icon" : "img/Sender2.jpg",
+										"Info" : "Reply",
+										"Timestamp" : "March 04, 2013",
+										"Text" :"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. At vero eos et accusam et justo duo dolores et ea rebum."	
+									}
+							
+			],					
+			"products"				: [
+			{
+				"productgroup"			:	"milk",
+				"prodGroupID"			:	"0",
+				"type"									: "goat milk",
+				"prodID"						:	"0",
+				"unit"							: "bottle",
+				"price"							: "5€",
+				"on_sale"						: "False",
+				"available"					: "True",
+				"product_picture"		: ""
+			},
+			{
+				"productgroup"			:	"milk",
+				"prodGroupID"			:	"0",
+				"type"							: "goat milk2",
+				"prodID"			:	"1",
+				"unit"							: "bottle",
+				"price"							: "5€",
+				"on_sale"						: "False",
+				"available"					: "True",
+				"product_picture"		: ""
+			},
+			{
+				"productgroup"			:	"apple",
+				"prodGroupID"			:	"1",
+				"type"							: "Pink Lady",
+				"prodID"			:	"0",
+				"unit"							: "bottle",
+				"price"							: "5€",
+				"on_sale"						: "False",
+				"available"					: "True",
+				"product_picture"		: ""
+			},
+			{
+				"productgroup"			:	"apple",
+				"prodGroupID"			:	"1",
+				"type"							: "Golden Apple",
+				"prodID"			:	"1",
+				"unit"							: "bottle",
+				"price"							: "5€",
+				"on_sale"						: "False",
+				"available"					: "True",
+				"product_picture"		: ""
+			}]
+			
+		},
+		{
+			"farmerID"					:"1",
+			"surname"					:	"Johanna",
+			"lastname"					: "Peters",
+			"gender"					:	"Male",
+			"street"					:	"F1",
+			"streetnumber"		: "2",
+			"postalcode"			: "68159",
+			"city"						: "Mannheim",
+			"companyname"			: "Jabberbean",
+			
+			"website"					: "https://jabberbean.de/",
+			"email"						: "bfieldsd@jabberbean.de",
+			"phone"						: "(049) 0983704",
+			"mobile"					: "(049) 06451899001",
+			
+			"working_hours"		: "Monday-Friday; 7:00-20:00",
+		
+			"facebookurl"			: "https://www.facebook.com/bfieldsd",
+			"twitterurl"			: "https://twitter.com/bfieldsd",
+			
+			"description"			:	"Fresh. Local. Organic.",
+			"profile_picture"	: "",
+			"slideshow"				: [ 
+				{
+					"url" : ""
+				}],
+			"rating"					: "4",
+			"createdate"			: "Oct 31, 2014",
+			"locations"				:[{
+										"locName": "Hofladen Fischer",
+										"lat": "49.4131683",
+										"lng": "8.5089157"
+			
+			
+									},
+									{
+										"locName": "Marktplatz MA",
+										"lat": "49.4882017",
+										"lng": "8.4661298"
+									},
+									{
+										"locName": "Edeka LU",
+										"lat": "49.4874026",
+										"lng":  "8.3875753"
+									}],
+			"products"				: [
+			{
+				"productgroup"			:	"apple",
+				"prodGroupID"			:	"1",
+				"type"							: "Pink Lady",
+				"prodID"			:	"0",
+				"unit"							: "bulk",
+				"price"							: "15€",
+				"on_sale"						: "False",
+				"available"					: "True",
+				"product_picture"		: ""
+			}]
+			
+		},
+		{
+			"farmerID"					:"2",
+			"surname"					:	"Paul",
+			"lastname"					: "Müller",
+			"gender"					:	"Male",
+			"street"					:	"Kirchstraße",
+			"streetnumber"		: "20",
+			"postalcode"			: "69198",
+			"city"						: "Schriesheim",
+			"companyname"			: "Avavee",
+			
+			"website"					: "https://Avavee.com/",
+			"email"						: "ehenryc@Avavee.de",
+			"phone"						: "(049) 0624471",
+			"mobile"					: "(049) 22430111282",
+			
+			"working_hours"		: "Monday-Saturday; 7:00-18:00",
+		
+			"facebookurl"			: "https://www.facebook.com/Avavee",
+			"twitterurl"			: "https://twitter.com/Avavee",
+			
+			"description"			:	"Welcome to Avavee",
+			"profile_picture"	: "",
+			"slideshow"				: [ 
+				{
+					"url" : ""
+				}],
+			"rating"					: "2",
+			"createdate"			: "Oct 28, 2014",
+			
+			"products"				: [
+			{
+				"productgroup"			:	"apple",
+				"type"							: "Autumn Gold",
+				"unit"							: "bulk",
+				"price"							: "15€",
+				"on_sale"						: "False",
+				"available"					: "False",
+				"product_picture"		: ""
+			}]
+			
+		},
+		{
+			"farmerID"					:"3",
+			"surname"					:	"Sandra",
+			"lastname"				: "Roberts",
+			"gender"					:	"Female",
+			"street"					:	"Wonnhaldestraße",
+			"streetnumber"		: "1",
+			"postalcode"			: "79100",
+			"city"						: "Freiburg",
+			"companyname"			: "Vidoo",
+			
+			"website"					: "http://Vidoo.com/",
+			"email"						: "sroberts@vidoo.com",
+			"phone"						: "(049) 0171989",
+			"mobile"					: "(049) 09592891755",
+			
+			"working_hours"		: "Tuesday-Saturday; 12:00-18:00",
+		
+			"facebookurl"			: "https://www.facebook.com/sroberts",
+			"twitterurl"			: "https://twitter.com/sroberts",
+			
+			"description"			:	"Fresh fruit",
+			"profile_picture"	: "",
+			"slideshow"				: [ 
+				{
+					"url" : ""
+				}],
+			"rating"					: "5",
+			"createdate"			: "Oct 30, 2014",
+			
+			"products"				: [
+			{
+				"productgroup"			:	"cherry",
+				"type"							: "Royal Rainier",
+				"unit"							: "bottle",
+				"price"							: "15€",
+				"on_sale"						: "False",
+				"available"					: "True",
+				"product_picture"		: ""
+			}]
+			
+		},
+		{
+			"farmerID"					:"4",
+			"surname"					:"Wolfgang",
+			"lastname"					: "Bauer",
+			"gender"					:	"Female",
+			"street"					:	"F1",
+			"streetnumber"		: "3",
+			"postalcode"			: "68159",
+			"city"						: "Mannheim",
+			"companyname"			: "StarFresh",
+			
+			"website"					: "http://StarFresh.de/",
+			"email"						: "jlane@vistaprint.com",
+			"phone"						: "(049) 0720312",
+			"mobile"					: "(049) 01773226165",
+			
+			"working_hours"		: "Monday-Friday; 10:00-18:00",
+		
+			"facebookurl"			: "https://www.facebook.com/jlane",
+			"twitterurl"			: "https://twitter.com/jlane",
+			
+			"description"			:	"Hello Fresh delivers great recipes and fresh ingredients to your home in Mannheim for free each week.",
+			"profile_picture"	: "",
+			"slideshow"				: [ 
+				{
+					"url" : ""
+				}],
+			"rating"					: "3",
+			"createdate"			: "Oct 26, 2014",
+			
+			"products"				: [
+			{
+				"productgroup"			:	"banana",
+				"type"							: "Blue Banana",
+				"unit"							: "bulk",
+				"price"							: "30€",
+				"on_sale"						: "False",
+				"available"					: "True",
+				"product_picture"		: ""
+			}]
+			
+		},
+		{
+			"farmerID"					: "5",
+			"surname"					:	"Kevin",
+			"lastname"				: "Allen",
+			"gender"					:	"Male",
+			"street"					:	"Talstraße",
+			"streetnumber"		: "12",
+			"postalcode"			: "69198",
+			"city"						: "Schriesheim",
+			"companyname"			: "Lajolajo",
+			
+			"website"					: "",
+			"email"						: "kallene@lajolajo.de",
+			"phone"						: "(049) 0694404",
+			"mobile"					: "(049) 23910949712",
+			
+			"working_hours"		: "Monday-Saturday; 7:00-12:00",
+		
+			"facebookurl"			: "https://www.facebook.com/kallene",
+			"twitterurl"			: "https://twitter.com/kallene",
+			
+			"description"			:	"Welcome to the farmers' market. Let's you and I share a moment this fine morning and admire the beautiful organic food I am offering for sale today.",
+			"profile_picture"	: "",
+			"slideshow"				: [ 
+				{
+					"url" : ""
+				}],
+			"rating"					: "4",
+			"createdate"			: "Oct 24, 2014",
+			
+			"products"				: [
+			{
+				"productgroup"			:	"apple",
+				"type"							: "Pink Lady",
+				"unit"							: "bulk",
+				"price"							: "17€",
+				"on_sale"						: "True",
+				"available"					: "True",
+				"product_picture"		: ""
+			}]
+			
+		},
+		{
+			"farmerID"					:"6",
+			"surname"					:	"Russell",
+			"lastname"				: "Barnes",
+			"gender"					:	"Male",
+			"street"					:	"Petersstraße",
+			"streetnumber"		: "41",
+			"postalcode"			: "67065",
+			"city"						: "Ludwigshafen",
+			"companyname"			: "Kropf",
+			
+			"website"					: "https://Kropf.de/",
+			"email"						: "rbarnes@Kropf.de",
+			"phone"						: "(049) 0039534",
+			"mobile"					: "(049) 04419450802",
+			
+			"working_hours"		: "Saturday; 10:00-21:00",
+		
+			"facebookurl"			: "https://www.facebook.com/rbarnes",
+			"twitterurl"			: "https://twitter.com/rbarnes",
+			
+			"description"			:	"Welcome to Kropf",
+			"profile_picture"	: "",
+			"slideshow"				: [ 
+				{
+					"url" : ""
+				}],
+			"rating"					: "5",
+			"createdate"			: "Oct 31, 2014",
+			
+			"products"				: [
+			{
+				"productgroup"			:	"Avocado",
+				"type"							: "Avocado",
+				"unit"							: "bulk",
+				"price"							: "35€",
+				"on_sale"						: "True",
+				"available"					: "True",
+				"product_picture"		: ""
+			}]
+			
+		},
+		{
+			"farmerID"					:"7",
+			"surname"					:	"Todd",
+			"lastname"				: "Moreno",
+			"gender"					:	"Male",
+			"street"					:	"Schusterstraße",
+			"streetnumber"		: "12",
+			"postalcode"			: "79098",
+			"city"						: "Freiburg",
+			"companyname"			: "Toddfarm",
+			
+			"website"					: "",
+			"email"						: "tmoreno@google.com",
+			"phone"						: "(049) 0209978",
+			"mobile"					: "(049) 52018532834",
+			
+			"working_hours"		: "Monday-Saturday; 10:00-20:00",
+		
+			"facebookurl"			: "https://www.facebook.com/tmoreno",
+			"twitterurl"			: "https://twitter.com/tmoreno",
+			
+			"description"			:	"Welcome to Todd's Farm",
+			"profile_picture"	: "",
+			"slideshow"				: [ 
+				{
+					"url" : ""
+				}],
+			"rating"					: "3",
+			"createdate"			: "Nov 2, 2014",
+			
+			"products"				: [
+			{
+				"productgroup"			:	"pork",
+				"type"							: "tenderloin",
+				"unit"							: "kilogram",
+				"price"							: "23€",
+				"on_sale"						: "False",
+				"available"					: "True",
+				"product_picture"		: ""
+			}]
+			
+		},
+		{
+			"farmerID"					:"8",
+			"surname"					:	"Justin",
+			"lastname"				: "Vasquez",
+			"gender"					:	"Male",
+			"street"					:	"K3",
+			"streetnumber"		: "3",
+			"postalcode"			: "68159",
+			"city"						: "Mannheim",
+			"companyname"			: "VJ Food",
+			
+			"website"					: "https://vjfood.de/",
+			"email"						: "jvasquezt@vjfood.de",
+			"phone"						: "(049) 0853544",
+			"mobile"					: "(049) 76265547592",
+			
+			"working_hours"		: "Monday-Friday; 13:00-18:00",
+		
+			"facebookurl"			: "https://www.facebook.com/jvasquezt",
+			"twitterurl"			: "https://twitter.com/jvasquezt",
+			
+			"description"			:	"Order your weekly groceries from our organic farm shop & veg box scheme.",
+			"profile_picture"	: "",
+			"slideshow"				: [ 
+				{
+					"url" : ""
+				}],
+			"rating"					: "1",
+			"createdate"			: "Oct 31, 2014",
+			
+			"products"				: [
+			{
+				"productgroup"			:	"apple",
+				"type"							: "Antonovka",
+				"unit"							: "bulk",
+				"price"							: "8€",
+				"on_sale"						: "False",
+				"available"					: "True",
+				"product_picture"		: ""
+			}]
+			
+		},
+		{
+			"farmerID"					: "9",
+			"surname"					:	"Karen",
+			"lastname"				: "Howard",
+			"gender"					:	"Female",
+			"street"					:	"Karl-Liebknecht-Straße",
+			"streetnumber"		: "30",
+			"postalcode"			: "10178",
+			"city"						: "Berlin",
+			"companyname"			: "Karen's Farm",
+			
+			"website"					: "",
+			"email"						: "khoward3@hotmail.com",
+			"phone"						: "(049) 0202157",
+			"mobile"					: "(049) 89389947079",
+			
+			"working_hours"		: "Tuesday-Saturday; 9:00-18:00",
+		
+			"facebookurl"			: "https://www.facebook.com/khoward",
+			"twitterurl"			: "",
+			
+			"description"			:	"Welcome to Karen's Farm",
+			"profile_picture"	: "",
+			"slideshow"				: [ 
+				{
+					"url" : ""
+				}],
+			"rating"					: "5",
+			"createdate"			: "Oct 30, 2014",
+			
+			"products"				: [
+			{
+				"productgroup"			:	"apple",
+				"type"							: "Autumn Gold",
+				"unit"							: "bulk",
+				"price"							: "19€",
+				"on_sale"						: "False",
+				"available"					: "True",
+				"product_picture"		: ""
+			}]
+			
+		},
+		{
+			"farmerID"					:"10",
+			"surname"					:	"Harold",
+			"lastname"				: "Rogers",
+			"gender"					:	"Male",
+			"street"					:	"Benzhauser St",
+			"streetnumber"		: "8",
+			"postalcode"			: "79108",
+			"city"						: "Freiburg",
+			"companyname"			: "Harold's Farm",
+			
+			"website"					: "",
+			"email"						: "hrogers9@gmail.com",
+			"phone"						: "(049) 0415053",
+			"mobile"					: "(049) 06035396101",
+			
+			"working_hours"		: "Tuesday-Friday; 12:00-16:00",
+		
+			"facebookurl"			: "https://www.facebook.com/Harold",
+			"twitterurl"			: "",
+			
+			"description"			:	"Welcome to Harold's Farm",
+			"profile_picture"	: "",
+			"slideshow"				: [ 
+				{
+					"url" : ""
+				}],
+			"rating"					: "3",
+			"createdate"			: "Oct 31, 2014",
+			
+			"products"				: [
+			{
+				"productgroup"			:	"apple",
+				"type"							: "Alexander",
+				"unit"							: "bulk",
+				"price"							: "5€",
+				"on_sale"						: "True",
+				"available"					: "True",
+				"product_picture"		: ""
+			}]
+			
+		},
+		{
+			"farmerID"					:"11",
+			"surname"					:	"Patricia",
+			"lastname"				: "Snyder",
+			"gender"					:	"Female",
+			"street"					:	"Dircksenstraße",
+			"streetnumber"		: "143",
+			"postalcode"			: "10178",
+			"city"						: "Berlin",
+			"companyname"			: "Pat's Farm",
+			
+			"website"					: "",
+			"email"						: "psnydera@hotmail.com",
+			"phone"						: "(049) 0136764",
+			"mobile"					: "(049) 76372876827",
+			
+			"working_hours"		: "Tuesday-Saturday; 17:00-18:00",
+		
+			"facebookurl"			: "https://www.facebook.com/psnydera",
+			"twitterurl"			: "",
+			
+			"description"			:	"Welcome to Pat's Farm",
+			"profile_picture"	: "",
+			"slideshow"				: [ 
+				{
+					"url" : ""
+				}],
+			"rating"					: "4",
+			"createdate"			: "Oct 20, 2014",
+			
+			"products"				: [
+			{
+				"productgroup"			:	"Cherry",
+				"type"							: "Black Tartarian",
+				"unit"							: "bottle",
+				"price"							: "4€",
+				"on_sale"						: "True",
+				"available"					: "True",
+				"product_picture"		: ""
+			}]
+			
+		},
+		{
+			"farmerID"					:"12",
+			"surname"					:	"Edward",
+			"lastname"				: "Grant",
+			"gender"					:	"Male",
+			"street"					:	"Friedrichstraße",
+			"streetnumber"		: "185-190",
+			"postalcode"			: "10117",
+			"city"						: "Berlin",
+			"companyname"			: "Edward's Farm",
+			
+			"website"					: "",
+			"email"						: "egranth@gmail.com",
+			"phone"						: "(049) 0321825",
+			"mobile"					: "(049) 18780447332",
+			
+			"working_hours"		: "Saturday; 9:00-21:00",
+		
+			"facebookurl"			: "",
+			"twitterurl"			: "https://twitter.com/egranth",
+			
+			"description"			:	"Welcome to Edward's Farm",
+			"profile_picture"	: "",
+			"slideshow"				: [ 
+				{
+					"url" : ""
+				}],
+			"rating"					: "5",
+			"createdate"			: "Oct 18, 2014",
+			
+			"products"				: [
+			{
+				"productgroup"			:	"Broccoli",
+				"type"							: "Sorrento",
+				"unit"							: "bulk",
+				"price"							: "15€",
+				"on_sale"						: "True",
+				"available"					: "True",
+				"product_picture"		: ""
+			}]
+			
+		},
+		{
+			"farmerID"					:"13",
+			"surname"					:	"Angela",
+			"lastname"				: "Berry",
+			"gender"					:	"Female",
+			"street"					:	"Theresienhöhe",
+			"streetnumber"		: "7",
+			"postalcode"			: "80339",
+			"city"						: "München",
+			"companyname"			: "Angela's Farm",
+			
+			"website"					: "",
+			"email"						: "aberrym@gmail.com",
+			"phone"						: "(049) 0153238",
+			"mobile"					: "(049) 02040687108",
+			
+			"working_hours"		: "Monday-Saturday; 10:00-18:00",
+		
+			"facebookurl"			: "https://www.facebook.com/aberrym",
+			"twitterurl"			: "",
+			
+			"description"			:	"Welcome to Angela's Farm",
+			"profile_picture"	: "",
+			"slideshow"				: [ 
+				{
+					"url" : ""
+				}],
+			"rating"					: "2",
+			"createdate"			: "Oct 28, 2014",
+			
+			"products"				: [
+			{
+				"productgroup"			:	"Broccoli",
+				"type"							: "Waltham 29",
+				"unit"							: "bulk",
+				"price"							: "32€",
+				"on_sale"						: "True",
+				"available"					: "True",
+				"product_picture"		: ""
+			}]
+			
+		},
+		{
+			"farmerID"					:"14",
+			"surname"					:	"Sara",
+			"lastname"				: "Dixon",
+			"gender"					:	"Female",
+			"street"					:	"Nußbaumstraße",
+			"streetnumber"		: "20",
+			"postalcode"			: "80336",
+			"city"						: "München",
+			"companyname"			: "Sara's Farm",
+			
+			"website"					: "",
+			"email"						: "sdixonp@1und1.de",
+			"phone"						: "(049) 0933450",
+			"mobile"					: "(049) 85035830726",
+			
+			"working_hours"		: "Monday-Saturday; 13:00-14:00",
+		
+			"facebookurl"			: "",
+			"twitterurl"			: "",
+			
+			"description"			:	"Welcome to Sara's Farm",
+			"profile_picture"	: "",
+			"slideshow"				: [ 
+				{
+					"url" : ""
+				}],
+			"rating"					: "4",
+			"createdate"			: "Nov 1, 2014",
+			
+			"products"				: [
+			{
+				"productgroup"			:	"pork",
+				"type"							: "Ham",
+				"unit"							: "kilogram",
+				"price"							: "45€",
+				"on_sale"						: "False",
+				"available"					: "True",
+				"product_picture"		: ""
+			}]
+			
+		}],
+		
+		 "ProductGroups": [
+        {   "productgroup": "Milch",
+            "image": "img/products/milk.png", 
+            "prodgroupID": "0",      
+            "product": [
+                {
+                	"prodID": "0",
+                    "type": "goat milk",
+                    "unit": "bottle",
+                    "price": "5€",
+                    "on_sale": "False",
+                    "available": "True",
+                    "product_picture": "",
+                    "plocation": "Mannheim",
+                    "farmers": [
+                        {
+                            "info": "goat milk",
+                            "location": "@49.445626, 8.471404"
+                        }
+                    ]
+                },
+                {
+                	"prodID": "1",
+                    "type": "goat milk 2",
+                    "unit": "bottle 2",
+                    "price": "5€",
+                    "on_sale": "False",
+                    "available": "True",
+                    "product_picture": "",
+                    "plocation": "Mannheim",
+                    "farmers": [
+                        {
+                            "info": "goat milk",
+                            "location": "@49.445626, 8.471404"
+                        }
+                    ]
+                },
+                {
+                	"prodID": "2",
+                    "type": "goat milk 3",
+                    "unit": "bottle 3",
+                    "price": "5€",
+                    "on_sale": "False",
+                    "available": "True",
+                    "product_picture": "",
+                    "plocation": "Mannheim",
+                    "farmers": [
+                        {
+                            "info": "goat milk",
+                            "location": "@49.445626, 8.471404"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "productgroup": "Äpfel",
+            "image" : "img/products/aepfel.png",            
+            "prodgroupID": "1",            
+            "product": [
+                {
+                	"prodID": "0",
+                    "type": "Pink Lady",
+					"image": "img/products/aepfel.png",
+                    "unit": "KG",
+                    "price": "15€",
+                    "on_sale": "False",
+                    "available": "True",
+                    "product_picture": "",
+                    "plocation": "Mannheim",
+					"info": "1,20€ - 2,99€",
+					"locations"				:[{
+										"locName": "Ilvesheimer Strasse - Johanna Peters",
+										"lat": "49.4837204",
+										"lng": "8.541513"
+			
+			
+									},
+									{
+										"locName": "Wallstadter Straße 14- Jan Schmidt",
+										"lat": "49.4859222",
+										"lng":  "8.5390634"
+									},
+									{
+										"locName": "Marktplatz MA - Paul Müller",
+										"lat": "49.48963",
+										"lng":  "8.467295"
+									},
+									{
+										"locName": "Schifferstadter Straße 9 - Wolfgang Bauer",
+										"lat": "49.4333178",
+										"lng":  "8.5259916"
+									}],
+                    "farmers": [
+					{
+						"Farmer": "Farmer Johanna Peters",
+						"farmerID"					:"1",
+						"Location": "Hofladen Fischer",
+						"geoLocation": "@49.488668, 8.466779",
+						"Price": "2,99€",
+						"Picture": "img/farmers/farmer1.png"
+					},
+					{
+						"Farmer": "Farmer Johanna Peters",
+						"farmerID"					:"1",
+						"Location": "Markt Planken",
+						"geoLocation": "@49.488668, 8.466779",						
+						"Price": "2,99€",
+						"Picture": "img/farmers/farmer1.png"
+					},
+					{
+						"Farmer": "Farmer Johanna Peters",
+						"farmerID"					:"1",
+						"Location": "Edeka Ludwigshafen",
+						"geoLocation": "@49.488668, 8.466779",						
+						"Price": "2,99€",
+						"Picture": "img/farmers/farmer1.png"
+					},
+					{
+						"Farmer": "Farmer Paul Müller",
+						"farmerID"					:"2",
+						"Location": "Bauernhof",
+						"geoLocation": "@49.488668, 8.466779",						
+						"Price": "1,89€",
+						"Picture": "img/farmers/farmer2.png"
+					},
+					{
+						"Farmer": "Farmer Paul Müller",
+						"farmerID"					:"2",
+						"Location": "Mannheimer Wochenmarkt",
+						"geoLocation": "@49.488668, 8.466779",						
+						"Price": "1,89€",
+						"Picture": "img/farmers/farmer2.png"
+					},
+					{
+						"Farmer": "Farmer Jan Schmidt",
+						"farmerID"					:"3",
+						"Location": "REWE Käfertal",
+						"geoLocation": "@49.488668, 8.466779",
+						"Price": "2,49€",
+						"Picture": "img/farmers/farmer3.png"
+					},
+					{
+						"Farmer": "Farmer Wolfgang Bauer",
+						"farmerID"					:"4",
+						"Location": "Frood Hofladen",
+						"geoLocation": "@49.488668, 8.466779",						
+						"Price": "2,20€",
+						"Picture": "img/farmers/farmer4.png"
+					},
+					{
+						"Farmer": "Farmer Wolfgang Bauer",
+						"farmerID"					:"4",
+						"Location": "Bio-Markt Käfertal",
+						"geoLocation": "@49.488668, 8.466779",						
+						"Price": "2,20€",
+						"Picture": "img/farmers/farmer4.png"
+					}
+                    ]
+                },	
+				{
+                	"prodID": "1",
+                    "type": "Arlet",
+					"image": "img/products/aepfel.png",					
+                    "unit": "KG",
+                    "price": "17€",
+                    "on_sale": "True",
+                    "available": "True",
+                    "product_picture": "",
+                    "plocation": "Schriesheim",
+					"info": "1,20€ - 2,99€",					
+                    "farmers": [
+					{
+						"Farmer": "Farmer Johanna Peters",
+						"farmerID"					:"1",
+						"Location": "Hofladen Fischer",
+						"geoLocation": "@49.488668, 8.466779",
+						"Price": "2,99€",
+						"Picture": "img/farmers/farmer1.png"
+					},
+					{
+						"Farmer": "Farmer Johanna Peters",
+						"farmerID"					:"1",
+						"Location": "Markt Planken",
+						"geoLocation": "@49.488668, 8.466779",						
+						"Price": "2,99€",
+						"Picture": "img/farmers/farmer1.png"
+					}]
+                },
+				
+				{
+                	"prodID": "2",
+                    "type": "Brettacher",
+					"image": "img/products/aepfel.png",					
+                    "unit": "KG",
+                    "price": "17€",
+                    "on_sale": "True",
+                    "available": "True",
+                    "product_picture": "",
+                    "plocation": "Schriesheim",
+					"info": "1,20€ - 2,99€",					
+                    "farmers": [
+                        {
+                            "info": "Welcome to the farmers' market. ",
+                            "location": "@47.988642, 7.849140"
+                        }
+                    ]
+                },
+				
+                {
+                	"prodID": "3",
+                    "type": "Golden Apple",
+					"image": "img/products/aepfel.png",					
+                    "unit": "KG",
+                    "price": "17€",
+                    "on_sale": "True",
+                    "available": "True",
+                    "product_picture": "",
+                    "plocation": "Schriesheim",
+					"info": "1,20€ - 2,99€",					
+                    "farmers": [
+                        {
+                            "info": "Welcome to the farmers' market. ",
+                            "location": "@47.988642, 7.849140"
+                        }
+                    ]
+                },
+				{
+                	"prodID": "4",
+                    "type": "Boskop",
+					"image": "img/products/aepfel.png",					
+                    "unit": "KG",
+                    "price": "17€",
+                    "on_sale": "True",
+                    "available": "True",
+                    "product_picture": "",
+                    "plocation": "Schriesheim",
+					"info": "1,20€ - 2,99€",					
+                    "farmers": [
+                        {
+                            "info": "Welcome to the farmers' market. ",
+                            "location": "@47.988642, 7.849140"
+                        }
+                    ]
+                }
+				
+				
+            ]
+        },
+		{				
+		"productgroup": "Rindfleisch",
+            "image": "img/products/beef.png", 
+            "prodgroupID": "2",      
+            "product": [       
+                {
+                	"prodID": "0",
+                    "type": "goat milk 3",
+                    "unit": "bottle 3",
+                    "price": "5€",
+                    "on_sale": "False",
+                    "available": "True",
+                    "product_picture": "",
+                    "plocation": "Mannheim",
+                    "farmers": [
+                        {
+                            "info": "goat milk",
+                            "location": "@49.445626, 8.471404"
+                        }
+                    ]
+                }
+            ]
+        },
+		{		
+		"productgroup": "Hähnchenfleisch",
+            "image": "img/products/chicken.png", 
+            "prodgroupID": "3",      
+            "product": [       
+                {
+                	"prodID": "0",
+                    "type": "goat milk 3",
+                    "unit": "bottle 3",
+                    "price": "5€",
+                    "on_sale": "False",
+                    "available": "True",
+                    "product_picture": "",
+                    "plocation": "Mannheim",
+                    "farmers": [
+                        {
+                            "info": "goat milk",
+                            "location": "@49.445626, 8.471404"
+                        }
+                    ]
+                }
+            ]
+        },
+		{
+		"productgroup": "Eier",
+            "image": "img/products/eier.png", 
+            "prodgroupID": "4",      
+            "product": [       
+                {
+                	"prodID": "0",
+                    "type": "goat milk 3",
+                    "unit": "bottle 3",
+                    "price": "5€",
+                    "on_sale": "False",
+                    "available": "True",
+                    "product_picture": "",
+                    "plocation": "Mannheim",
+                    "farmers": [
+                        {
+                            "info": "goat milk",
+                            "location": "@49.445626, 8.471404"
+                        }
+                    ]
+                }
+            ]
+        },
+		{
+				"productgroup": "Gurken",
+            "image": "img/products/gurke.png", 
+            "prodgroupID": "5",      
+            "product": [       
+                {
+                	"prodID": "0",
+                    "type": "goat milk 3",
+                    "unit": "bottle 3",
+                    "price": "5€",
+                    "on_sale": "False",
+                    "available": "True",
+                    "product_picture": "",
+                    "plocation": "Mannheim",
+                    "farmers": [
+                        {
+                            "info": "goat milk",
+                            "location": "@49.445626, 8.471404"
+                        }
+                    ]
+                }
+            ]
+        },
+		{
+		"productgroup": "Zwiebeln",
+            "image": "img/products/onions.png", 
+            "prodgroupID": "6",      
+            "product": [       
+                {
+                	"prodID": "0",
+                    "type": "goat milk 3",
+                    "unit": "bottle 3",
+                    "price": "5€",
+                    "on_sale": "False",
+                    "available": "True",
+                    "product_picture": "",
+                    "plocation": "Mannheim",
+                    "farmers": [
+                        {
+                            "info": "goat milk",
+                            "location": "@49.445626, 8.471404"
+                        }
+                    ]
+                }
+            ]
+        },
+		{
+				"productgroup": "Radieschen",
+            "image": "img/products/radieschen.png", 
+            "prodgroupID": "7",      
+            "product": [       
+                {
+                	"prodID": "0",
+                    "type": "goat milk 3",
+                    "unit": "bottle 3",
+                    "price": "5€",
+                    "on_sale": "False",
+                    "available": "True",
+                    "product_picture": "",
+                    "plocation": "Mannheim",
+                    "farmers": [
+                        {
+                            "info": "goat milk",
+                            "location": "@49.445626, 8.471404"
+                        }
+                    ]
+                }
+            ]
+        },
+		{
+		"productgroup": "Salat",
+            "image": "img/products/salad.png", 
+            "prodgroupID": "8",      
+            "product": [       
+                {
+                	"prodID": "0",
+                    "type": "goat milk 3",
+                    "unit": "bottle 3",
+                    "price": "5€",
+                    "on_sale": "False",
+                    "available": "True",
+                    "product_picture": "",
+                    "plocation": "Mannheim",
+                    "farmers": [
+                        {
+                            "info": "goat milk",
+                            "location": "@49.445626, 8.471404"
+                        }
+                    ]
+                }
+            ]
+        },
+		{
+				"productgroup": "Trauben",
+            "image": "img/products/trauben.png", 
+            "prodgroupID": "0",      
+            "product": [       
+                {
+                	"prodID": "0",
+                    "type": "goat milk 3",
+                    "unit": "bottle 3",
+                    "price": "5€",
+                    "on_sale": "False",
+                    "available": "True",
+                    "product_picture": "",
+                    "plocation": "Mannheim",
+                    "farmers": [
+                        {
+                            "info": "goat milk",
+                            "location": "@49.445626, 8.471404"
+                        }
+                    ]
+                }
+            ]
+        },
+		{
+		"productgroup": "Wein",
+            "image": "img/products/wine.png", 
+            "prodgroupID": "0",      
+            "product": [       
+                {
+                	"prodID": "0",
+                    "type": "goat milk 3",
+                    "unit": "bottle 3",
+                    "price": "5€",
+                    "on_sale": "False",
+                    "available": "True",
+                    "product_picture": "",
+                    "plocation": "Mannheim",
+                    "farmers": [
+                        {
+                            "info": "goat milk",
+                            "location": "@49.445626, 8.471404"
+                        }
+                    ]
+                }
+            ]
+        }		
+		
+    ],
+		
+		"Events" : [
+		{
+		}]
+	
+	}
+}

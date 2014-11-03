@@ -1,0 +1,149 @@
+jQuery.sap.declare("testApp.Component");
+jQuery.sap.require("testApp.Router");
+
+
+sap.ui.core.UIComponent.extend("testApp.Component", {
+	
+	metadata : {
+		rootView : "testApp.testlayout.App",
+		config : {
+			resourceBundle : "i18n/messageBundle.properties",
+			serviceConfig : {
+				//name : "Northwind",
+				//serviceUrl : "/uilib-sample/proxy/http/services.odata.org/V2/(S(sapuidemotdg))/OData/OData.svc/"
+			}},
+		routing : {
+			config : {
+				routerClass : testApp.Router,
+				viewType : "XML",
+				viewPath : "testApp.testlayout",
+				targetControl : "idAppControl",
+				clearTarget : false
+			},
+			routes : [ 
+						{
+						  pattern : "",
+						  name : "_index",
+						  view : "Main",
+						  viewType : "XML",
+						  targetAggregation: "pages",
+						  targetControl : "idAppControl",
+						},
+						{
+							  pattern : "farmers",
+							  name : "farmersOV",
+							  view : "FarmersOV",
+							  viewType : "XML",
+							  targetAggregation: "pages",
+							  targetControl : "idAppControl",
+						},
+						{
+							  pattern : "products",
+							  name : "productOV",
+							  view : "ProductOV",
+							  viewType : "XML",
+							  targetAggregation: "pages",
+							  targetControl : "idAppControl",
+						},
+						{
+						  pattern : "foo",
+						  name : "_foo",
+						  view : "SplitContainer",
+						  viewType : "JS",
+						  targetAggregation : "pages",
+						  targetControl : "idAppControl",
+						  subroutes : [
+						  {
+							     pattern : "ProductProfile/{prodgroupID}",
+							     name : "productMaster",
+							     view : "ProductMaster",
+							     viewType : "XML",
+							     targetAggregation : "masterPages",
+							     targetControl : "idSplitContainerControl",
+							     subroutes : [
+										     {
+										        pattern : "ProductProfile/{prodgroupID}/product/{prodID}",
+										        name : "productDetail",
+										        view : "ProductDetail",
+										        viewType : "XML",
+										        targetAggregation : "detailPages",
+										        targetControl : "idSplitContainerControl"
+										        
+										     }]
+						  	},
+						  	{
+							     pattern : "FarmerProfile/{farmerID}",
+							     name : "farmMaster",
+							     view : "FarmMaster",
+							     viewType : "XML",
+							     targetAggregation : "masterPages",
+							     targetControl : "idSplitContainerControl",
+							     subroutes : [
+										     {
+										        pattern : "FarmerProfile/{farmerID}/Detail",
+										        name : "farmDetail",
+										        view : "FarmDetail",
+										        viewType : "XML",
+										        targetAggregation : "detailPages",
+										        targetControl : "idSplitContainerControl"
+										        
+										     }]
+						  	}
+						  
+						  ]
+							}]
+
+				}
+	},
+	init : function() {
+		
+	
+		
+		console.log("in init component")
+		sap.ui.core.UIComponent.prototype.init.apply(this, arguments);
+
+		var mConfig = this.getMetadata().getConfig();
+
+		// always use absolute paths relative to our own component
+		// (relative paths will fail if running in the Fiori Launchpad)
+		var oRootPath = jQuery.sap.getModulePath("testApp");
+
+		// set i18n model
+		var i18nModel = new sap.ui.model.resource.ResourceModel({
+			bundleUrl : [oRootPath, mConfig.resourceBundle].join("/")
+		});
+		this.setModel(i18nModel, "i18n");
+
+		var sServiceUrl = mConfig.serviceConfig.serviceUrl;
+
+		// Create and set domain model to the component
+		var sPath = "models/mainModel.json"
+		var oModel = new sap.ui.model.json.JSONModel(sPath);
+		this.setModel(oModel);
+		// set i18n model
+//		var i18nModel = new sap.ui.model.resource.ResourceModel({
+//			bundleUrl : [oRootPath, mConfig.resourceBundle].join("/")
+//		});
+//		this.setModel(i18nModel, "i18n");
+
+
+//		
+
+		// set device model
+		var oDeviceModel = new sap.ui.model.json.JSONModel({
+			isTouch : sap.ui.Device.support.touch,
+			isNoTouch : !sap.ui.Device.support.touch,
+			isPhone : sap.ui.Device.system.phone,
+			isNoPhone : !sap.ui.Device.system.phone,
+			listMode : sap.ui.Device.system.phone ? "None" : "SingleSelectMaster",
+			listItemType : sap.ui.Device.system.phone ? "Active" : "Inactive"
+		});
+		oDeviceModel.setDefaultBindingMode("OneWay");
+		this.setModel(oDeviceModel, "device");
+
+		this.getRouter().initialize();
+		console.log("router is init")
+	},
+
+});
+	
