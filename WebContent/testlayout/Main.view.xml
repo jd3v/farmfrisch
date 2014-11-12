@@ -211,6 +211,7 @@
 		<m:footer>
       <m:Toolbar>
         <m:ToolbarSpacer/> 
+         <m:Button text="Analytics" press="navToAnalytics" />
         <m:Button text="Share" icon="./img/fb_white_150x150.png" />
         <m:Button text="Tweet" icon="./img/twitter_white_150x150.png" />
         <m:Button icon="sap-icon://settings" />

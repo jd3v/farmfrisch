@@ -96,6 +96,42 @@ sap.ui.core.UIComponent.extend("testApp.Component", {
 										        targetControl : "idSplitContainerControl"
 										        
 										     }]
+						  	},
+						  	{
+							     pattern : "Analytics",
+							     name : "analyticsMaster",
+							     view : "AnalyticsMaster",
+							     viewType : "XML",
+							     targetAggregation : "masterPages",
+							     targetControl : "idSplitContainerControl",
+							     subroutes : [
+										     {
+										        pattern : "Analytics/DetailGeneral",
+										        name : "analyticsGeneral",
+										        view : "AnalyticsGeneral",
+										        viewType : "XML",
+										        targetAggregation : "detailPages",
+										        targetControl : "idSplitContainerControl"
+										        
+										     },
+										     {
+											        pattern : "Analytics/DetailProduct",
+											        name : "analyticsProducts",
+											        view : "AnalyticsProducts",
+											        viewType : "XML",
+											        targetAggregation : "detailPages",
+											        targetControl : "idSplitContainerControl"
+											        
+										     },
+										     {
+											        pattern : "Analytics/DetailCustomer",
+											        name : "analyticsCustomer",
+											        view : "AnalyticsCustomer",
+											        viewType : "XML",
+											        targetAggregation : "detailPages",
+											        targetControl : "idSplitContainerControl"
+											        
+											     }]
 						  	}
 						  
 						  ]
