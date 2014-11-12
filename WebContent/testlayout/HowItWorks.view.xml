@@ -1,0 +1,26 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout" xmlns:m="sap.m" xmlns="sap.suite.ui.commons"
+	controllerName="testApp.testlayout.HowItWorks" xmlns:html="http://www.w3.org/1999/xhtml">
+
+
+	<m:Page title="HowItWorks" enableScrolling="false" showHeader="false">
+		<m:content>
+		
+		
+		
+		
+
+		</m:content>
+		
+		
+		<m:footer>
+      <m:Toolbar>
+        <m:ToolbarSpacer/> 
+        <m:Button text="Share" icon="./img/fb_white_150x150.png" />
+        <m:Button text="Tweet" icon="./img/twitter_white_150x150.png" />
+        <m:Button icon="sap-icon://settings" />
+      </m:Toolbar>
+    </m:footer>
+	</m:Page>
+
+</mvc:View>

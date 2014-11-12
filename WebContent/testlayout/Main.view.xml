@@ -8,9 +8,8 @@
 		<m:TileContainer id="container" tileDelete="handleTileDelete">
 
 				<m:CustomTile>
-					<GenericTile size="M" frameType="OneByOne" press="navProductOV"
-						backgroundImage="img/farmfrisch_logo_184x176.jpg" info="{prodgroupID}"
-						type="Navigation">
+					<GenericTile size="M" frameType="OneByOne" press="navHowItWorks"
+						backgroundImage="img/farmfrisch_logo_184x176.jpg"	type="Navigation">
 					</GenericTile>
 				</m:CustomTile>
 

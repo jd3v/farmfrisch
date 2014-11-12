@@ -48,6 +48,11 @@ sap.ui.controller("testApp.testlayout.Main", {
 		
 		this._oRouter.navTo("farmersOV") 
 	},
+	
+	navHowItWorks: function(oEvent){
+		
+		this._oRouter.navTo("howItWorks") 
+	},
 
 /**
 * Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered

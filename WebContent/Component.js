@@ -46,6 +46,14 @@ sap.ui.core.UIComponent.extend("testApp.Component", {
 							  targetControl : "idAppControl",
 						},
 						{
+							  pattern : "howItWorks",
+							  name : "howItWorks",
+							  view : "HowItWorks",
+							  viewType : "XML",
+							  targetAggregation: "pages",
+							  targetControl : "idAppControl",
+						},
+						{
 						  pattern : "foo",
 						  name : "_foo",
 						  view : "SplitContainer",
