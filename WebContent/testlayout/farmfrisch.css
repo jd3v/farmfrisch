@@ -1,60 +1,79 @@
-.sapMPage{
-/* 	background-image: url(data:image/gif;base64,R0lGODlhAwADAIAAAMhFJuFdPiH5BAAAAAAALAAAAAADAAMAAAIERB5mBQA7); */
+.sapMPage {
+	/* 	background-image: url(data:image/gif;base64,R0lGODlhAwADAIAAAMhFJuFdPiH5BAAAAAAALAAAAAADAAMAAAIERB5mBQA7); */
 	background-image: url(../img/bg_orange.png);
 }
 
 .farmFrischTile {
+	
+}
 
-}
 .farmFrischTile .sapSuiteGT .OneByOne {
-	height: 6rem!important;
+	height: 6rem !important;
 }
-.farmFrischTile .sapSuiteGT:hover{
-	box-shadow: 0 0 0 2px rgba(0,0,0,0.1)!important;
+
+.farmFrischTile .sapSuiteGT:hover {
+	box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1) !important;
 }
-.farmFrischTile .sapSuiteGT .sapSuiteUiCommonsNwCCTxt{
-	height: 0px!important;
+
+.farmFrischTile .sapSuiteGT .sapSuiteUiCommonsNwCCTxt {
+	height: 0px !important;
 }
-.farmFrischTile .sapSuiteGT .sapSuiteUiCommonsNwCSbh{
-	height: 3rem!important;
-	font-size: 0.9rem!important;
-	font-weight: bold!important;
-	overflow: hidden!important;
-	color: black!important;
-	white-space: normal!important;
+
+.farmFrischTile .sapSuiteGT .sapSuiteUiCommonsNwCSbh {
+	height: 3rem !important;
+	font-size: 0.9rem !important;
+	font-weight: bold !important;
+	overflow: hidden !important;
+	color: black !important;
+	white-space: normal !important;
 }
-.farmFrischTile .sapSuiteGT .News{
+
+.farmFrischTile .sapSuiteGT .News {
 	/*height: 5rem; */
-	background-color: rgba(255,255,255,0.8)!important;
+	background-color: rgba(255, 255, 255, 0.8) !important;
 }
-.farmFrischTile .sapSuiteGT .sapSuiteUiCommonsNwC{
-	width: 10.5rem!important;
+
+.farmFrischTile .sapSuiteGT .sapSuiteUiCommonsNwC {
+	width: 10.5rem !important;
 }
-.sapMSplitContainer .sapMPage{
-	background: white!important;
+
+.sapMSplitContainer .sapMPage {
+	background: white;
 }
+
+.analytics {
+/* 	background-color: #FFF6E4!important; */
+	background-image: url(../img/bg_orange.png)!important;	
+}
+
 .sapUiUfdShellBrand {
-	background-color: #DE5D40!important;
+	background-color: #DE5D40 !important;
 }
-.sapMSFF{
+
+.sapMSFF {
 	border-top: none !important;
 	border-bottom: none !important;
 	height: 2.7rem;
 }
-.sapMSF{
+
+.sapMSF {
 	padding: 0px;
 }
-.sapMSFI{
+
+.sapMSFI {
 	height: 2.6rem;
 }
-.sapMSFB{
+
+.sapMSFB {
 	height: 2.675rem;
 	line-height: 2.8rem;
 }
-.sapMFocus>.sapMSFF, :not(.sapMSFDisabled)>.sapMSFF:hover{
+
+.sapMFocus>.sapMSFF, :not (.sapMSFDisabled )>.sapMSFF:hover {
 	border-color: #DE5D40;
 }
- .myMap {  
-                height: 500px!important;  
-                width: 100%!important;
-                   } 
+
+.myMap {
+	height: 500px !important;
+	width: 100% !important;
+}

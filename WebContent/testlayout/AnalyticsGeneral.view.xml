@@ -4,33 +4,120 @@
 
 
 	<m:Page title="General Analytics" enableScrolling="false"
-		showHeader="false">
+		showHeader="false" class="analytics">
 		<m:content>
 
 
-			<!-- <m:Button text="Zur Übersicht" press="backToLandingPage" /> -->
+			<m:Panel text="Account Overview Information">
+				<m:content>
+					<KpiTile value="Premium Account" description="Account Status"
+						doubleFontSize="false" valueStatus="Good" />
+					<KpiTile value="+15.000" description="Aufrufe insgesamt"
+						valueStatus="Good" />
+					<KpiTile value="126" description="Großaufträge erhalten"
+						valueStatus="Good" />
+					<KpiTile value="18" description="Produkte im Portfolio" />
+				</m:content>
+			</m:Panel>
 
-
-			<m:TileContainer id="container" tileDelete="handleTileDelete"
-				tiles="{ path: '/Farmfrisch/ProductGroups' }">
-
-<!-- 				<m:CustomTile class="farmFrischTile"> -->
-
-<!-- 					<GenericTile size="M" frameType="OneByOne" press="navProduct" -->
-<!-- 						backgroundImage="{image}" info="{id}" type="Navigation"> -->
-<!-- 						<tileContent> -->
-<!-- 							<TileContent size="M"> -->
-<!-- 								<content> -->
-<!-- 									<NewsContent size="M" subheader="{productgroup}"> -->
-<!-- 									</NewsContent> -->
-<!-- 								</content> -->
-<!-- 							</TileContent> -->
-<!-- 						</tileContent> -->
-<!-- 					</GenericTile> -->
-
-<!-- 				</m:CustomTile> -->
+			<m:TileContainer id="container" tileDelete="handleTileDelete">
 
 				<m:CustomTile>
+					<GenericTile header="Seitenaufrufe im Monat November"
+						size="M" frameType="OneByOne" press="press">
+						<tileContent>
+							<TileContent footer="Aufrufe" size="M">
+								<content>
+									<NumericContent size="M" value="623" valueColor="Good"
+										indicator="Up" icon="sap-icon://group" />
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+				</m:CustomTile>
+
+				<m:CustomTile>
+					<GenericTile header="Unique Seitenaufrufe im Monat November"
+						size="M" frameType="OneByOne" press="press">
+						<tileContent>
+							<TileContent footer="Aufrufe" size="M">
+								<content>
+									<NumericContent size="M" value="284" icon="sap-icon://hr-approval" />
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+				</m:CustomTile>
+
+				<m:CustomTile>
+					<GenericTile header="Seitenaufrufe im Monat November"
+						size="M" frameType="OneByOne" press="press">
+						<tileContent>
+							<TileContent footer="Aufrufe" size="M">
+								<content>
+									<NumericContent size="M" value="3" valueColor="Good"
+										indicator="Up" icon="sap-icon://employee-lookup" />
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+				</m:CustomTile>
+
+				<m:CustomTile >
+					<GenericTile header="Burst-Rate" subheader="Anteil besonders kurzer Aufrufe"
+						size="M" frameType="OneByOne" press="press">
+						<tileContent>
+							<TileContent footer="aller Aufrufe" size="M">
+								<content>
+									<NumericContent size="M" value="34" valueColor="Critical"
+										scale="%" indicator="Down" icon="sap-icon://media-forward" />
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+				</m:CustomTile>
+
+				<m:CustomTile>
+
+				</m:CustomTile>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<m:CustomTile>
+
+
+
+
 
 					<GenericTile header="Comparative Annual Totals"
 						subheader="By Region" size="M" frameType="OneByOne" press="press">
@@ -102,7 +189,6 @@
 					</GenericTile>
 
 				</m:CustomTile>
-
 
 			</m:TileContainer>
 
