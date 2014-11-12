@@ -1,8 +1,121 @@
-<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
-		controllerName="testApp.testlayout.AnalyticsGeneral" xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page title="General Analytics">
-		<content>
-	
-		</content>
-	</Page>
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:m="sap.m" xmlns="sap.suite.ui.commons" controllerName="testApp.testlayout.ProductOV"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+
+
+	<m:Page title="General Analytics" enableScrolling="false"
+		showHeader="false">
+		<m:content>
+
+
+			<!-- <m:Button text="Zur Übersicht" press="backToLandingPage" /> -->
+
+
+			<m:TileContainer id="container" tileDelete="handleTileDelete"
+				tiles="{ path: '/Farmfrisch/ProductGroups' }">
+
+<!-- 				<m:CustomTile class="farmFrischTile"> -->
+
+<!-- 					<GenericTile size="M" frameType="OneByOne" press="navProduct" -->
+<!-- 						backgroundImage="{image}" info="{id}" type="Navigation"> -->
+<!-- 						<tileContent> -->
+<!-- 							<TileContent size="M"> -->
+<!-- 								<content> -->
+<!-- 									<NewsContent size="M" subheader="{productgroup}"> -->
+<!-- 									</NewsContent> -->
+<!-- 								</content> -->
+<!-- 							</TileContent> -->
+<!-- 						</tileContent> -->
+<!-- 					</GenericTile> -->
+
+<!-- 				</m:CustomTile> -->
+
+				<m:CustomTile>
+
+					<GenericTile header="Comparative Annual Totals"
+						subheader="By Region" size="M" frameType="OneByOne" press="press">
+						<tileContent>
+							<TileContent footer="Compare across regions" unit="EUR"
+								size="M">
+								<content>
+									<ComparisonChart size="M" scale="M">
+										<data>
+											<ComparisonData title="Americas" value="234"
+												color="Good" />
+											<ComparisonData title="EMEA" value="97" color="Error" />
+											<ComparisonData title="APAC" value="197"
+												color="Critical" />
+										</data>
+									</ComparisonChart>
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+
+				</m:CustomTile>
+
+				<m:CustomTile>
+
+					<GenericTile header="123 Demo Opportunity" subheader="SAP Jam Group"
+						size="M" frameType="OneByOne" press="press">
+						<tileContent>
+							<TileContent footer="Hours since last Activity" size="M">
+								<content>
+									<NumericContent size="M" value="9"
+										icon="sap-icon://locked" />
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+
+
+				</m:CustomTile>
+
+				<m:CustomTile>
+
+					<GenericTile header="Comparative Annual Totals"
+						subheader="Expenses By Region" size="M" frameType="TwoByOne"
+						press="press">
+						<tileContent>
+							<TileContent footer="Actual and Target" unit="EUR"
+								size="M">
+								<content>
+									<NumericContent size="M" scale="M" value="1.96"
+										valueColor="Error" indicator="Up" />
+								</content>
+							</TileContent>
+							<TileContent footer="Compare across regions" unit="EUR"
+								size="M">
+								<content>
+									<ComparisonChart size="M" scale="M">
+										<data>
+											<ComparisonData title="Americas" value="234"
+												color="Good" />
+											<ComparisonData title="EMEA" value="97" color="Error" />
+											<ComparisonData title="APAC" value="197"
+												color="Critical" />
+										</data>
+									</ComparisonChart>
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+
+				</m:CustomTile>
+
+
+			</m:TileContainer>
+
+		</m:content>
+		<m:footer>
+			<m:Toolbar>
+				<m:Button text="Zurück" icon="sap-icon://nav-back" press="backToLandingPage" />
+				<m:ToolbarSpacer />
+				<m:Button text="Share" icon="./img/fb_white_150x150.png" />
+				<m:Button text="Tweet" icon="./img/twitter_white_150x150.png" />
+				<m:Button icon="sap-icon://settings" />
+			</m:Toolbar>
+		</m:footer>
+	</m:Page>
+
 </core:View>
