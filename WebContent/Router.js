@@ -1,5 +1,7 @@
 jQuery.sap.declare("testApp.Router");
 
+//test4
+
 jQuery.sap.require("sap.m.routing.RouteMatchedHandler");
 jQuery.sap.require("sap.ui.core.routing.Router");
 jQuery.sap.declare("testApp.Router");
