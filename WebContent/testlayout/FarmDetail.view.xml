@@ -34,7 +34,7 @@
 			</l:VerticalLayout>
 					<IconTabBar>
 						<items>
-							<IconTabFilter key="key1" text="Products" icon="img/Products.jpg">
+							<IconTabFilter key="key1" text="Products" icon="sap-icon://nutrition-activity">
 								<content>
 									<ui:OverflowContainer overflowHeight="200px">
 										<ui:content>
@@ -53,7 +53,7 @@
 								</content>
 							</IconTabFilter>
 
-							<IconTabFilter key="key2" text="Reviews" icon="img/Review.png">
+							<IconTabFilter key="key2" text="Reviews" icon="sap-icon://leads">
 								<content>
 									<ui:OverflowContainer overflowHeight="200px">
 										<ui:content>
@@ -61,7 +61,6 @@
 												<items>
 													<FeedListItem sender="{Sender}" icon = "{Icon}" info="{Request}"
 														timestamp="{Timestamp}" text="{Text}" />
-
 												</items>
 											</List>
 											<FeedInput post="onPost" icon="img/gurke.png"
@@ -72,7 +71,7 @@
 							</IconTabFilter>
 
 							<IconTabFilter key="key3" text="Contact"
-								icon="img/contact_icon.png">
+								icon="sap-icon://contacts">
 								<content>
 									<ui:OverflowContainer overflowHeight="200px">
 										<ui:content>
