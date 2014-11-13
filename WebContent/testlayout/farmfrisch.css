@@ -77,3 +77,11 @@
 	height: 500px !important;
 	width: 100% !important;
 }
+/*Hack for timeline object so time does not get shown and title is bold*/
+.sapSuiteUiCommonsTimelineItemShellDateTime {display: none;}
+.sapSuiteUiCommonsTimelineItemShellHdr {font-weight: bold !important;}
+
+/*Style class for text styles*/
+.italicClass {font-style: italic !important;
+				padding-bottom: 5px !important;}
+.boldClass {font-weight: bold!important;}
