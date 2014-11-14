@@ -13,6 +13,9 @@ sap.ui.controller("testApp.testlayout.AnalyticsCustomer", {
 		
 		   jQuery.sap.require("sap.m.MessageToast");
 		   var button = evt.getSource().getId() ;
+		   var length = button.length;
+		   var offset = length - 7;
+		   button = button.substring(offset, length );
 		   var element;
 
 		   var reviews5 =[{
@@ -116,11 +119,11 @@ sap.ui.controller("testApp.testlayout.AnalyticsCustomer", {
 
 		switch (button)
 		   {
-		     case "__button0": reviews = reviews5 ;break;
-		     case "__button1": reviews = reviews4 ;break;
-		     case "__button2": reviews = reviews3 ;break;
-		     case "__button3": reviews = reviews2 ;break;
-		     case "__button4": reviews = reviews1 ;break;
+		     case "Button1": reviews = reviews5 ;break;
+		     case "Button2": reviews = reviews4 ;break;
+		     case "Button3": reviews = reviews3 ;break;
+		     case "Button4": reviews = reviews2 ;break;
+		     case "Button5": reviews = reviews1 ;break;
 		
 		   }	
 		   
