@@ -82,14 +82,9 @@
 					<IconTabFilter icon="sap-icon://pipeline-analysis">
 						<l:HorizontalLayout>
 							<Panel height="500px">
-								<headerToolbar>
-									<Toolbar height="3rem">
-										<Text text="Wer sucht nach was?" class="sapMH4FontSize" />
-										<Button icon="sap-icon://hint" press="onMsgDialogPress" />
-									</Toolbar>
-								</headerToolbar>
+								
 								<content>
-									<c:Timeline showHeaderBar="false">
+									<c:Timeline showHeaderBar="false" height="450px">
 										<c:content>
 											<c:TimelineItem title="Apfel" icon="sap-icon://product">
 												<c:embeddedControl>
@@ -113,7 +108,7 @@
 							</Panel>
 							<Panel height="500px">
 								<content>
-									<c:Timeline showHeaderBar="false">
+									<c:Timeline showHeaderBar="false" height="450px">
 										<c:content>
 											<c:TimelineItem title="Apfel" icon="sap-icon://product">
 												<c:embeddedControl>
@@ -138,7 +133,7 @@
 							</Panel>
 							<Panel height="500px">
 								<content>
-									<c:Timeline showHeaderBar="false">
+									<c:Timeline showHeaderBar="false" height="450px">
 										<c:content>
 											<c:TimelineItem title="Gurken" icon="sap-icon://product">
 												<c:embeddedControl>
