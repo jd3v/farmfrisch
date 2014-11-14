@@ -81,10 +81,10 @@
 					</IconTabFilter>
 					<IconTabFilter icon="sap-icon://pipeline-analysis">
 						<l:HorizontalLayout>
-							<Panel height="500px">
+							<Panel height="500px" width="300px" areaDesign="Transparent" showCollapseIcon="false">
 								
 								<content>
-									<c:Timeline showHeaderBar="false" height="450px">
+									<c:Timeline showHeaderBar="false">
 										<c:content>
 											<c:TimelineItem title="Apfel" icon="sap-icon://product">
 												<c:embeddedControl>
@@ -106,9 +106,9 @@
 									</c:Timeline>
 								</content>
 							</Panel>
-							<Panel height="500px">
+							<Panel height="500px" width="300px" areaDesign="Transparent" showCollapseIcon="false">
 								<content>
-									<c:Timeline showHeaderBar="false" height="450px">
+									<c:Timeline showHeaderBar="false" >
 										<c:content>
 											<c:TimelineItem title="Apfel" icon="sap-icon://product">
 												<c:embeddedControl>
@@ -131,9 +131,9 @@
 									</c:Timeline>
 								</content>
 							</Panel>
-							<Panel height="500px">
+							<Panel height="500px" width="300px" areaDesign="Transparent" showCollapseIcon="false">
 								<content>
-									<c:Timeline showHeaderBar="false" height="450px">
+									<c:Timeline showHeaderBar="false" >
 										<c:content>
 											<c:TimelineItem title="Gurken" icon="sap-icon://product">
 												<c:embeddedControl>
