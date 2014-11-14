@@ -1,0 +1,12 @@
+<core:FragmentDefinition
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core">
+  <Dialog
+    title="Erklärung"
+    type="Message" >
+    <Text text="Hier können Sie die Verhaltensweise ihrer User betrachten. Zum Beispiel sehen Sie in welcher Reiehenfolge sich user Produkte angeschaut haben" />
+    <beginButton>
+      <Button text="Schließen" press="onDialogCloseButton" />
+    </beginButton>
+  </Dialog>
+</core:FragmentDefinition>

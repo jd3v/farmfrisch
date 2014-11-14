@@ -17,15 +17,15 @@ sap.ui.controller("testApp.testlayout.AnalyticsMaster", {
 		var jsonString = {
 			ListItems : [ {
 				listId : "0",
-				listName : "General",
+				listName : "Übersicht",
 				navLink: "analyticsGeneral"
 			}, {
 				listId : "1",
-				listName : "Products",
+				listName : "Produkte",
 				navLink: "analyticsProducts"
 			}, {
 				listId : "2",
-				listName : "Customer",
+				listName : "Kunden",
 				navLink: "analyticsCustomer"
 			} ]
 		};
@@ -49,10 +49,16 @@ sap.ui.controller("testApp.testlayout.AnalyticsMaster", {
 	
 	navigateToDetail: function(oEvent){
 		
-		var sPath = oEvent.getSource().getBindingContext().getPath(); 
-		var oObject = this.getView().getModel().getProperty(sPath);
-		console.log(oObject.navLink)
+		var item = oEvent.getParameter("listItem");		
+		var sPath = item.getBindingContext().getPath(); 		
+		var oObject = this.getView().getModel().getProperty(sPath);		
 		this._oRouter.navTo(oObject.navLink);
+	},
+	
+backToLandingPage: function() {
+		
+		this._oRouter.navTo("_index");
+		
 	}
 
 /**

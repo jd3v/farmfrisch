@@ -1,8 +1,189 @@
-<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
-		controllerName="testApp.testlayout.AnalyticsProducts" xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page title="Analytics Products">
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:viz="sap.viz" xmlns:c="sap.suite.ui.commons" xmlns="sap.m"
+	controllerName="testApp.testlayout.AnalyticsProducts" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Analytics Products" showHeader="false" class="analytics">
 		<content>
-	
+
+			<Panel text="Account Overview Information">
+				<content>
+					<c:KpiTile value="Premium Account" description="Account Status"
+						doubleFontSize="false" valueStatus="Good" />
+					<c:KpiTile value="+15.000" description="Aufrufe insgesamt"
+						valueStatus="Good" />
+					<c:KpiTile value="126" description="Großaufträge erhalten"
+						valueStatus="Good" />
+					<c:KpiTile value="18" description="Produkte im Portfolio" />
+				</content>
+			</Panel>
+			<IconTabBar class="iconTabBarPaddingTop" id="idIconTabBarMulti"
+				expanded="{device>/isNoPhone}">
+				<items>
+					<IconTabFilter icon="sap-icon://table-chart">
+						<Panel>
+							<headerToolbar>
+								<Toolbar height="3rem">
+									<Text text="Tabellarische Übersicht" class="sapMH4FontSize" />
+								</Toolbar>
+							</headerToolbar>
+							<content>
+								<Table headerText="table headertext"
+									items="{
+								      path:'/Table',
+								      sorter: {
+								        path: 'ProductGroup',
+								       descending: false
+								      }
+								    }">									
+									<columns>
+										<Column mergeDuplicates="true" >
+											<header>
+												<Text text="Produktgruppe" />
+											</header>
+										</Column>
+										<Column minScreenWidth="Tablet" demandPopin="true"
+											hAlign="Center">
+											<header>
+												<Text text="Produkte" />
+											</header>
+										</Column>
+										<Column minScreenWidth="Tablet" demandPopin="true"
+											hAlign="Center">
+											<header>
+												<Text text="Seitenaufrufe" />
+											</header>
+										</Column>
+										<Column minScreenWidth="Tablet" demandPopin="true"
+											hAlign="Center">
+											<header>
+												<Text text="Individuelle SeitenAufrufe" />
+											</header>
+										</Column>
+										<Column minScreenWidth="Tablet" demandPopin="true"
+											hAlign="Center">
+											<header>
+												<Text text="Preis" />
+											</header>
+										</Column>
+									</columns>
+									<items>
+										<ColumnListItem>
+											<Text text="{ProductGroup}" class="boldClass" />
+											<Text text="{Product}"  />
+											<Text text="{Visitors}" />
+											<Text text="{UniqueVisitors}" />
+											<ObjectNumber number="{Price}" unit="{Currency}" />
+										</ColumnListItem>
+									</items>
+								</Table>
+							</content>
+						</Panel>
+					</IconTabFilter>
+					<IconTabFilter icon="sap-icon://pipeline-analysis">
+						<Panel>
+							<headerToolbar>
+								<Toolbar height="3rem">
+									<Text text="Wer sucht nach was?" class="sapMH4FontSize" />
+									<Button icon="sap-icon://hint" press="onMsgDialogPress" />
+								</Toolbar>
+							</headerToolbar>
+							<content>
+								<HBox>
+									<c:Timeline showHeaderBar="false">
+										<c:content>
+											<c:TimelineItem title="Apfel" icon="sap-icon://product">
+												<c:embeddedControl>
+													<Text text="100 Kunden haben sich Äpfel angeschaut"
+														class="italicClass"></Text>
+													<Image src="./img/aepfel.png"></Image>
+												</c:embeddedControl>
+											</c:TimelineItem>
+											<c:TimelineItem title="Eier" icon="sap-icon://product">
+												<c:embeddedControl>
+													<VBox>
+														<Text text="80% der Kunden haben sich auch Eier angeschaut"
+															class="italicClass"></Text>
+														<Image src="./img/eier.png"></Image>
+													</VBox>
+												</c:embeddedControl>
+											</c:TimelineItem>
+										</c:content>
+									</c:Timeline>
+									<c:Timeline showHeaderBar="false">
+										<c:content>
+											<c:TimelineItem title="Apfel" icon="sap-icon://product">
+												<c:embeddedControl>
+													<Text text="100 Kunden haben sich Äpfel angeschaut"
+														class="italicClass"></Text>
+													<Image src="./img/aepfel.png"></Image>
+												</c:embeddedControl>
+											</c:TimelineItem>
+											<c:TimelineItem title="Radieschen" icon="sap-icon://product">
+												<c:embeddedControl>
+													<VBox>
+														<Text
+															text="75% der Kunden haben sich auch Radieschen angeschaut"
+															class="italicClass"></Text>
+														<Image src="./img/radieschen.png"></Image>
+													</VBox>
+												</c:embeddedControl>
+											</c:TimelineItem>
+										</c:content>
+									</c:Timeline>
+									<c:Timeline showHeaderBar="false">
+										<c:content>
+											<c:TimelineItem title="Gurken" icon="sap-icon://product">
+												<c:embeddedControl>
+													<Text text="100 Kunden haben sich Gurken angeschaut"
+														class="italicClass"></Text>
+													<Image src="./img/gurke.png"></Image>
+												</c:embeddedControl>
+											</c:TimelineItem>
+											<c:TimelineItem title="Zwiebel" icon="sap-icon://product">
+												<c:embeddedControl>
+													<VBox>
+														<Text text="35% der Kunden haben sich auch Zwiebel angeschaut"
+															class="italicClass"></Text>
+														<Image src="./img/onions.png"></Image>
+													</VBox>
+												</c:embeddedControl>
+											</c:TimelineItem>
+										</c:content>
+									</c:Timeline>
+								</HBox>
+							</content>
+						</Panel>
+					</IconTabFilter>
+					<IconTabFilter icon="sap-icon://pie-chart">
+						<Panel>
+							<headerToolbar>
+								<Toolbar height="3rem">
+									<Text text="Produkte in der Übersicht" class="sapMH4FontSize" />
+								</Toolbar>
+							</headerToolbar>
+							<content>
+								<ActionSelect id="select"
+									items="{
+				          path: '/DataSets'				         
+				        }"
+									change="onChange">
+									<items>
+										<core:Item key="{dataSetId}" text="{name}" />
+									</items>
+								</ActionSelect>
+								<viz:ui5.Pie id="xmlPie" title="Most popular Products" />
+							</content>
+						</Panel>
+					</IconTabFilter>
+				</items>
+			</IconTabBar>
 		</content>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer />
+				<Button text="Share" icon="./img/fb_white_150x150.png" />
+				<Button text="Tweet" icon="./img/twitter_white_150x150.png" />
+				<Button icon="sap-icon://settings" />
+			</Toolbar>
+		</footer>
 	</Page>
 </core:View>
