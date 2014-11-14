@@ -5,9 +5,26 @@ sap.ui.controller("testApp.testlayout.AnalyticsCustomer", {
 * Can be used to modify the View before it is displayed, to bind event handlers and do other one-time initialization.
 * @memberOf testlayout.AnalyticsCustomer
 */
-//	onInit: function() {
-//
-//	},
+	onInit: function() {
+		var jsonString = {
+			socialMedia : [ {
+				ActivityId : "0",
+				Website : "Facebook",
+				Postings: "90",
+				Icon : "img/facebookLogo.jpg"
+			} ,
+			
+			{
+				ActivityId : "1",
+				Website : "Twitter",
+				Postings: "22",
+				Icon : "img/twitterLogo.jpg"
+			} ,
+		]}
+		this.oModel1 = new sap.ui.model.json.JSONModel();
+		this.oModel1.setData(jsonString);
+	    this.getView().setModel(this.oModel1); // set model to entire Application
+	},
 	onPress: function (evt) {
 
 		

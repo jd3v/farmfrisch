@@ -16,7 +16,7 @@
 		</Panel>
 
 		<c:FacetOverview title="Ratings" heightType="Auto"
-			width="500px" class="marginTopLeft howItWorks" >
+			width="500px" class="marginTopLeft howItWorks">
 
 			<c:content>
 				<ui:OverflowContainer overflowHeight="500px">
@@ -46,15 +46,21 @@
 				</ui:OverflowContainer>
 
 			</c:content>
-		</c:FacetOverview >
+		</c:FacetOverview>
 
-		<c:FacetOverview title="Social Media Activities"  heightType="Auto" width= "500px" class="marginTopLeft howItWorks" >
+		<c:FacetOverview title="Social Media Activities"
+			heightType="Auto" width="500px" class="marginTopLeft howItWorks">
 			<c:content>
-			<ui:OverflowContainer>
-			<ui:content>
-			<Text text="test" />
-			</ui:content>
-			</ui:OverflowContainer>
+				<ui:OverflowContainer>
+					<ui:content>
+						<List items="{/socialMedia}">
+							<ObjectListItem title="{Website}" type="Active"
+								number="{Postings}" icon="{Icon}">
+
+							</ObjectListItem>
+						</List>
+					</ui:content>
+				</ui:OverflowContainer>
 			</c:content>
 		</c:FacetOverview>
 	</Page>
