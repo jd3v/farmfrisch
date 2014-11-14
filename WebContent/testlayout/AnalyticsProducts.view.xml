@@ -80,10 +80,17 @@
 						</Panel>
 					</IconTabFilter>
 					<IconTabFilter icon="sap-icon://pipeline-analysis">
-						<l:HorizontalLayout>
-						<l:content>
-							<Panel height="500px" width="30%" areaDesign="Transparent" showCollapseIcon="false">
+						
+							<Panel>							
+							<headerToolbar>
+									<Toolbar height="3rem">
+										<Text text="Wer sucht nach was?" class="sapMH4FontSize" />
+										<Button icon="sap-icon://hint" press="onMsgDialogPress" />
+									</Toolbar>
+								</headerToolbar>
+								<l:HorizontalLayout>
 								
+							<Panel width="30%">															
 								<content>
 									<c:Timeline showHeaderBar="false">
 										<c:content>
@@ -107,9 +114,9 @@
 									</c:Timeline>
 								</content>
 							</Panel>
-							<Panel height="500px" width="30%" areaDesign="Transparent" showCollapseIcon="false">
+							<Panel width="30%">
 								<content>
-									<c:Timeline showHeaderBar="false" >
+									<c:Timeline showHeaderBar="false">
 										<c:content>
 											<c:TimelineItem title="Apfel" icon="sap-icon://product">
 												<c:embeddedControl>
@@ -132,9 +139,9 @@
 									</c:Timeline>
 								</content>
 							</Panel>
-							<Panel height="500px" width="30%" areaDesign="Transparent" showCollapseIcon="false">
+							<Panel width="30%">
 								<content>
-									<c:Timeline showHeaderBar="false" >
+									<c:Timeline showHeaderBar="false">
 										<c:content>
 											<c:TimelineItem title="Gurken" icon="sap-icon://product">
 												<c:embeddedControl>
@@ -156,8 +163,11 @@
 									</c:Timeline>
 								</content>
 							</Panel>
-							</l:content>
-						</l:HorizontalLayout>
+							
+							</l:HorizontalLayout>
+						
+							</Panel>
+						
 					</IconTabFilter>
 					<IconTabFilter icon="sap-icon://pie-chart">
 						<Panel>
