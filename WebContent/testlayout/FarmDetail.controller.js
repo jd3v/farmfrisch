@@ -25,10 +25,9 @@ sap.ui.controller("testApp.testlayout.FarmDetail", {
 		this.getView().setBindingContext(oContext);	
 		this.initialize_map();	
 		
-		window.onload = function() {
-			google.maps.event.trigger(map, "resize");
-			console.log("called")
-		};
+		setTimeout(function(){
+			google.maps.event.trigger(map, "resize");			
+		},2000);
 	},
 	
 	navToProdProfile: function(oEvent){

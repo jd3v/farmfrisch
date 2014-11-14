@@ -15,6 +15,8 @@ sap.ui.controller("testApp.testlayout.ProductDetail", {
 	
 
 	_handleRouteMatched: function(evt){
+		
+		
 		if("productDetail" !== evt.getParameter("name")){
 			
 			return;
@@ -32,6 +34,10 @@ sap.ui.controller("testApp.testlayout.ProductDetail", {
 		this.getView().setBindingContext(oContext);	
 		
 		this.initialize_map();
+		
+		setTimeout(function(){
+			google.maps.event.trigger(mapProduct, "resize");			
+		},2000);
 
 	},
 	
@@ -121,16 +127,11 @@ sap.ui.controller("testApp.testlayout.ProductDetail", {
 	},
 	
 navToFarmerProfile: function(oEvent){
-
-	if (window.map !== undefined) {
-		console.log(map)
-		google.maps.event.trigger(map, "resize");
-	}
 	
 		//get selected item
 		var sPath = oEvent.getSource().getBindingContext().getPath(); 
 		var oObject = this.getView().getModel().getProperty(sPath);
-			console.log(oObject.prodID)	
+			
 		
 		this._oRouter.navTo("farmMaster",{farmerID: oObject.farmerID}) 
 		this._oRouter.navTo("farmDetail",{farmerID: oObject.farmerID});
