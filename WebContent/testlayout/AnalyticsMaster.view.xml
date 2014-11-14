@@ -1,10 +1,9 @@
 <core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 
 		controllerName="testApp.testlayout.AnalyticsMaster" xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page title="Master Analytics">
+	<Page title="Analytics">
 		<content>
 			 <List
 			    id="ShortProductList"
-			    headerText="Analytics"
 			    items="{
 			      path: '/ListItems'			      
 			    }"
