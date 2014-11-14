@@ -81,7 +81,8 @@
 					</IconTabFilter>
 					<IconTabFilter icon="sap-icon://pipeline-analysis">
 						<l:HorizontalLayout>
-							<Panel height="500px" width="300px" areaDesign="Transparent" showCollapseIcon="false">
+						<l:content>
+							<Panel height="500px" width="30%" areaDesign="Transparent" showCollapseIcon="false">
 								
 								<content>
 									<c:Timeline showHeaderBar="false">
@@ -106,7 +107,7 @@
 									</c:Timeline>
 								</content>
 							</Panel>
-							<Panel height="500px" width="300px" areaDesign="Transparent" showCollapseIcon="false">
+							<Panel height="500px" width="30%" areaDesign="Transparent" showCollapseIcon="false">
 								<content>
 									<c:Timeline showHeaderBar="false" >
 										<c:content>
@@ -131,7 +132,7 @@
 									</c:Timeline>
 								</content>
 							</Panel>
-							<Panel height="500px" width="300px" areaDesign="Transparent" showCollapseIcon="false">
+							<Panel height="500px" width="30%" areaDesign="Transparent" showCollapseIcon="false">
 								<content>
 									<c:Timeline showHeaderBar="false" >
 										<c:content>
@@ -155,6 +156,7 @@
 									</c:Timeline>
 								</content>
 							</Panel>
+							</l:content>
 						</l:HorizontalLayout>
 					</IconTabFilter>
 					<IconTabFilter icon="sap-icon://pie-chart">
