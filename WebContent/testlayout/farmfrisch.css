@@ -7,8 +7,10 @@
 	
 }
 
+
 .farmFrischTile .sapSuiteGT .OneByOne {
 	height: 6rem !important;
+	border: medium!important;
 }
 
 .farmFrischTile .sapSuiteGT:hover {
@@ -42,8 +44,9 @@
 }
 
 .analytics {
-/* 	background-color: #FFF6E4!important; */
-	background-image: url(../img/bg_orange.png)!important;	
+/* 	background-color: #004F49!important; */
+	background-color: #DE5D40!important;
+/* 	background-image: url(../img/bg_orange.png)!important;	 */
 }
 
 .sapUiUfdShellBrand {
@@ -85,3 +88,65 @@
 .italicClass {font-style: italic !important;
 				padding-bottom: 5px !important;}
 .boldClass {font-weight: bold!important;}
+
+
+
+/*********************************
+**	Stuff for the Facet Overview
+**********************************/
+.howItWorks{
+	display: block!important;
+/* 	float: left!important; */
+	margin: 20px!important;
+/* 	padding: 2em!important; */
+}
+
+.sapUtiContactsImage {
+  margin: 0 1rem 0 0!important;;
+}
+
+html[dir=rtl] .sapUtiContactsImage {
+  margin: 0 0 0 1rem!important;;
+}
+
+.sapUtiContactsGrid, .sapUtiContactsGrid>div {
+  margin: 0!important;;
+  padding: 0!important;;
+}
+
+.sapUtiTextName {
+  font: 16px!important;;
+  margin-bottom: 8px!important;;
+}
+
+.sapUtiTextValue {
+  font: 12px!important;;
+  font-weight: normal!important;;
+  color: #666666!important;; 
+}
+
+.sap-phone .sapUtiSalesOrgFacet {
+    width: 80%!important;;
+}
+
+.sapUtiSalesOrgFacet > .sapMFlexBox {
+    padding: 0 0.5rem 0.5rem 0!important;;
+}
+
+.sapUtiSalesOrgKeyLabel {
+    text-overflow: ellipsis!important;;
+    overflow: hidden!important;;
+    white-space: nowrap!important;;
+    width: 100%;
+}
+
+.sapUtiSalesOrgDelimiter {
+  padding-right: 0.4rem!important;;
+}
+
+.sapUtiSalesOrgValueLabel {
+    text-overflow: ellipsis!important;;
+    overflow: hidden!important;;
+    width: 100%!important;;
+    white-space: nowrap!important;;
+}

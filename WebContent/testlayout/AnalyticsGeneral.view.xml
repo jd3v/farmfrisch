@@ -6,8 +6,7 @@
 	<m:Page title="General Analytics" enableScrolling="false"
 		showHeader="false" class="analytics">
 		<m:content>
-
-
+		
 			<m:Panel text="Account Overview Information">
 				<m:content>
 					<KpiTile value="Premium Account" description="Account Status"
@@ -23,7 +22,7 @@
 			<m:TileContainer id="container" tileDelete="handleTileDelete">
 
 				<m:CustomTile>
-					<GenericTile header="Seitenaufrufe im Monat November"
+					<GenericTile header="Profilaufrufe im Monat November"
 						size="M" frameType="OneByOne" press="press">
 						<tileContent>
 							<TileContent footer="Aufrufe" size="M">
@@ -37,7 +36,7 @@
 				</m:CustomTile>
 
 				<m:CustomTile>
-					<GenericTile header="Unique Seitenaufrufe im Monat November"
+					<GenericTile header="Unique Profilaufrufe im Monat November"
 						size="M" frameType="OneByOne" press="press">
 						<tileContent>
 							<TileContent footer="Aufrufe" size="M">
@@ -80,36 +79,34 @@
 
 				<m:CustomTile>
 				
-					<GenericTile header="Comparative Annual Totals"
-						subheader="By Region" size="M" frameType="OneByOne" press="press">
+					<GenericTile header="Profilaufrufe letzte Woche im  Vergleich" size="M" frameType="OneByOne" press="press">
 						<tileContent>
-							<TileContent footer="Compare across regions" unit="EUR"
-								size="M">
+ 							<TileContent size="M" footer="zu anderen Produzenten">
 								<content>
 									<MicroAreaChart width="164px" height="74px"
 										minXValue="0" maxXValue="100" minYValue="0" maxYValue="100"
 										class="marginTopLeft" press="press">
 										<firstXLabel>
-											<MicroAreaChartLabel label="June 1"
+											<MicroAreaChartLabel label="Nov 3"
 												color="Good" />
 										</firstXLabel>
 										<lastXLabel>
-											<MicroAreaChartLabel label="June 30"
+											<MicroAreaChartLabel label="Nov 9"
 												color="Critical" />
 										</lastXLabel>
 										<firstYLabel>
-											<MicroAreaChartLabel label="0M" color="Good" />
+											<MicroAreaChartLabel label="0" color="Good" />
 										</firstYLabel>
 										<lastYLabel>
-											<MicroAreaChartLabel label="80M" color="Critical" />
+											<MicroAreaChartLabel label="420" color="Critical" />
 										</lastYLabel>
 										<chart>
 											<MicroAreaChartItem>
 												<points>
 													<MicroAreaChartPoint x="0" y="0" />
-													<MicroAreaChartPoint x="30" y="20" />
-													<MicroAreaChartPoint x="60" y="20" />
-													<MicroAreaChartPoint x="100" y="80" />
+													<MicroAreaChartPoint x="30" y="50" />
+													<MicroAreaChartPoint x="60" y="68" />
+													<MicroAreaChartPoint x="100" y="88" />
 												</points>
 											</MicroAreaChartItem>
 										</chart>
@@ -154,40 +151,27 @@
 
 				<m:CustomTile>
 
-					<GenericTile header="123 Demo Opportunity" subheader="SAP Jam Group"
+					<GenericTile header="Beliebtheit bei Kunden" subheader="nach Ratings"
 						size="M" frameType="OneByOne" press="press">
 						<tileContent>
-							<TileContent footer="Hours since last Activity" size="M">
+							<TileContent footer="insgesamt" size="M">
 								<content>
-									<!-- <BulletChart size="M" scale="M" targetValue="100" forecastValue="50" 
-										class="marginTopLeft" press="press"> -->
-									<!-- <actual> -->
-									<!-- <BulletChartData value="50" color="Good"/> -->
-									<!-- </actual> -->
-									<!-- <thresholds> -->
-									<!-- <BulletChartData value="0" color="Error"/> -->
-									<!-- <BulletChartData value="50" color="Critical"/> -->
-									<!-- <BulletChartData value="150" color="Critical"/> -->
-									<!-- <BulletChartData value="160" color="Error"/> -->
-									<!-- </thresholds> -->
-									<!-- </BulletChart> -->
 
-									<BulletChart size="M" scale="M" targetValue="100"
-										forecastValue="110" class="marginTopLeft" press="press">
+									<BulletChart size="M" scale="Sterne" targetValue="5"
+										forecastValue="3" class="marginTopLeft" press="press" color="Neutral">
 										<actual>
-											<BulletChartData value="120" color="Good" />
+											<BulletChartData value="4" color="Good" />
 										</actual>
 										<thresholds>
-											<BulletChartData value="0" color="Error" />
-											<BulletChartData value="50" color="Critical" />
-											<BulletChartData value="150" color="Critical" />
-											<BulletChartData value="200" color="Error" />
+											<BulletChartData value="1" color="Error" />
+											<BulletChartData value="2" color="Critical" />
+											<BulletChartData value="3" color="Neutral" />
+											<BulletChartData value="4" color="Good" />
+											<BulletChartData value="5" color="Good" />
 										</thresholds>
 									</BulletChart>
-
-
+									
 								</content>
-
 							</TileContent>
 						</tileContent>
 					</GenericTile>
@@ -196,6 +180,7 @@
 			</m:TileContainer>
 
 		</m:content>
+		
 		<m:footer>
 			<m:Toolbar>
 				<m:ToolbarSpacer />

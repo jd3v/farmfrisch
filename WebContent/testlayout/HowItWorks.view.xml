@@ -1,205 +1,49 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
-	xmlns:l="sap.ui.layout" xmlns:m="sap.m" xmlns="sap.suite.ui.commons" xmlns:viz="sap.viz.ui5.controls"
-	controllerName="testApp.testlayout.HowItWorks" xmlns:html="http://www.w3.org/1999/xhtml">
+	xmlns:l="sap.ui.layout" xmlns:m="sap.m" xmlns="sap.suite.ui.commons"
+	xmlns:viz="sap.viz.ui5.controls" controllerName="testApp.testlayout.HowItWorks"
+	xmlns:html="http://www.w3.org/1999/xhtml">
 
 
 	<m:Page title="HowItWorks" enableScrolling="false" showHeader="false">
-	<m:content>
-	
-	  <UnifiedThingInspector
-    id="unified1"
-    height="100%"
-    icon="test-resources/sap/suite/ui/commons/demokit/images/strawberries_frozen.jpg"
-    title="Article"  name="Frozen Spanish Strawberries"
-    description="90345929"
-    actionsVisible="true"
-      transactionsVisible="true"
-      backAction="backAction"
-      configurationButtonPress="pressConfig"
-      actionsButtonPress="pressActions"
-      transactionsButtonPress="pressTransactions">
-    <kpis>
-      <KpiTile value="In Approval" description="Status" doubleFontSize="false" valueStatus="Critical" class="sapDemoKitSuiteKTile"/>
-      <KpiTile value="32" description="Gross national program" valueScale="M" valueUnit="USD" valueStatus="Good" class="sapDemoKitSuiteKTile"/>
-    </kpis>
-    <facets>
-      <FacetOverview title="General" heightType="Auto" press="pressGeneralFacet" rowSpan="2">
-        <content>
-          <m:Table backgroundDesign="Transparent" showSeparators="None" class="sapSuiteUtiGeneralInTeaser">
-            <m:columns>
-              <m:Column width="42%" hAlign="End"/><m:Column/>
-            </m:columns>
-            <m:items>
-              <m:ColumnListItem><m:Label text="Locked for:"/><m:Text text="Actual Primary Costs"/></m:ColumnListItem>
-              <m:ColumnListItem><m:Label text=""/><m:Text text="Actual Secondary Costs"/></m:ColumnListItem>
-              <m:ColumnListItem><m:Label text="Valid From:"/><m:Text text="01.01.2010"/></m:ColumnListItem>
-              <m:ColumnListItem><m:Text/><m:Text/></m:ColumnListItem>
-              <m:ColumnListItem><m:Label text="Valid To:"/><m:Text text="Partially Invoiced"/></m:ColumnListItem>
-              <m:ColumnListItem><m:Label text="Created on:"/><m:Text text="01.01.2010"/></m:ColumnListItem>
-              <m:ColumnListItem><m:Label text="Created by:"/><m:Text text="John Smith"/><m:Link href="http://www.sap.com"/></m:ColumnListItem>
-              <m:ColumnListItem><m:Text/><m:Text/></m:ColumnListItem>
-              <m:ColumnListItem><m:Label text="Responsible:"/><m:Link text="John Bradford" press="pressJB"/></m:ColumnListItem>
-            </m:items>
-          </m:Table>
-        </content>
-      </FacetOverview>
-      <FacetOverview title="Description" heightType="Auto">
-        <content>
-          <m:Text text="In this example, the header area contains the object image, condensed object header, and two key values represented by the KpiTile controls. The content area contains teaser tiles represented by the FacetOverview controls. Depending on the device type and orientation, the layout changes respectively. The footer area contains the configuration icon, the Open In menu represented by the LinkActionSheet control, and the Actions menu represented by the ActionSheet control."/>
-        </content>
-      </FacetOverview>
-      <FacetOverview title="Sales Organization 0001 - Walldorf" heightType="Auto">
-        <content>
-          <m:FlexBox>
-            <core:Icon src="sap-icon://globe" size="4rem" class="sapUtiImagePaddingRight"/>
-            <m:VBox class="sapUtiSalesOrgFacet">
-              <m:HBox>
-                <m:Label text="Distribution Channel General Brenenal" class="sapUtiSalesOrgKeyLabel"/>
-                <m:Label text=":" class="sapUtiSalesOrgDelimiter"/>
-                <m:Text text="01 - Electronic Sales" class="sapUtiSalesOrgValueLabel"/>
-              </m:HBox>
-              <m:HBox>
-                <m:Label text="Division" class="sapUtiSalesOrgKeyLabel"/>
-                <m:Label text=":" class="sapUtiSalesOrgDelimiter"/>
-                <m:Text text="01 - Industry" class="sapUtiSalesOrgValueLabel"/>
-              </m:HBox>
-              <m:HBox>
-                <m:layoutData><l:GridData visibleOnSmall="false"/></m:layoutData>
-                <m:Label text="Sales Group" class="sapUtiSalesOrgKeyLabel"/>
-                <m:Label text=":" class="sapUtiSalesOrgDelimiter"/>
-                <m:Text text="001 Sales Group 01" class="sapUtiSalesOrgValueLabel"/>
-              </m:HBox>
-            </m:VBox>
-          </m:FlexBox>
-        </content>
-      </FacetOverview>
-      <FacetOverview title="Internal Orders" quantity="4" heightType="M" press="pressOrdersFacet">
-        <content>
-          <l:Grid id="form-orders" class="sapUtiFacetOverviewContentMargin" defaultSpan="L6 M6 S6">
-            <m:VBox><m:Label text="CeBit Demo:"/><m:Text text="040 Event"/></m:VBox>
-            <m:VBox><m:Label text="Order 2:"/><m:Text text="040 Event"/></m:VBox>
-            <m:VBox>
-              <m:Label text="Order 3:"/><m:Text text="040 Event"/>
-              <m:layoutData><l:GridData visibleOnSmall="false"/></m:layoutData>
-            </m:VBox>
-            <m:VBox>
-              <m:Label text="Order 4:"/><m:Text text="040 Event"/>
-              <m:layoutData><l:GridData visibleOnSmall="false"/></m:layoutData>
-            </m:VBox>
-              </l:Grid>
-        </content>
-      </FacetOverview>
-      <FacetOverview title="Sales view" heightType="Auto"/>
-    </facets>  
-  </UnifiedThingInspector>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+		<m:content>
+			<FacetOverview title="Sales view" width="500px"
+				heightType="Auto" class="marginTopLeft howItWorks">
+			</FacetOverview>
+			<FacetOverview title="Sales Organization 0001 - Walldorf"
+				width="500px" heightType="M" class="marginTopLeft howItWorks">
+				<content>
+					<m:VBox class="sapUtiSalesOrgFacet">
+						<m:HBox>
+							<m:Label text="Distribution Channel General Brenenal"
+								class="sapUtiSalesOrgKeyLabel" />
+							<m:Label text=":" class="sapUtiSalesOrgDelimiter" />
+							<m:Text text="01 - Electronic Sales" class="sapUtiSalesOrgValueLabel" />
+						</m:HBox>
+						<m:HBox>
+							<m:Label text="Division" class="sapUtiSalesOrgKeyLabel" />
+							<m:Label text=":" class="sapUtiSalesOrgDelimiter" />
+							<m:Text text="01 - Industry" class="sapUtiSalesOrgValueLabel" />
+						</m:HBox>
+						<m:HBox>
+							<m:Label text="Sales Group" class="sapUtiSalesOrgKeyLabel" />
+							<m:Label text=":" class="sapUtiSalesOrgDelimiter" />
+							<m:Link text="001 Sales Group 01" class="sapUtiSalesOrgValueLabel" />
+						</m:HBox>
+					</m:VBox>
+				</content>
+			</FacetOverview>
 
-<!-- 		<ChartContainer id="idChartContainer" showFullScreen="true" -->
-<!-- 			showPersonalization="true" autoAdjustHeight="true" showLegend="true" -->
-<!-- 			personalizationPress="attachPersonalizationPress" contentChange="attachContentChange"> -->
-
-<!-- 			<dimensionSelectors> -->
-<!-- 				<m:Select id="idoSelect1"> -->
-<!-- 				</m:Select> -->
-<!-- 				<m:Select id="idoSelect2"> -->
-<!-- 				</m:Select> -->
-<!-- 				<m:Select id="idoSelect3"> -->
-<!-- 				</m:Select> -->
-<!-- 			</dimensionSelectors> -->
-
-<!-- 			<content> -->
-<!-- 				<ChartContainerContent icon="sap-icon://horizontal-bar-chart" -->
-<!-- 					title="vizFrame Bar Chart Sample"> -->
-<!-- 					<content> -->
-<!-- 						<viz:VizFrame id="idoVizFrame"> -->
-<!-- 						</viz:VizFrame> -->
-<!-- 					</content> -->
-<!-- 				</ChartContainerContent> -->
-<!-- 				<ChartContainerContent icon="sap-icon://line-chart" -->
-<!-- 					title="vizFrame Line Chart Sample"> -->
-<!-- 					<content> -->
-<!-- 						<viz:VizFrame id="idoVizFrame2"> -->
-<!-- 						</viz:VizFrame> -->
-<!-- 					</content> -->
-<!-- 				</ChartContainerContent> -->
-<!-- 				<ChartContainerContent icon="sap-icon://bubble-chart" -->
-<!-- 					title="vizFrame Bubble Chart Sample"> -->
-<!-- 					<content> -->
-<!-- 						<viz:VizFrame id="idoVizFrame3"> -->
-<!-- 						</viz:VizFrame> -->
-<!-- 					</content> -->
-<!-- 				</ChartContainerContent> -->
-<!-- 				<ChartContainerContent icon="sap-icon://vertical-bar-chart" -->
-<!-- 					title="vizFrame Column Chart Sample"> -->
-<!-- 					<content> -->
-<!-- 						<viz:VizFrame id="idoVizFrame4"> -->
-<!-- 						</viz:VizFrame> -->
-<!-- 					</content> -->
-<!-- 				</ChartContainerContent> -->
-<!-- 				<ChartContainerContent icon="sap-icon://horizontal-stacked-chart" -->
-<!-- 					title="vizFrame Stacked Bar Chart Sample"> -->
-<!-- 					<content> -->
-<!-- 						<viz:VizFrame id="idoVizFrame5"> -->
-<!-- 						</viz:VizFrame> -->
-<!-- 					</content> -->
-<!-- 				</ChartContainerContent> -->
-<!-- 				<ChartContainerContent icon="sap-icon://vertical-stacked-chart" -->
-<!-- 					title="vizFrame Stacked Column Chart Sample"> -->
-<!-- 					<content> -->
-<!-- 						<viz:VizFrame id="idoVizFrame6"> -->
-<!-- 						</viz:VizFrame> -->
-<!-- 					</content> -->
-<!-- 				</ChartContainerContent> -->
-<!-- 				<ChartContainerContent icon="sap-icon://business-objects-experience" -->
-<!-- 					title="vizFrame Combination Chart Sample"> -->
-<!-- 					<content> -->
-<!-- 						<viz:VizFrame id="idoVizFrame7"> -->
-<!-- 						</viz:VizFrame> -->
-<!-- 					</content> -->
-<!-- 				</ChartContainerContent> -->
-<!-- 				<ChartContainerContent icon="sap-icon://horizontal-bar-chart-2" -->
-<!-- 					title="vizFrame Bar Chart Sample"> -->
-<!-- 					<content> -->
-<!-- 						<viz:VizFrame id="idoVizFrame8"> -->
-<!-- 						</viz:VizFrame> -->
-<!-- 					</content> -->
-<!-- 				</ChartContainerContent> -->
-<!-- 				<ChartContainerContent icon="sap-icon://table-chart" -->
-<!-- 					title="Table Sample"> -->
-<!-- 					<content> -->
-<!-- 						<m:Table id="idoTable"> -->
-<!-- 						</m:Table> -->
-<!-- 					</content> -->
-<!-- 				</ChartContainerContent> -->
-<!-- 			</content> -->
-<!-- 		</ChartContainer> -->
+		</m:content>
 
 
-
-
-
-	</m:content>
-		
-		
 		<m:footer>
-      <m:Toolbar>
-        <m:ToolbarSpacer/> 
-        <m:Button text="Share" icon="./img/fb_white_150x150.png" />
-        <m:Button text="Tweet" icon="./img/twitter_white_150x150.png" />
-        <m:Button icon="sap-icon://settings" />
-      </m:Toolbar>
-    </m:footer>
+			<m:Toolbar>
+				<m:ToolbarSpacer />
+				<m:Button text="Share" icon="./img/fb_white_150x150.png" />
+				<m:Button text="Tweet" icon="./img/twitter_white_150x150.png" />
+				<m:Button icon="sap-icon://settings" />
+			</m:Toolbar>
+		</m:footer>
 	</m:Page>
 
 </mvc:View>
