@@ -25,7 +25,7 @@
 			"twitterurl"			: "https://twitter.com/triley",
 			
 			"description"			:	"NO Hormones - NO Pesticides - NO GMO. Fresh meats, real milk, yogurt, kefir and cheese from 100% grass-fed/grass-finished cows, goat and sheep. Delicious Eggs and meats from happy free-roaming ducks and chickens",
-			"profile_picture"	: "",
+			"profile_picture"	: "img/farmers/farmer1.png",
 			"slideshow"				: [ 
 				{
 					"url" : ""
@@ -138,7 +138,7 @@
 			"twitterurl"			: "https://twitter.com/bfieldsd",
 			
 			"description"			:	"Fresh. Local. Organic.",
-			"profile_picture"	: "",
+			"profile_picture"	: "img/farmers/theresa1.jpg",
 			"slideshow"				: [ 
 				{
 					"url" : ""
