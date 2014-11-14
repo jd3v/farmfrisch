@@ -81,7 +81,7 @@
 					</IconTabFilter>
 					<IconTabFilter icon="sap-icon://pipeline-analysis">
 						<l:HorizontalLayout>
-							<Panel>
+							<Panel height="500px">
 								<headerToolbar>
 									<Toolbar height="3rem">
 										<Text text="Wer sucht nach was?" class="sapMH4FontSize" />
@@ -111,7 +111,7 @@
 									</c:Timeline>
 								</content>
 							</Panel>
-							<Panel>
+							<Panel height="500px">
 								<content>
 									<c:Timeline showHeaderBar="false">
 										<c:content>
@@ -136,7 +136,7 @@
 									</c:Timeline>
 								</content>
 							</Panel>
-							<Panel>
+							<Panel height="500px">
 								<content>
 									<c:Timeline showHeaderBar="false">
 										<c:content>
