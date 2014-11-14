@@ -13,11 +13,11 @@
 				<m:CustomTile class="farmFrischTile">
 
 					<GenericTile size="M" frameType="OneByOne" press="navFarmer"
-						backgroundImage="{image}" info="{id}" type="Navigation">
+						backgroundImage="{profile_picture}" info="{id}" type="Navigation">
 						<tileContent>
 							<TileContent size="M">
 								<content>
-									<NewsContent size="M" subheader="{productgroup}">
+									<NewsContent size="M" subheader="{surname},{lastname}">
 									</NewsContent>
 								</content>
 							</TileContent>

@@ -2,7 +2,7 @@
 	xmlns:l="sap.ui.layout" xmlns:viz="sap.viz" xmlns:c="sap.suite.ui.commons"
 	xmlns="sap.m" controllerName="testApp.testlayout.AnalyticsProducts"
 	xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page title="Analytics Products" showHeader="false">
+	<Page title="Analytics Products" showHeader="false" class="analytics"> 
 		<content>
 
 			<Panel text="Account Overview Information">
