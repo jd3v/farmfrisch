@@ -96,7 +96,7 @@
 **********************************/
 .howItWorks{
 	display: block!important;
-/* 	float: left!important; */
+	float: left!important;
 	margin: 20px!important;
 /* 	padding: 2em!important; */
 }
