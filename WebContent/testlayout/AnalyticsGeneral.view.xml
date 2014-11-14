@@ -21,7 +21,7 @@
 
 			<m:TileContainer id="container" tileDelete="handleTileDelete">
 
-				<m:CustomTile>
+				<m:CustomTile class="analyticstile">
 					<GenericTile header="Profilaufrufe im Monat November"
 						size="M" frameType="OneByOne" press="press">
 						<tileContent>
