@@ -42,7 +42,8 @@
 						<tileContent>
 							<TileContent footer="Aufrufe" size="M">
 								<content>
-									<NumericContent size="M" value="284" icon="sap-icon://hr-approval" />
+									<NumericContent size="M" value="284"
+										icon="sap-icon://hr-approval" />
 								</content>
 							</TileContent>
 						</tileContent>
@@ -50,21 +51,21 @@
 				</m:CustomTile>
 
 				<m:CustomTile>
-					<GenericTile header="Seitenaufrufe im Monat November"
+					<GenericTile header="Durchschnittliche Zeit eines Profilbesuchs"
 						size="M" frameType="OneByOne" press="press">
 						<tileContent>
-							<TileContent footer="Aufrufe" size="M">
+							<TileContent footer="Sekunden" size="M">
 								<content>
-									<NumericContent size="M" value="3" valueColor="Good"
-										indicator="Up" icon="sap-icon://employee-lookup" />
+									<NumericContent size="M" value="57" valueColor="Good"
+										indicator="Up" icon="sap-icon://time-entry-request" />
 								</content>
 							</TileContent>
 						</tileContent>
 					</GenericTile>
 				</m:CustomTile>
 
-				<m:CustomTile >
-					<GenericTile header="Burst-Rate" subheader="Anteil besonders kurzer Aufrufe"
+				<m:CustomTile>
+					<GenericTile header="Bounce-Rate" subheader="Anteil besonders kurzer Aufrufe"
 						size="M" frameType="OneByOne" press="press">
 						<tileContent>
 							<TileContent footer="aller Aufrufe" size="M">
@@ -78,62 +79,72 @@
 				</m:CustomTile>
 
 				<m:CustomTile>
-
-				</m:CustomTile>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-				<m:CustomTile>
-
-
-
-
-
+				
 					<GenericTile header="Comparative Annual Totals"
 						subheader="By Region" size="M" frameType="OneByOne" press="press">
 						<tileContent>
 							<TileContent footer="Compare across regions" unit="EUR"
 								size="M">
 								<content>
-									<ComparisonChart size="M" scale="M">
-										<data>
-											<ComparisonData title="Americas" value="234"
+									<MicroAreaChart width="164px" height="74px"
+										minXValue="0" maxXValue="100" minYValue="0" maxYValue="100"
+										class="marginTopLeft" press="press">
+										<firstXLabel>
+											<MicroAreaChartLabel label="June 1"
 												color="Good" />
-											<ComparisonData title="EMEA" value="97" color="Error" />
-											<ComparisonData title="APAC" value="197"
+										</firstXLabel>
+										<lastXLabel>
+											<MicroAreaChartLabel label="June 30"
 												color="Critical" />
-										</data>
-									</ComparisonChart>
+										</lastXLabel>
+										<firstYLabel>
+											<MicroAreaChartLabel label="0M" color="Good" />
+										</firstYLabel>
+										<lastYLabel>
+											<MicroAreaChartLabel label="80M" color="Critical" />
+										</lastYLabel>
+										<chart>
+											<MicroAreaChartItem>
+												<points>
+													<MicroAreaChartPoint x="0" y="0" />
+													<MicroAreaChartPoint x="30" y="20" />
+													<MicroAreaChartPoint x="60" y="20" />
+													<MicroAreaChartPoint x="100" y="80" />
+												</points>
+											</MicroAreaChartItem>
+										</chart>
+										<target>
+											<MicroAreaChartItem>
+												<points>
+													<MicroAreaChartPoint x="0" y="0" />
+													<MicroAreaChartPoint x="30" y="30" />
+													<MicroAreaChartPoint x="60" y="40" />
+													<MicroAreaChartPoint x="100" y="90" />
+												</points>
+											</MicroAreaChartItem>
+										</target>
+										<maxThreshold>
+											<MicroAreaChartItem color="Good">
+												<points>
+													<MicroAreaChartPoint x="0" y="0" />
+													<MicroAreaChartPoint x="30" y="40" />
+													<MicroAreaChartPoint x="60" y="50" />
+													<MicroAreaChartPoint x="100" y="100" />
+												</points>
+											</MicroAreaChartItem>
+										</maxThreshold>
+										<minThreshold>
+											<MicroAreaChartItem color="Error">
+												<points>
+													<MicroAreaChartPoint x="0" y="0" />
+													<MicroAreaChartPoint x="30" y="20" />
+													<MicroAreaChartPoint x="60" y="30" />
+													<MicroAreaChartPoint x="100" y="70" />
+												</points>
+											</MicroAreaChartItem>
+										</minThreshold>
+									</MicroAreaChart>
+
 								</content>
 							</TileContent>
 						</tileContent>
@@ -148,53 +159,45 @@
 						<tileContent>
 							<TileContent footer="Hours since last Activity" size="M">
 								<content>
-									<NumericContent size="M" value="9"
-										icon="sap-icon://locked" />
+									<!-- <BulletChart size="M" scale="M" targetValue="100" forecastValue="50" 
+										class="marginTopLeft" press="press"> -->
+									<!-- <actual> -->
+									<!-- <BulletChartData value="50" color="Good"/> -->
+									<!-- </actual> -->
+									<!-- <thresholds> -->
+									<!-- <BulletChartData value="0" color="Error"/> -->
+									<!-- <BulletChartData value="50" color="Critical"/> -->
+									<!-- <BulletChartData value="150" color="Critical"/> -->
+									<!-- <BulletChartData value="160" color="Error"/> -->
+									<!-- </thresholds> -->
+									<!-- </BulletChart> -->
+
+									<BulletChart size="M" scale="M" targetValue="100"
+										forecastValue="110" class="marginTopLeft" press="press">
+										<actual>
+											<BulletChartData value="120" color="Good" />
+										</actual>
+										<thresholds>
+											<BulletChartData value="0" color="Error" />
+											<BulletChartData value="50" color="Critical" />
+											<BulletChartData value="150" color="Critical" />
+											<BulletChartData value="200" color="Error" />
+										</thresholds>
+									</BulletChart>
+
+
 								</content>
+
 							</TileContent>
 						</tileContent>
 					</GenericTile>
-
-
-				</m:CustomTile>
-
-				<m:CustomTile>
-
-					<GenericTile header="Comparative Annual Totals"
-						subheader="Expenses By Region" size="M" frameType="TwoByOne"
-						press="press">
-						<tileContent>
-							<TileContent footer="Actual and Target" unit="EUR"
-								size="M">
-								<content>
-									<NumericContent size="M" scale="M" value="1.96"
-										valueColor="Error" indicator="Up" />
-								</content>
-							</TileContent>
-							<TileContent footer="Compare across regions" unit="EUR"
-								size="M">
-								<content>
-									<ComparisonChart size="M" scale="M">
-										<data>
-											<ComparisonData title="Americas" value="234"
-												color="Good" />
-											<ComparisonData title="EMEA" value="97" color="Error" />
-											<ComparisonData title="APAC" value="197"
-												color="Critical" />
-										</data>
-									</ComparisonChart>
-								</content>
-							</TileContent>
-						</tileContent>
-					</GenericTile>
-
 				</m:CustomTile>
 
 			</m:TileContainer>
 
 		</m:content>
 		<m:footer>
-			<m:Toolbar>				
+			<m:Toolbar>
 				<m:ToolbarSpacer />
 				<m:Button text="Share" icon="./img/fb_white_150x150.png" />
 				<m:Button text="Tweet" icon="./img/twitter_white_150x150.png" />
