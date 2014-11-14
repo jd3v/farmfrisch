@@ -1,0 +1,17 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:ui="sap.ca.ui"
+	xmlns:core="sap.ui.core">
+	<Popover title="Reviews" class="sapUiPopupWithPadding"
+		placement="Bottom">
+
+		<ui:OverflowContainer overflowHeight="200px">
+			<ui:content>
+				<List items="{/}">
+					<items>
+						<FeedListItem sender="{Sender}" icon="{Icon}" info="{Request}"
+							timestamp="{Timestamp}" text="{Text}" />
+					</items>
+				</List>
+			</ui:content>
+		</ui:OverflowContainer>
+	</Popover>
+</core:FragmentDefinition>

@@ -1,8 +1,33 @@
-<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
-		controllerName="testApp.testlayout.AnalyticsCustomer" xmlns:html="http://www.w3.org/1999/xhtml">
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:ui="sap.ca.ui" xmlns:form="sap.ui.layout.form"
+	xmlns="sap.m" controllerName="testApp.testlayout.AnalyticsCustomer"
+	xmlns:html="http://www.w3.org/1999/xhtml">
 	<Page title="Customer">
-		<content>
-	
-		</content>
+
+		<ui:OverflowContainer overflowHeight="500px">
+			<ui:content>
+				<form:SimpleForm maxContainerCols="1" minWidth="100">
+					<Label text="" />
+					<RatingIndicator maxValue="5" value="5" enabled="false" />
+					<Button text="Reviews" press="onPress"></Button>
+					<Label text="" />
+					<RatingIndicator maxValue="5" value="4" enabled="false" />
+					<Button text="Reviews" press="onPress">
+					</Button>
+					<Label text="" />
+					<RatingIndicator maxValue="5" value="3" enabled="false" />
+					<Button text="Reviews" press="onPress">
+					</Button>
+					<Label text="" />
+					<RatingIndicator maxValue="5" value="2" enabled="false" />
+					<Button text="Reviews" press="onPress">
+					</Button>
+					<Label text="" />
+					<RatingIndicator maxValue="5" value="1" enabled="false" />
+					<Button text="Reviews" press="onPress">
+					</Button>
+				</form:SimpleForm>
+			</ui:content>
+		</ui:OverflowContainer>
+
 	</Page>
 </core:View>
