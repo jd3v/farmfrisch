@@ -94,7 +94,7 @@ initialize_map : function (sPath) {
 						        icon: pinImage
 						      });
 				        
-				         var meInfowindow = new google.maps.InfoWindow({content: 'Your location'});
+				         var meInfowindow = new google.maps.InfoWindow({content: '<div style="width:150px; height:30px"> Hier bist du! </div>'});
 				         
 				         google.maps.event.addListener(meMarker, 'click', function() {
 				        	    meInfowindow.open(map,meMarker);				        	    

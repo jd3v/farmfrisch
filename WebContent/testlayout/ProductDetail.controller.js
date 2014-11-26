@@ -92,7 +92,7 @@ sap.ui.controller("testApp.testlayout.ProductDetail", {
 							        icon: pinImage
 							      });
 					        
-					         var meInfowindow = new google.maps.InfoWindow({content: 'Hier bist du!'});
+					         var meInfowindow = new google.maps.InfoWindow({content:'<div style="width:150px; height:30px"> Hier bist du! </div>'});
 					         
 					         google.maps.event.addListener(meMarker, 'click', function() {
 					        	    meInfowindow.open(mapProduct,meMarker);				        	    
