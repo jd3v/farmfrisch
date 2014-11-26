@@ -1,18 +1,37 @@
 .sapMPage {
 	/* 	background-image: url(data:image/gif;base64,R0lGODlhAwADAIAAAMhFJuFdPiH5BAAAAAAALAAAAAADAAMAAAIERB5mBQA7); */
-/* 	background-image: url(../img/bg_orange.png); */
-/* 	background-image: url(../img/bg_pattern_retina_wood.png); */
-/* 	background-image: url(../img/bg_pattern_traditional.png); */
-	background-color: white!important;
-/* 		background-image: url(../img/bg_pattern_pluses.png); */
-/* 	background-image: url(../img/bg_pattern_light.png); */
+	/* 	background-image: url(../img/bg_orange.png); */
+	/* 	background-image: url(../img/bg_pattern_retina_wood.png); */
+	/* 	background-image: url(../img/bg_pattern_traditional.png); */
+	/* 	background-color: white!important; */
+	/* 		background-image: url(../img/bg_pattern_pluses.png); */
+	background-image: url(../img/bg_pattern_light.png);
 }
 
+.center {
+	align: center;
+}
 
+.login {
+	display: block;
+	background-color: white;
+	width: 600px;
+	margin-top: 6em;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 3em;
+	align: center;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #666666 !important;
+	border-radius: 25px !important;
+	position: relative;
+	outline: none;
+}
 
 .farmFrischTile .sapSuiteGT .OneByOne {
 	height: 6rem !important;
-	border: medium!important;
+	border: medium !important;
 }
 
 .farmFrischTile .sapSuiteGT:hover {
@@ -24,7 +43,7 @@
 }
 
 .farmFrischTile .sapSuiteGT .sapSuiteUiCommonsPointer {
-	border: 100em!important;
+	border: 100em !important;
 }
 
 .farmFrischTile .sapSuiteGT .sapSuiteUiCommonsNwCSbh {
@@ -45,20 +64,20 @@
 	width: 10.5rem !important;
 }
 
-.sapSuiteDC.M.OneByOne{
-width: 188rem!important;
-height: 180rem!important;
+.sapSuiteDC.M.OneByOne {
+	width: 188rem !important;
+	height: 180rem !important;
 }
 
 .sapSuiteGT {
-display: inline-block;
-overflow: hidden;
-border-style: solid;
-border-width: 2px;
-border-color: #666666!important;
-border-radius: 25px!important;
-position: relative;
-outline: none;
+	display: inline-block;
+	overflow: hidden;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #666666 !important;
+	border-radius: 25px !important;
+	position: relative;
+	outline: none;
 }
 
 .sapMSplitContainer .sapMPage {
@@ -66,14 +85,14 @@ outline: none;
 }
 
 .analytics {
-/* 	background-color: #004F49!important; */
-	background-color: #ebebeb!important;
-/* 	background-image: url(../img/bg_orange.png)!important;	 */
+	/* 	background-color: #004F49!important; */
+	background-color: #ebebeb !important;
+	/* 	background-image: url(../img/bg_orange.png)!important;	 */
 }
 
 .sapUiUfdShellBrand {
-/* 	background-color: #DE5D40 !important; */
-	background-color: #1d8345!important;
+	/* 	background-color: #DE5D40 !important; */
+	background-color: #1d8345 !important;
 }
 
 .sapMSFF {
@@ -104,72 +123,80 @@ outline: none;
 	width: 100% !important;
 }
 /*Hack for timeline object so time does not get shown and title is bold*/
-.sapSuiteUiCommonsTimelineItemShellDateTime {display: none;}
-.sapSuiteUiCommonsTimelineItemShellHdr {font-weight: bold !important;}
+.sapSuiteUiCommonsTimelineItemShellDateTime {
+	display: none;
+}
+
+.sapSuiteUiCommonsTimelineItemShellHdr {
+	font-weight: bold !important;
+}
 
 /*Style class for text styles*/
-.italicClass {font-style: italic !important;
-				padding-bottom: 5px !important;}
-.boldClass {font-weight: bold!important;}
+.italicClass {
+	font-style: italic !important;
+	padding-bottom: 5px !important;
+}
 
-
+.boldClass {
+	font-weight: bold !important;
+}
 
 /*********************************
 **	Stuff for the Facet Overview
 **********************************/
-.howItWorks{
-	display: block!important;
-	float: left!important;
-	margin: 20px!important;
-/* 	padding: 2em!important; */
+.howItWorks {
+	display: block !important;
+	float: left !important;
+	margin: 20px !important;
+	/* 	padding: 2em!important; */
 }
 
 .sapUtiContactsImage {
-  margin: 0 1rem 0 0!important;;
+	margin: 0 1rem 0 0 !important;;
 }
 
 html[dir=rtl] .sapUtiContactsImage {
-  margin: 0 0 0 1rem!important;;
+	margin: 0 0 0 1rem !important;;
 }
 
 .sapUtiContactsGrid, .sapUtiContactsGrid>div {
-  margin: 0!important;;
-  padding: 0!important;;
+	margin: 0 !important;;
+	padding: 0 !important;;
 }
 
 .sapUtiTextName {
-  font: 16px!important;;
-  margin-bottom: 8px!important;;
+	font: 16px !important;;
+	margin-bottom: 8px !important;;
 }
 
 .sapUtiTextValue {
-  font: 12px!important;;
-  font-weight: normal!important;;
-  color: #666666!important;; 
+	font: 12px !important;;
+	font-weight: normal !important;;
+	color: #666666 !important;;
 }
 
 .sap-phone .sapUtiSalesOrgFacet {
-    width: 80%!important;;
+	width: 80% !important;;
 }
 
-.sapUtiSalesOrgFacet > .sapMFlexBox {
-    padding: 0 0.5rem 0.5rem 0!important;;
+.sapUtiSalesOrgFacet>.sapMFlexBox {
+	padding: 0 0.5rem 0.5rem 0 !important;;
 }
 
 .sapUtiSalesOrgKeyLabel {
-    text-overflow: ellipsis!important;;
-    overflow: hidden!important;;
-    white-space: nowrap!important;;
-    width: 100%;
+	text-overflow: ellipsis !important;;
+	overflow: hidden !important;;
+	white-space: nowrap !important;;
+	width: 100%;
 }
 
 .sapUtiSalesOrgDelimiter {
-  padding-right: 0.4rem!important;;
+	padding-right: 0.4rem !important;;
 }
 
 .sapUtiSalesOrgValueLabel {
-    text-overflow: ellipsis!important;;
-    overflow: hidden!important;;
-    width: 100%!important;;
-    white-space: nowrap!important;;
+	text-overflow: ellipsis !important;;
+	overflow: hidden !important;;
+	width: 100% !important;;
+	white-space: nowrap !important;;
 }

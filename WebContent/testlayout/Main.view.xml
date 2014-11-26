@@ -225,6 +225,7 @@
 		<m:footer>
 			<m:Toolbar>
 				<m:ToolbarSpacer />
+				<m:Button text="Login" press="navToLogin" />
 				<m:Button text="My Profile" press="navToMainFarmer" />
 				<m:Button text="Analytics" press="navToAnalytics" />
 				<m:Button text="Share" icon="./img/fb_white_150x150.png" />

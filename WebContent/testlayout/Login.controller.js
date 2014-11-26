@@ -1,4 +1,4 @@
-sap.ui.controller("testApp.testlayout.Main", {
+sap.ui.controller("testApp.testlayout.Login", {
 
 /**
 * Called when a controller is instantiated and its View controls (if available) are already created.
@@ -15,60 +15,6 @@ sap.ui.controller("testApp.testlayout.Main", {
 	//	console.log(sap.ui.getCore().byId("idAppControl"));
 //		new sap.m.SplitContainer("idSplitContainerControl",{height:"500px", width:"500px"});
 	},
-	
-	
-	navProduct: function(oEvent){
-		
-		//get selected item
-		var sPath = oEvent.getSource().getBindingContext().getPath(); 
-		var oObject = this.getView().getModel().getProperty(sPath);
-				
-		this._oRouter.navTo("productMaster",{prodgroupID: oObject.prodgroupID}) 
-	
-	},
-
-	
-	navFarmer: function(oEvent){
-		
-		//get selected item
-		var sPath = oEvent.getSource().getBindingContext().getPath(); 
-		var oObject = this.getView().getModel().getProperty(sPath);
-				
-		this._oRouter.navTo("farmMaster",{farmerID: oObject.farmerID}) 
-		
-	},
-	
-	/*Both functions used to navigate to Overview Pages, NO Model Manipulation*/
-	navProductOV: function(oEvent){
-		
-		this._oRouter.navTo("productOV") 
-	},
-	
-	navFarmerOV: function(oEvent){
-		
-		this._oRouter.navTo("farmersOV") 
-	},
-	
-	navHowItWorks: function(oEvent){
-		
-		this._oRouter.navTo("howItWorks") 
-	},
-	
-	navToMainFarmer: function(oEvent){
-		
-		this._oRouter.navTo("mainFarmer") 
-	},
-
-	navToAnalytics: function(){
-		
-		this._oRouter.navTo("analyticsMaster")
-	},
-	
-	navToLogin: function(){
-		
-		this._oRouter.navTo("login")
-	}
-	
 /**
 * Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered
 * (NOT before the first rendering! onInit() is used for that one!).
