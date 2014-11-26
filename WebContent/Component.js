@@ -173,7 +173,7 @@ sap.ui.core.UIComponent.extend("testApp.Component", {
 //		// Create and set domain model to the component
 //		var sPath = "models/mainModel.json"
 //		var oModel = new sap.ui.model.json.JSONModel(sPath);
-//		this.setModel(oModel);
+		this.setModel(mainOdataModel);
 		// set i18n model
 //		var i18nModel = new sap.ui.model.resource.ResourceModel({
 //			bundleUrl : [oRootPath, mConfig.resourceBundle].join("/")
