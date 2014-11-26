@@ -30,6 +30,14 @@ sap.ui.core.UIComponent.extend("testApp.Component", {
 						  targetControl : "idAppControl",
 						},
 						{
+							  pattern : "mainFarmer",
+							  name : "mainFarmer",
+							  view : "MainFarmer",
+							  viewType : "XML",
+							  targetAggregation: "pages",
+							  targetControl : "idAppControl",
+							},
+						{
 							  pattern : "farmers",
 							  name : "farmersOV",
 							  view : "FarmersOV",

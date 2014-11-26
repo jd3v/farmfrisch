@@ -1,6 +1,9 @@
 .sapMPage {
 	/* 	background-image: url(data:image/gif;base64,R0lGODlhAwADAIAAAMhFJuFdPiH5BAAAAAAALAAAAAADAAMAAAIERB5mBQA7); */
-	background-image: url(../img/bg_orange.png);
+/* 	background-image: url(../img/bg_orange.png); */
+/* 	background-image: url(../img/bg_pattern_retina_wood.png); */
+	background-image: url(../img/bg_pattern_traditional.png);
+/* 		background-image: url(../img/bg_pattern_pluses.png); */
 }
 
 .farmFrischTile {
@@ -50,7 +53,8 @@
 }
 
 .sapUiUfdShellBrand {
-	background-color: #DE5D40 !important;
+/* 	background-color: #DE5D40 !important; */
+	background-color: #1d8345!important;
 }
 
 .sapMSFF {

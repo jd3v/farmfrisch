@@ -1,0 +1,233 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout" xmlns:m="sap.m" xmlns="sap.suite.ui.commons"
+	controllerName="testApp.testlayout.MainFarmer" xmlns:html="http://www.w3.org/1999/xhtml">
+
+
+	<m:Page title="Main" enableScrolling="false" showHeader="false">
+		<m:content>
+			<m:TileContainer id="container" tileDelete="handleTileDelete">
+
+				<m:CustomTile class="farmFrischTile">
+					<!-- press="navHowItWorks" -->
+					<GenericTile size="M" frameType="OneByOne"
+						backgroundImage="img/farmfrisch_logo_184x176.jpg" type="Navigation">
+					</GenericTile>
+				</m:CustomTile>
+
+				<m:CustomTile class="farmFrischTile">
+					<GenericTile size="M" frameType="OneByOne" press="navProductOV"
+						backgroundImage="img/farmers/farmer99.png" info="{prodgroupID}" type="Navigation">
+						<tileContent>
+							<TileContent size="M">
+								<content>
+									<NewsContent size="M" subheader="Mein Profil">
+									</NewsContent>
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+				</m:CustomTile>
+
+				<m:CustomTile class="farmFrischTile">
+					<GenericTile size="M" frameType="OneByOne" press="navProductOV"
+						backgroundImage="img/farmer_products.png" info="{prodgroupID}" type="Navigation">
+						<tileContent>
+							<TileContent size="M">
+								<content>
+									<NewsContent size="M" subheader="Mein Portfolio">
+									</NewsContent>
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+				</m:CustomTile>
+				
+								<m:CustomTile class="farmFrischTile">
+					<GenericTile size="M" frameType="OneByOne" press="navProductOV"
+						backgroundImage="img/farmer_offer.png" info="{prodgroupID}" type="Navigation">
+						<tileContent>
+							<TileContent size="M">
+								<content>
+									<NewsContent size="M" subheader="Sparen Sie heute 25% auf Werbung!">
+									</NewsContent>
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+				</m:CustomTile>
+
+				<m:CustomTile class="farmFrischTile">
+					<GenericTile size="M" frameType="OneByOne" press="navProductOV"
+						backgroundImage="img/ads_new.png" type="Navigation">
+						<tileContent>
+							<TileContent size="M">
+								<content>
+									<NewsContent size="M" subheader="Werbeoptionen">
+									</NewsContent>
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+				</m:CustomTile>
+
+				<m:CustomTile class="farmFrischTile">
+					<GenericTile size="M" frameType="OneByOne" press="navProductOV"
+						backgroundImage="img/analytics.png" info="{prodgroupID}" type="Navigation">
+						<tileContent>
+							<TileContent size="M">
+								<content>
+									<NewsContent size="M" subheader="farmfrisch Analytics">
+									</NewsContent>
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+				</m:CustomTile>
+
+
+
+
+
+
+
+
+
+
+
+
+				<!-- <m:CustomTile class="farmFrischTile"> -->
+				<!-- <GenericTile size="M" frameType="OneByOne" press="navProductOV" -->
+				<!-- backgroundImage="img/products.png" info="{prodgroupID}" type="Navigation"> -->
+				<!-- <tileContent> -->
+				<!-- <TileContent size="M"> -->
+				<!-- <content> -->
+				<!-- <NewsContent size="M" subheader="Produkte in Ihrer Nähe"> -->
+				<!-- </NewsContent> -->
+				<!-- </content> -->
+				<!-- </TileContent> -->
+				<!-- </tileContent> -->
+				<!-- </GenericTile> -->
+				<!-- </m:CustomTile> -->
+
+
+
+				<!-- <m:CustomTile class="farmFrischTile"> -->
+
+				<!-- <GenericTile size="M" class="farmFrischTile" frameType="OneByOne" -->
+				<!-- press="navFarmerOV" backgroundImage="img/Farmer.png" info="{id}" -->
+				<!-- type="Navigation"> -->
+				<!-- <tileContent> -->
+				<!-- <TileContent size="M"> -->
+				<!-- <content> -->
+				<!-- <NewsContent size="M" subheader="Farmer in Ihrer Nähe"> -->
+				<!-- </NewsContent> -->
+				<!-- </content> -->
+				<!-- </TileContent> -->
+				<!-- </tileContent> -->
+				<!-- </GenericTile> -->
+				<!-- </m:CustomTile> -->
+
+				<!-- <m:CustomTile> -->
+
+				<!-- <DynamicContainer class="marginTopLeft" -->
+				<!-- displayTime="2750" transitionTime="500"> -->
+
+				<!-- <tiles> -->
+
+				<!-- <GenericTile size="M" class="farmFrischTile" -->
+				<!-- frameType="OneByOne" press="navProduct" backgroundImage="img/farmers/farmer1.png" -->
+				<!-- info="{id}" type="Navigation"> -->
+				<!-- <tileContent> -->
+				<!-- <TileContent size="M"> -->
+				<!-- <content> -->
+				<!-- <l:VerticalLayout class="marginVerticalContent"> -->
+				<!-- <m:RatingIndicator maxValue="5" value="4" /> -->
+				<!-- </l:VerticalLayout> -->
+
+				<!-- </content> -->
+				<!-- </TileContent> -->
+				<!-- </tileContent> -->
+				<!-- </GenericTile> -->
+
+
+				<!-- <GenericTile size="M" class="farmFrischTile" -->
+				<!-- frameType="OneByOne" press="navFarmerOV" backgroundImage="img/farmers/farmer3.png" -->
+				<!-- info="{id}" type="Navigation"> -->
+				<!-- <tileContent> -->
+				<!-- <TileContent size="M"> -->
+				<!-- <content> -->
+				<!-- <l:VerticalLayout class="marginVerticalContent"> -->
+				<!-- <m:RatingIndicator maxValue="5" value="4.5" /> -->
+				<!-- </l:VerticalLayout> -->
+				<!-- </content> -->
+				<!-- </TileContent> -->
+				<!-- </tileContent> -->
+				<!-- </GenericTile> -->
+
+				<!-- <GenericTile size="M" class="farmFrischTile" -->
+				<!-- frameType="OneByOne" press="navFarmerOV" backgroundImage="img/farmers/farmer4.png" -->
+				<!-- info="{id}" type="Navigation"> -->
+				<!-- <tileContent> -->
+				<!-- <TileContent size="M"> -->
+				<!-- <content> -->
+				<!-- <l:VerticalLayout class="marginVerticalContent"> -->
+				<!-- <m:RatingIndicator maxValue="5" value="5" /> -->
+				<!-- </l:VerticalLayout> -->
+				<!-- </content> -->
+				<!-- </TileContent> -->
+				<!-- </tileContent> -->
+				<!-- </GenericTile> -->
+
+				<!-- <GenericTile size="M" class="farmFrischTile" -->
+				<!-- frameType="OneByOne" press="navFarmerOV" backgroundImage="img/farmers/farmer2.png" -->
+				<!-- info="{id}" type="Navigation"> -->
+				<!-- <tileContent> -->
+				<!-- <TileContent size="M"> -->
+				<!-- <content> -->
+				<!-- <l:VerticalLayout class="marginVerticalContent"> -->
+				<!-- <m:RatingIndicator maxValue="5" value="3.5" /> -->
+				<!-- </l:VerticalLayout> -->
+				<!-- </content> -->
+				<!-- </TileContent> -->
+				<!-- </tileContent> -->
+				<!-- </GenericTile> -->
+
+
+				<!-- </tiles> -->
+				<!-- </DynamicContainer> -->
+
+				<!-- </m:CustomTile> -->
+
+
+				<!-- <m:CustomTile class="farmFrischTile"> -->
+				<!-- <GenericTile size="M" class="farmFrischTile" frameType="OneByOne" -->
+				<!-- press="navProduct" backgroundImage="img/event.png" info="{id}" -->
+				<!-- type="Navigation"> -->
+				<!-- <tileContent> -->
+				<!-- <TileContent size="M"> -->
+				<!-- <content> -->
+				<!-- <NewsContent size="M" subheader="Events in Ihrer Nähe"> -->
+				<!-- </NewsContent> -->
+				<!-- </content> -->
+				<!-- </TileContent> -->
+				<!-- </tileContent> -->
+				<!-- </GenericTile> -->
+				<!-- </m:CustomTile> -->
+
+
+			</m:TileContainer>
+
+
+		</m:content>
+		<m:footer>
+			<m:Toolbar>
+				<m:ToolbarSpacer />
+				<m:Button text="Analytics" press="navToAnalytics" />
+				<m:Button text="Share" icon="./img/fb_white_150x150.png" />
+				<m:Button text="Tweet" icon="./img/twitter_white_150x150.png" />
+				<m:Button icon="sap-icon://settings" />
+			</m:Toolbar>
+		</m:footer>
+	</m:Page>
+
+</mvc:View>

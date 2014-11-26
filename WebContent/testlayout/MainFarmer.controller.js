@@ -1,4 +1,4 @@
-sap.ui.controller("testApp.testlayout.Main", {
+sap.ui.controller("testApp.testlayout.MainFarmer", {
 
 /**
 * Called when a controller is instantiated and its View controls (if available) are already created.
@@ -52,11 +52,6 @@ sap.ui.controller("testApp.testlayout.Main", {
 	navHowItWorks: function(oEvent){
 		
 		this._oRouter.navTo("howItWorks") 
-	},
-	
-	navToMainFarmer: function(oEvent){
-		
-		this._oRouter.navTo("mainFarmer") 
 	},
 
 	navToAnalytics: function(){
