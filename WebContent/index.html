@@ -32,7 +32,7 @@
 						var homeurl = url.split('#')[0]+"#";						
 						window.location.href = homeurl;
 					}})],					
-					user: new sap.ui.unified.ShellHeadUserItem({image: "./img/user.png",username: "Joe Mengler"	}),
+					user: new sap.ui.unified.ShellHeadUserItem({image: "./img/user.png",username: "Joe Mengler", press: function(){alert("you pressed me")}	}),
 					search: new sap.m.SearchField(),
 					content: [new sap.ui.core.ComponentContainer({name: "testApp"})]
 				}).placeAt('content');

@@ -169,7 +169,7 @@ sap.ui.core.UIComponent.extend("testApp.Component", {
 		var sServiceUrl = mConfig.serviceConfig.serviceUrl;
 
 		//Odata Model
-		var mainOdataModel =  new sap.ui.model.odata.ODataModel(sServiceUrl, false, "joeger518@yahoo.de", "Jo3jo3123");
+		var mainOdataModel =  new sap.ui.model.odata.ODataModel(sServiceUrl, false, "P1914487387", "Jo3jo3123");
 //		// Create and set domain model to the component
 //		var sPath = "models/mainModel.json"
 //		var oModel = new sap.ui.model.json.JSONModel(sPath);
