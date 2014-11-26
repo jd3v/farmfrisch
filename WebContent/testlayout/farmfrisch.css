@@ -2,13 +2,12 @@
 	/* 	background-image: url(data:image/gif;base64,R0lGODlhAwADAIAAAMhFJuFdPiH5BAAAAAAALAAAAAADAAMAAAIERB5mBQA7); */
 /* 	background-image: url(../img/bg_orange.png); */
 /* 	background-image: url(../img/bg_pattern_retina_wood.png); */
-	background-image: url(../img/bg_pattern_traditional.png);
+/* 	background-image: url(../img/bg_pattern_traditional.png); */
+	background-color: white!important;
 /* 		background-image: url(../img/bg_pattern_pluses.png); */
+/* 	background-image: url(../img/bg_pattern_light.png); */
 }
 
-.farmFrischTile {
-	
-}
 
 
 .farmFrischTile .sapSuiteGT .OneByOne {
@@ -22,6 +21,10 @@
 
 .farmFrischTile .sapSuiteGT .sapSuiteUiCommonsNwCCTxt {
 	height: 0px !important;
+}
+
+.farmFrischTile .sapSuiteGT .sapSuiteUiCommonsPointer {
+	border: 100em!important;
 }
 
 .farmFrischTile .sapSuiteGT .sapSuiteUiCommonsNwCSbh {
@@ -40,6 +43,22 @@
 
 .farmFrischTile .sapSuiteGT .sapSuiteUiCommonsNwC {
 	width: 10.5rem !important;
+}
+
+.sapSuiteDC.M.OneByOne{
+width: 188rem!important;
+height: 180rem!important;
+}
+
+.sapSuiteGT {
+display: inline-block;
+overflow: hidden;
+border-style: solid;
+border-width: 2px;
+border-color: #666666!important;
+border-radius: 25px!important;
+position: relative;
+outline: none;
 }
 
 .sapMSplitContainer .sapMPage {

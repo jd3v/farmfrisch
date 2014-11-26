@@ -46,8 +46,7 @@
 
 					<m:CustomTile>
 
-						<DynamicContainer class="marginTopLeft"
-							displayTime="4250" transitionTime="500">
+						<DynamicContainer displayTime="4250" transitionTime="500">
 
 							<tiles>
 
@@ -134,8 +133,7 @@
 
 					<m:CustomTile>
 
-						<DynamicContainer class="marginTopLeft"
-							displayTime="2750" transitionTime="500">
+						<DynamicContainer displayTime="2750" transitionTime="500">
 
 							<tiles>
 
