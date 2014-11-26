@@ -7,31 +7,20 @@ sap.ui.controller("testApp.testlayout.FarmersOV", {
 */
 	onInit: function() {
 		this._oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-		this._oRouter.attachRoutePatternMatched(this._handleRouteMatched, this);
-	},
-	
-	
-	_handleRouteMatched:function(evt){
-		console.log(evt)
-		if("farmers" !== evt.getParameter("name")){
-			return;
-		}
-		var id = evt.getParameter("arguments").id;
-		var model = new sap.ui.model.json.JSONModel({id:id});
-		this.getView().setModel(model,"data");
 	},
 	
 	navFarmer: function(oEvent){
 		
+		//get model
+		var oDataModel = this.getView().getModel();
 		//get selected item
 		var sPath = oEvent.getSource().getBindingContext().getPath(); 
-		var oObject = this.getView().getModel().getProperty(sPath);
+		var oObject = oDataModel.getProperty(sPath);
 		
-		if (window.map !== undefined) {
-			console.log(map)
-			google.maps.event.trigger(map, "resize");
-		}
-		this._oRouter.navTo("farmMaster",{farmerID: oObject.farmerID}) 
+
+		this._oRouter.navTo("farmMaster",{farmerID: oObject.producerID}) 
+		
+	
 		
 	},
 	

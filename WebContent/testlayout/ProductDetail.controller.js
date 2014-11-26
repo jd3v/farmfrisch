@@ -25,26 +25,47 @@ sap.ui.controller("testApp.testlayout.ProductDetail", {
 		this.prodGroupID = evt.getParameter("arguments").prodgroupID;
 		this.prodID = evt.getParameter("arguments").prodID;
 		
+		//specific bind for object header otherwise odata will not integrate this binding
+		//get objectheader
+		var objectHeader = this.getView().byId("productProfileObjectHeader");
+		objectHeader.bindElement("/Products('"+this.prodID+"')")	
 		
-		var sPath = "/Farmfrisch/ProductGroups/"+this.prodGroupID+"/product/"+this.prodID;	
+		//set binding for rest of the detail page
+		var sPath = "/Products('"+this.prodID+"')";		
 		
 		var oModel = this.getView().getModel();		
 		
 		var oContext = new sap.ui.model.Context(oModel, sPath);		
 		this.getView().setBindingContext(oContext);	
-		
-		this.initialize_map();
+		console.log(oContext)
+		this.initialize_map(sPath);
 		
 		setTimeout(function(){
 			google.maps.event.trigger(mapProduct, "resize");			
-		},2000);
+		},1000);
 
 	},
 	
-	initialize_map : function () {
+	initialize_map : function (sPath) {
 		
+		var oDataModel = this.getView().getModel();
 		
-		  
+		//create temporary jsonModel for Map
+		var jsonModelMap = new sap.ui.model.json.JSONModel();
+		
+		var urlForMap = sPath + "/ProductMap"
+		oDataModel.read(urlForMap, null, null, false, 
+	 			function(oData, oResponse)
+	 			{	 				
+	    	 		jsonModelMap.setData(oData);    			
+	 			},
+	 			function()
+	 			{
+	 				alert("Failed to read Data");
+	 	        });
+		
+			var locations = jsonModelMap.oData.results;
+		
 		  /*clean up*/
 		  //delete all markers from map
 		  for(var i = 0; i < markersProd.length; i++){
@@ -53,10 +74,7 @@ sap.ui.controller("testApp.testlayout.ProductDetail", {
 		  //delete markers from array
 		  markersProd = [];
 		
-			//get Model
-			var oModel = this.getView().getModel();	
-			var locations = oModel.oData.Farmfrisch.ProductGroups[this.prodGroupID].product[this.prodID].locations;
-		      console.log(locations)  
+			
 		        //initialize geoloc marker
 		      //Get GeoLoc
 				 if(navigator.geolocation) {
@@ -74,7 +92,7 @@ sap.ui.controller("testApp.testlayout.ProductDetail", {
 							        icon: pinImage
 							      });
 					        
-					         var meInfowindow = new google.maps.InfoWindow({content: 'Your location'});
+					         var meInfowindow = new google.maps.InfoWindow({content: 'Hier bist du!'});
 					         
 					         google.maps.event.addListener(meMarker, 'click', function() {
 					        	    meInfowindow.open(mapProduct,meMarker);				        	    
@@ -110,7 +128,7 @@ sap.ui.controller("testApp.testlayout.ProductDetail", {
 		          google.maps.event.addListener(marker, 'click', (function(marker, i) {
 		            return function() {
 		              
-		              infowindow.setContent('<div style="width:150px; height:60px">'+locations[i].locName+'</div>');
+		              infowindow.setContent('<div style="width:150px; height:60px">'+locations[i].locName+'</br>'+"Farmer: "+ locations[i].surname + "," + locations[i].lastname+'</div>');
 		              infowindow.open(mapProduct, marker);
 		            }
 		          })(marker, i));
@@ -133,8 +151,8 @@ navToFarmerProfile: function(oEvent){
 		var oObject = this.getView().getModel().getProperty(sPath);
 			
 		
-		this._oRouter.navTo("farmMaster",{farmerID: oObject.farmerID}) 
-		this._oRouter.navTo("farmDetail",{farmerID: oObject.farmerID});
+		this._oRouter.navTo("farmMaster",{farmerID: oObject.producerID}) 
+		this._oRouter.navTo("farmDetail",{farmerID: oObject.producerID});
 	},
 
 /**

@@ -8,7 +8,7 @@
 
 
 			<m:TileContainer id="container" tileDelete="handleTileDelete"
-				tiles="{ path: '/Farmfrisch/Farmers' }">
+				tiles="{ path: '/Producers' }">
 
 				<m:CustomTile class="farmFrischTile">
 

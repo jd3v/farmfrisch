@@ -23,7 +23,7 @@
 
 
 	<m:TileContainer id="container" tileDelete="handleTileDelete"
-		tiles="{ path: '/Farmfrisch/ProductGroups' }">
+		tiles="{ path: '/ProductGroups' }">
 
 		<m:CustomTile class="farmFrischTile">
 
@@ -32,7 +32,7 @@
 				<tileContent>
 					<TileContent size="M">
 						<content>
-							<NewsContent size="M" subheader="{productgroup}">
+							<NewsContent size="M" subheader="{name}">
 							</NewsContent>
 						</content>
 					</TileContent>

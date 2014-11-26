@@ -10,8 +10,8 @@
 			
 
 
-			<ObjectHeader iconDensityAware="false" title="{type}"
-				number="{price}" numberUnit="{unit}">
+			<ObjectHeader id="productProfileObjectHeader" iconDensityAware="false" title="{product_name}"
+				number="{price}" numberUnit="{unit}" intro="{description}">
 				<statuses>
 					<ObjectStatus text="Updated" state="Success" />
 				</statuses>
@@ -28,15 +28,15 @@
 
 						<List
 							items="{
-								      path: 'farmers',
+								      path: 'ProductsFarmers',
 								      sorter: {
-								        path: 'Farmer',								       
+								        path: 'surname',								       
 								        group: true
 								      }
 								   }"
 							headerText="Orte an denen das Produkt erworben werden kann">
-							<StandardListItem title="{Location}"
-								description="{Price}" icon="{Picture}" iconDensityAware="false"
+							<StandardListItem title="{locName}"
+								description="{type}" icon="{Picture}" iconDensityAware="false"
 								iconInset="false" type="Navigation" press="navToFarmerProfile" />
 						</List>
 

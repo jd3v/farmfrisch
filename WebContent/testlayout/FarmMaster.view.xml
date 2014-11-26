@@ -5,7 +5,7 @@
 			<List			
 			    headerText="Farmers Product(s)"
 			    items="{
-			      path: 'locations'
+			      path: 'ProducerLocationsGrouped'
 			      }">
 			    <StandardListItem
 			      title="{locName}"
