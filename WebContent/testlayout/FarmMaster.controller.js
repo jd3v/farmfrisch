@@ -53,6 +53,7 @@ sap.ui.controller("testApp.testlayout.FarmMaster", {
 		
 	},
 	
+	//footer functions
 	
 	back: function(){
 		

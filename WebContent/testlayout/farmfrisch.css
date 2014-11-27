@@ -200,3 +200,9 @@ html[dir=rtl] .sapUtiContactsImage {
 	width: 100% !important;;
 	white-space: nowrap !important;;
 }
+.FooterButtonHide {
+	 display: none !important;
+}
+.FooterButtonShow {
+	 display: block !important;
+}

@@ -2,7 +2,7 @@
 	xmlns:l="sap.ui.layout" xmlns:viz="sap.viz" xmlns:c="sap.suite.ui.commons"
 	xmlns="sap.m" controllerName="testApp.testlayout.AnalyticsProducts"
 	xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page title="Analytics Products" showHeader="false" class="analytics"> 
+	<Page title="Analytics Products" showHeader="false" class="analytics">
 		<content>
 
 			<Panel text="Account Overview Information">
@@ -80,94 +80,94 @@
 						</Panel>
 					</IconTabFilter>
 					<IconTabFilter icon="sap-icon://pipeline-analysis">
-						
-							<Panel>							
+
+						<Panel>
 							<headerToolbar>
-									<Toolbar height="3rem">
-										<Text text="Wer sucht nach was?" class="sapMH4FontSize" />
-										<Button icon="sap-icon://hint" press="onMsgDialogPress" />
-									</Toolbar>
-								</headerToolbar>
-								<l:HorizontalLayout>
-								
-							<Panel width="30%">															
-								<content>
-									<c:Timeline showHeaderBar="false">
-										<c:content>
-											<c:TimelineItem title="Apfel" icon="sap-icon://product">
-												<c:embeddedControl>
-													<Text text="100 Kunden haben sich Äpfel angeschaut"
-														class="italicClass"></Text>
-													<Image src="./img/aepfel.png"></Image>
-												</c:embeddedControl>
-											</c:TimelineItem>
-											<c:TimelineItem title="Eier" icon="sap-icon://product">
-												<c:embeddedControl>
-													<VBox>
-														<Text text="80% der Kunden haben sich auch Eier angeschaut"
+								<Toolbar height="3rem">
+									<Text text="Wer sucht nach was?" class="sapMH4FontSize" />
+									<Button icon="sap-icon://hint" press="onMsgDialogPress" />
+								</Toolbar>
+							</headerToolbar>
+							<l:HorizontalLayout>
+
+								<Panel width="30%">
+									<content>
+										<c:Timeline showHeaderBar="false">
+											<c:content>
+												<c:TimelineItem title="Apfel" icon="sap-icon://product">
+													<c:embeddedControl>
+														<Text text="100 Kunden haben sich Äpfel angeschaut"
 															class="italicClass"></Text>
-														<Image src="./img/eier.png"></Image>
-													</VBox>
-												</c:embeddedControl>
-											</c:TimelineItem>
-										</c:content>
-									</c:Timeline>
-								</content>
-							</Panel>
-							<Panel width="30%">
-								<content>
-									<c:Timeline showHeaderBar="false">
-										<c:content>
-											<c:TimelineItem title="Apfel" icon="sap-icon://product">
-												<c:embeddedControl>
-													<Text text="100 Kunden haben sich Äpfel angeschaut"
-														class="italicClass"></Text>
-													<Image src="./img/aepfel.png"></Image>
-												</c:embeddedControl>
-											</c:TimelineItem>
-											<c:TimelineItem title="Radieschen" icon="sap-icon://product">
-												<c:embeddedControl>
-													<VBox>
-														<Text
-															text="75% der Kunden haben sich auch Radieschen angeschaut"
+														<Image src="./img/aepfel.png"></Image>
+													</c:embeddedControl>
+												</c:TimelineItem>
+												<c:TimelineItem title="Eier" icon="sap-icon://product">
+													<c:embeddedControl>
+														<VBox>
+															<Text text="80% der Kunden haben sich auch Eier angeschaut"
+																class="italicClass"></Text>
+															<Image src="./img/eier.png"></Image>
+														</VBox>
+													</c:embeddedControl>
+												</c:TimelineItem>
+											</c:content>
+										</c:Timeline>
+									</content>
+								</Panel>
+								<Panel width="30%">
+									<content>
+										<c:Timeline showHeaderBar="false">
+											<c:content>
+												<c:TimelineItem title="Apfel" icon="sap-icon://product">
+													<c:embeddedControl>
+														<Text text="100 Kunden haben sich Äpfel angeschaut"
 															class="italicClass"></Text>
-														<Image src="./img/radieschen.png"></Image>
-													</VBox>
-												</c:embeddedControl>
-											</c:TimelineItem>
-										</c:content>
-									</c:Timeline>
-								</content>
-							</Panel>
-							<Panel width="30%">
-								<content>
-									<c:Timeline showHeaderBar="false">
-										<c:content>
-											<c:TimelineItem title="Gurken" icon="sap-icon://product">
-												<c:embeddedControl>
-													<Text text="100 Kunden haben sich Gurken angeschaut"
-														class="italicClass"></Text>
-													<Image src="./img/gurke.png"></Image>
-												</c:embeddedControl>
-											</c:TimelineItem>
-											<c:TimelineItem title="Zwiebel" icon="sap-icon://product">
-												<c:embeddedControl>
-													<VBox>
-														<Text text="35% der Kunden haben sich auch Zwiebel angeschaut"
+														<Image src="./img/aepfel.png"></Image>
+													</c:embeddedControl>
+												</c:TimelineItem>
+												<c:TimelineItem title="Radieschen" icon="sap-icon://product">
+													<c:embeddedControl>
+														<VBox>
+															<Text
+																text="75% der Kunden haben sich auch Radieschen angeschaut"
+																class="italicClass"></Text>
+															<Image src="./img/radieschen.png"></Image>
+														</VBox>
+													</c:embeddedControl>
+												</c:TimelineItem>
+											</c:content>
+										</c:Timeline>
+									</content>
+								</Panel>
+								<Panel width="30%">
+									<content>
+										<c:Timeline showHeaderBar="false">
+											<c:content>
+												<c:TimelineItem title="Gurken" icon="sap-icon://product">
+													<c:embeddedControl>
+														<Text text="100 Kunden haben sich Gurken angeschaut"
 															class="italicClass"></Text>
-														<Image src="./img/onions.png"></Image>
-													</VBox>
-												</c:embeddedControl>
-											</c:TimelineItem>
-										</c:content>
-									</c:Timeline>
-								</content>
-							</Panel>
-							
+														<Image src="./img/gurke.png"></Image>
+													</c:embeddedControl>
+												</c:TimelineItem>
+												<c:TimelineItem title="Zwiebel" icon="sap-icon://product">
+													<c:embeddedControl>
+														<VBox>
+															<Text text="35% der Kunden haben sich auch Zwiebel angeschaut"
+																class="italicClass"></Text>
+															<Image src="./img/onions.png"></Image>
+														</VBox>
+													</c:embeddedControl>
+												</c:TimelineItem>
+											</c:content>
+										</c:Timeline>
+									</content>
+								</Panel>
+
 							</l:HorizontalLayout>
-						
-							</Panel>
-						
+
+						</Panel>
+
 					</IconTabFilter>
 					<IconTabFilter icon="sap-icon://pie-chart">
 						<Panel>
@@ -194,12 +194,7 @@
 			</IconTabBar>
 		</content>
 		<footer>
-			<Toolbar>
-				<ToolbarSpacer />
-				<Button text="Share" icon="./img/fb_white_150x150.png" />
-				<Button text="Tweet" icon="./img/twitter_white_150x150.png" />
-				<Button icon="sap-icon://settings" />
-			</Toolbar>
+			<core:Fragment fragmentName="testApp.testlayout.fragments.DetailFooter" type="XML" />
 		</footer>
 	</Page>
 </core:View>

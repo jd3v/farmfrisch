@@ -18,9 +18,7 @@
 			  </List>
 		</content>
 		<footer>
-			<Toolbar>
-				<Button text="Zurück" icon="sap-icon://nav-back" press="backToLandingPage" />				
-			</Toolbar>
+			<core:Fragment fragmentName="testApp.testlayout.fragments.MasterFooter" type="XML"/>
 		</footer>
 	</Page>
 </core:View>

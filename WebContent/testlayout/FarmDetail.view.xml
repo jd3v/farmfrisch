@@ -103,12 +103,7 @@
 			</IconTabBar>
 		</content>
 		<footer>
-			<Toolbar>
-				<ToolbarSpacer />
-				<Button text="Share" icon="./img/fb_white_150x150.png" press="helperResizeMap" />
-				<Button text="Tweet" icon="./img/twitter_white_150x150.png" />
-				<Button icon="sap-icon://settings" />
-			</Toolbar>
+			<core:Fragment fragmentName="testApp.testlayout.fragments.DetailFooter" type="XML" />
 		</footer>
 	</Page>
 </core:View>
