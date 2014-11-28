@@ -63,5 +63,8 @@
 				</ui:OverflowContainer>
 			</c:content>
 		</c:FacetOverview>
+		<footer>
+			<core:Fragment fragmentName="testApp.testlayout.fragments.DetailFooter" type="XML"/>
+		</footer>
 	</Page>
 </core:View>

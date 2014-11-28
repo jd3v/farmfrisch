@@ -147,23 +147,8 @@ initialize_map : function (sPath) {
 		
 		map.setZoom(15);
 		map.panTo(position);
-	},
+	},	
 	
-	back: function(){
-		
-		
-		this._oRouter.navTo("productOV");
-	},
-	
-	/*utility functions*/
-	 goToWebsite: function(){
-		 
-		 alert("Would go to website")
-	 } ,
-	 
-	 helperResizeMap: function(){
-		  google.maps.event.trigger(map, "resize"); 
-	 },
 	
 	 onAfterRendering: function(){
 		
@@ -188,7 +173,23 @@ initialize_map : function (sPath) {
 	        	google.maps.event.trigger(map, "resize");
 	        	console.log("loaded")
 	        }, true);
-	        console.log("infarm on after rendering")
+	      
+	},
+	
+	//relevant footer functions
+	navHowItWorks: function(oEvent){
+		
+		this._oRouter.navTo("howItWorks") 
+	},
+	
+	navToMainFarmer: function(oEvent){
+		
+		this._oRouter.navTo("mainFarmer") 
+	},
+
+	navToAnalytics: function(){
+		
+		this._oRouter.navTo("analyticsMaster")
 	}
 
 });

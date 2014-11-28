@@ -22,9 +22,9 @@
 
 					<m:VBox class="marginBoxContent">
 						<m:items>
-							<m:Input type="Text" placeholder="Username..." width="350px" />
-							<m:Input type="Password" placeholder="Password..." width="350px" />
-							<m:Button type="Accept" text="Einloggen" press="onPress"
+							<m:Input id="userNameField" type="Text" placeholder="Username..." width="350px" />
+							<m:Input id="passwordField" type="Password" placeholder="Password..." width="350px" />
+							<m:Button type="Accept" text="Einloggen" press="handleLogon"
 								width="350px">
 								<m:layoutData>
 									<m:FlexItemData growFactor="1" />
@@ -45,12 +45,7 @@
 		</m:content>
 
 		<m:footer>
-			<m:Toolbar>
-				<m:ToolbarSpacer />
-				<m:Button text="Share" icon="./img/fb_white_150x150.png" />
-				<m:Button text="Tweet" icon="./img/twitter_white_150x150.png" />
-				<m:Button icon="sap-icon://settings" />
-			</m:Toolbar>
+			<core:Fragment fragmentName="testApp.testlayout.fragments.FullscreenFooter" type="XML" />
 		</m:footer>
 	</m:Page>
 

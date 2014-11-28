@@ -55,7 +55,7 @@ sap.ui.controller("testApp.testlayout.AnalyticsMaster", {
 		this._oRouter.navTo(oObject.navLink);
 	},
 	
-backToLandingPage: function() {
+back: function() {
 		
 		this._oRouter.navTo("_index");
 		

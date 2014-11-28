@@ -24,10 +24,26 @@ sap.ui.controller("testApp.testlayout.FarmersOV", {
 		
 	},
 	
-	backToLandingPage: function() {
+	//relevant footer functions	
+	back: function() {
 		
 		this._oRouter.navTo("_index");
 		
+	},	
+	
+	navHowItWorks: function(oEvent){
+		
+		this._oRouter.navTo("howItWorks") 
+	},
+	
+	navToMainFarmer: function(oEvent){
+		
+		this._oRouter.navTo("mainFarmer") 
+	},
+
+	navToAnalytics: function(){
+		
+		this._oRouter.navTo("analyticsMaster")
 	}
 	
 

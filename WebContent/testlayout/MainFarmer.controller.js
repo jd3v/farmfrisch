@@ -49,9 +49,20 @@ sap.ui.controller("testApp.testlayout.MainFarmer", {
 		this._oRouter.navTo("farmersOV") 
 	},
 	
+	//relevant footer functions
+	back: function() {
+		
+		this._oRouter.navTo("_index");
+		
+	},
 	navHowItWorks: function(oEvent){
 		
 		this._oRouter.navTo("howItWorks") 
+	},
+	
+	navToMainFarmer: function(oEvent){
+		
+		this._oRouter.navTo("mainFarmer") 
 	},
 
 	navToAnalytics: function(){

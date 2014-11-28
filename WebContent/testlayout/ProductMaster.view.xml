@@ -25,9 +25,7 @@
 			</List>
 		</content>
 		<footer>
-			<Toolbar>
-				<Button text="Zurück" icon="sap-icon://nav-back" press="back" />
-			</Toolbar>
+			<core:Fragment fragmentName="testApp.testlayout.fragments.MasterFooter" type="XML"/>
 		</footer>
 	</Page>
 </mvc:View>

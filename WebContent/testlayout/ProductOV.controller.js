@@ -42,11 +42,35 @@ sap.ui.controller("testApp.testlayout.ProductOV", {
 		this._oRouter.navTo("productDetail",{prodgroupID: oObject.prodGroupID, prodID: firstProductId});
 	},
 	
-	backToLandingPage: function() {
+	//relevant footer functions
+	back: function() {
 		
 		this._oRouter.navTo("_index");
 		
-	}
+	},
+	
+	navHowItWorks: function(oEvent){
+		
+		this._oRouter.navTo("howItWorks") 
+	},
+	
+	navToMainFarmer: function(oEvent){
+		
+		this._oRouter.navTo("mainFarmer") 
+	},
+
+	navToAnalytics: function(){
+		
+		this._oRouter.navTo("analyticsMaster")
+	},
+	
+	navToLogin: function(){
+		
+		this._oRouter.navTo("login")
+	}	
+	
+	
+	
 /**
 * Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered
 * (NOT before the first rendering! onInit() is used for that one!).

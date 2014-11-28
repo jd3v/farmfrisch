@@ -162,6 +162,24 @@ sap.ui.controller("testApp.testlayout.AnalyticsCustomer", {
 
 			    
 		},
+		
+		//relevant footer functions
+		navHowItWorks: function(oEvent){
+			
+			this._oRouter.navTo("howItWorks") 
+		},
+		
+		navToMainFarmer: function(oEvent){
+			
+			this._oRouter.navTo("mainFarmer") 
+		},
+
+		navToAnalytics: function(){
+			
+			this._oRouter.navTo("analyticsMaster")
+		}
+		
+		
 /**
 * Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered
 * (NOT before the first rendering! onInit() is used for that one!).

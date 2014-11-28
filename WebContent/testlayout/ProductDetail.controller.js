@@ -136,15 +136,9 @@ sap.ui.controller("testApp.testlayout.ProductDetail", {
 		       
 		      
 		        
-		},
-	
-	
-	navBack: function(){
-		
-		this._oRouter.navTo("_index") 
 	},
 	
-navToFarmerProfile: function(oEvent){
+	navToFarmerProfile: function(oEvent){
 	
 		//get selected item
 		var sPath = oEvent.getSource().getBindingContext().getPath(); 
@@ -188,6 +182,22 @@ onAfterRendering: function(){
 	        mapProduct = new google.maps.Map(mapRef, mapOptions);
 	        //IMPORTANT
 	        google.maps.event.trigger(mapProduct, "resize");
+	},
+	
+	//relevant footer functions
+	navHowItWorks: function(oEvent){
+		
+		this._oRouter.navTo("howItWorks") 
+	},
+	
+	navToMainFarmer: function(oEvent){
+		
+		this._oRouter.navTo("mainFarmer") 
+	},
+
+	navToAnalytics: function(){
+		
+		this._oRouter.navTo("analyticsMaster")
 	}
 
 /**

@@ -204,7 +204,7 @@
 
 					<m:CustomTile class="farmFrischTile">
 						<GenericTile size="M" class="farmFrischTile"
-							frameType="OneByOne" press="navProduct" backgroundImage="img/event.png"
+							frameType="OneByOne"  backgroundImage="img/event.png"
 							info="{id}" type="Navigation">
 							<tileContent>
 								<TileContent size="M">
@@ -223,15 +223,7 @@
 
 		</m:content>
 		<m:footer>
-			<m:Toolbar>
-				<m:ToolbarSpacer />
-				<m:Button text="Login" press="navToLogin" />
-				<m:Button text="My Profile" press="navToMainFarmer" />
-				<m:Button text="Analytics" press="navToAnalytics" />
-				<m:Button text="Share" icon="./img/fb_white_150x150.png" />
-				<m:Button text="Tweet" icon="./img/twitter_white_150x150.png" />
-				<m:Button icon="sap-icon://settings" />
-			</m:Toolbar>
+			<core:Fragment fragmentName="testApp.testlayout.fragments.DetailFooter" type="XML"/>
 		</m:footer>
 	</m:Page>
 

@@ -30,13 +30,7 @@
 
 		</m:content>
 	<m:footer>
-      <m:Toolbar>
-     	<m:Button text="Zurück" icon="sap-icon://nav-back" press="backToLandingPage" />
-        <m:ToolbarSpacer/> 
-      	 <m:Button text="Share" icon="./img/fb_white_150x150.png" />
-         <m:Button text="Tweet" icon="./img/twitter_white_150x150.png" />
-        <m:Button icon="sap-icon://settings" />
-      </m:Toolbar>
+      <core:Fragment fragmentName="testApp.testlayout.fragments.FullscreenFooter" type="XML" />
     </m:footer>
 	</m:Page>
 

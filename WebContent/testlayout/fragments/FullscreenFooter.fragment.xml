@@ -1,0 +1,12 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml">
+    <Toolbar>
+    <Button text="Zurück" icon="sap-icon://nav-back" press="back" />       
+  	  <ToolbarSpacer />        
+		<Button id="footerFSProfile" text="My Profile" press="navToMainFarmer" />
+		<Button text="Analytics" press="navToAnalytics" />
+		<Button text="Share" icon="./img/fb_white_150x150.png" />
+		<Button text="Tweet" icon="./img/twitter_white_150x150.png" />
+		<Button icon="sap-icon://settings" />
+    </Toolbar>    
+</core:FragmentDefinition>
+
