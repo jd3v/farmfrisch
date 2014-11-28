@@ -12,8 +12,8 @@
 				"testApp": "./"
 			}' >
 		</script>
-		<script type="text/javascript"  src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=weather">
-		</script>
+		<script type="text/javascript"  src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=weather"/></script>  
+		<script type="text/javascript" src="./util/Global.js" ></script>  
 		<script>jQuery.sap.require("sap.ui.core.IconPool");
 				jQuery.sap.require("testApp.Router");
 				jQuery.sap.require("testApp.Component");</script>
@@ -31,8 +31,15 @@
 						var url = window.location.toString();						
 						var homeurl = url.split('#')[0]+"#";						
 						window.location.href = homeurl;
-					}})],					
-					user: new sap.ui.unified.ShellHeadUserItem({image: "./img/user.png",username: "Joe Mengler"	}),
+					}})],	
+					headEndItems: [new sap.ui.unified.ShellHeadItem({icon: sap.ui.core.IconPool.getIconURI("log"), press: function(){
+						//hack for router
+						var url = window.location.toString();						
+						var homeurl = url.split('#')[0]+"#";
+						var loginurl = homeurl + "/login";
+						window.location.href = loginurl;
+					} })],
+					user: new sap.ui.unified.ShellHeadUserItem({image: "./img/user.png",username: "Anonymous"}),
 					search: new sap.m.SearchField(),
 					content: [new sap.ui.core.ComponentContainer({name: "testApp"})]
 				}).placeAt('content');

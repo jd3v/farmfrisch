@@ -118,7 +118,7 @@
 		},
 		{
 			"farmerID"					:"1",
-			"surname"					:	"Johanna",
+			"surname"					:	"Jörg",
 			"lastname"					: "Peters",
 			"gender"					:	"Male",
 			"street"					:	"F1",
@@ -138,7 +138,7 @@
 			"twitterurl"			: "https://twitter.com/bfieldsd",
 			
 			"description"			:	"Fresh. Local. Organic.",
-			"profile_picture"	: "img/farmers/theresa1.jpg",
+			"profile_picture"	: "img/farmers/farmer2.png",
 			"slideshow"				: [ 
 				{
 					"url" : ""

@@ -1,28 +1,30 @@
-<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
-           xmlns:u="sap.ui.unified" xmlns:form="sap.ui.layout.form" xmlns:ui="sap.ca.ui" 
-           xmlns:l="sap.ui.layout" xmlns:c="sap.suite.ui.commons"
-		controllerName="testApp.testlayout.FarmDetail" xmlns:html="http://www.w3.org/1999/xhtml">
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" xmlns:u="sap.ui.unified" xmlns:form="sap.ui.layout.form"
+	xmlns:ui="sap.ca.ui" xmlns:l="sap.ui.layout" xmlns:c="sap.suite.ui.commons"
+	controllerName="testApp.testlayout.FarmDetail" xmlns:html="http://www.w3.org/1999/xhtml">
 	<Page title="FarmDetail" showHeader="false">
 		<content>
-		 <VBox fitContainer="true" justifyContent="Center" alignItems="Center">  
-							<HBox height="500px" id="map_canvas" fitContainer="true" justifyContent="Center" alignItems="Center" />
-							
-				        </VBox>		
-		<l:VerticalLayout class="marginVerticalContent" width="100%">
+			<VBox fitContainer="true" justifyContent="Center" alignItems="Center">
+				<HBox height="500px" id="map_canvas" fitContainer="true"
+					justifyContent="Center" alignItems="Center" />
+
+			</VBox>
+			<l:VerticalLayout class="marginVerticalContent"
+				width="100%">
 				<l:content>
 
-					<Panel width="100%">
-						<Label text="{surname}" design="Bold" />
-						<RatingIndicator maxValue="5" value="{rating}" enabled = "false"
-							tooltip="Rating Tooltip" />
+					<Panel width="100%" id="headerPanel">
+						<Label text="{surname},{lastname}" design="Bold" />
+						<RatingIndicator maxValue="5" value="{rating}"
+							enabled="false" tooltip="Rating Tooltip" />
 
 						<FlexBox alignItems="Start" justifyContent="SpaceBetween">
 							<items>
 
-								<Text text="{description}"/> 
+								<Text text="{description}" />
 
 								<HBox>
-									<Image src="img/Farmer.png" width="{/imageWidth}">
+									<Image src="{profile_picture}" height="100%" width="100%">
 									</Image>
 								</HBox>
 
@@ -32,79 +34,76 @@
 
 				</l:content>
 			</l:VerticalLayout>
-					<IconTabBar>
-						<items>
-							<IconTabFilter key="key1" text="Products" icon="sap-icon://nutrition-activity">
-								<content>
-									<ui:OverflowContainer overflowHeight="200px">
-										<ui:content>
-											<List id="ShortProductList" items="{ path: 'products', sorter: {path: 'productgroup', group: true} }">
-												<items>
-													<StandardListItem 
-													    title="{type}"
-												        type="Navigation"
-												        press="navToProdProfile" 
-													/>
+			<IconTabBar>
+				<items>
+					<IconTabFilter key="key1" text="Products"
+						icon="sap-icon://nutrition-activity">
+						<content>
+							<ui:OverflowContainer overflowHeight="200px">
+								<ui:content>
+									<List id="ShortProductList"
+										items="{ path: 'ProducersProducts', sorter: {path: 'name', group: true} }">
+										<items>
+											<StandardListItem title="{product_name}"
+												info="{
+										                  path: 'price',
+										              		  formatter: 'testApp.util.Formatter.CurrencyEuro'
+									              		  }"
+												type="Navigation" press="navToProdProfile" />
 
-												</items>
-											</List>
-										</ui:content>
-									</ui:OverflowContainer>
-								</content>
-							</IconTabFilter>
+										</items>
+									</List>
+								</ui:content>
+							</ui:OverflowContainer>
+						</content>
+					</IconTabFilter>
 
-							<IconTabFilter key="key2" text="Reviews" icon="sap-icon://leads">
-								<content>
-									<ui:OverflowContainer overflowHeight="200px">
-										<ui:content>
-											<List items="{ path: 'reviews'}">
-												<items>
-													<FeedListItem sender="{Sender}" icon = "{Icon}" info="{Request}"
-														timestamp="{Timestamp}" text="{Text}" />
-												</items>
-											</List>
-											<FeedInput post="onPost" icon="img/gurke.png"
-												class="sapUiExploredFeedMargin" />
-										</ui:content>
-									</ui:OverflowContainer>
-								</content>
-							</IconTabFilter>
+					<IconTabFilter key="key2" text="Reviews" icon="sap-icon://leads">
+						<content>
+							<ui:OverflowContainer overflowHeight="200px">
+								<ui:content>
+									<List items="{ path: 'reviews'}">
+										<items>
+											<FeedListItem sender="{Sender}" icon="{Icon}"
+												info="{Request}" timestamp="{Timestamp}" text="{Text}" />
+										</items>
+									</List>
+									<FeedInput post="onPost" icon="img/gurke.png"
+										class="sapUiExploredFeedMargin" />
+								</ui:content>
+							</ui:OverflowContainer>
+						</content>
+					</IconTabFilter>
 
-							<IconTabFilter key="key3" text="Contact"
-								icon="sap-icon://contacts">
-								<content>
-									<ui:OverflowContainer overflowHeight="200px">
-										<ui:content>
-											<form:SimpleForm maxContainerCols="2">
-												<Label text="Name"></Label>
-												<Text text="{surname} {lastname}"></Text> 
-												<Label text="Street"></Label>
-												<Text text="{street}"></Text>
-												<Label text="City"></Label>
-												<Text text="{city}"></Text>
-												<Label text="Postal Code"></Label>
-												<Text text="{postalcode}"></Text>
-												<Label text="Email"></Label>
-												<Text text="{email}"></Text>
-												<Label text="Phone"></Label>
-												<Text text="{phone}"></Text>
-												<Label text="Mobile"></Label>
-												<Text text="{mobile}"></Text>
-											</form:SimpleForm>
-										</ui:content>
-									</ui:OverflowContainer>
-								</content>
-							</IconTabFilter>
-						</items>
-					</IconTabBar>
+					<IconTabFilter key="key3" text="Contact" icon="sap-icon://contacts">
+						<content>
+							<ui:OverflowContainer overflowHeight="200px">
+								<ui:content>
+									<form:SimpleForm maxContainerCols="2">
+										<Label text="Name"></Label>
+										<Text text="{surname} {lastname}"></Text>
+										<Label text="Street"></Label>
+										<Text text="{street}"></Text>
+										<Label text="City"></Label>
+										<Text text="{city}"></Text>
+										<Label text="Postal Code"></Label>
+										<Text text="{postalcode}"></Text>
+										<Label text="Email"></Label>
+										<Text text="{email}"></Text>
+										<Label text="Phone"></Label>
+										<Text text="{phone}"></Text>
+										<Label text="Mobile"></Label>
+										<Text text="{mobile}"></Text>
+									</form:SimpleForm>
+								</ui:content>
+							</ui:OverflowContainer>
+						</content>
+					</IconTabFilter>
+				</items>
+			</IconTabBar>
 		</content>
 		<footer>
-      <Toolbar>     	
-        <ToolbarSpacer/> 
-         <Button text="Share" icon="./img/fb_white_150x150.png" press="helperResizeMap" />
-        <Button text="Tweet" icon="./img/twitter_white_150x150.png" />
-        <Button icon="sap-icon://settings" />
-      </Toolbar>
-    </footer>		
+			<core:Fragment fragmentName="testApp.testlayout.fragments.DetailFooter" type="XML" />
+		</footer>
 	</Page>
 </core:View>

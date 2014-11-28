@@ -1,3 +1,5 @@
+jQuery.sap.require("testApp.util.Formatter");
+
 sap.ui.controller("testApp.testlayout.FarmDetail", {
 
 	onInit: function() {
@@ -16,18 +18,18 @@ sap.ui.controller("testApp.testlayout.FarmDetail", {
 		
 		this.farmerID = evt.getParameter("arguments").farmerID;	
 		
-		
-		var sPath = "/Farmfrisch/Farmers/"+this.farmerID;	
+			
+		var sPath = "/Producers('"+this.farmerID+"')";	
 		
 		var oModel = this.getView().getModel();
 		
 		var oContext = new sap.ui.model.Context(oModel, sPath);		
 		this.getView().setBindingContext(oContext);	
-		this.initialize_map();	
+		this.initialize_map(sPath);	
 		
 		setTimeout(function(){
 			google.maps.event.trigger(map, "resize");			
-		},2000);
+		},1000);
 	},
 	
 	navToProdProfile: function(oEvent){
@@ -37,7 +39,7 @@ sap.ui.controller("testApp.testlayout.FarmDetail", {
 		var oObject = this.getView().getModel().getProperty(sPath);
 			console.log(oObject.prodID)	
 		this._oRouter.navTo("productMaster",{prodgroupID: oObject.prodGroupID}) 
-		this._oRouter.navTo("productDetail",{prodgroupID: oObject.prodGroupID, prodID: oObject.prodID});
+		this._oRouter.navTo("productDetail",{prodgroupID: oObject.prodGroupID, prodID: oObject.productID});
 	},
 	
 	onBeforeShow: function(){
@@ -45,10 +47,26 @@ sap.ui.controller("testApp.testlayout.FarmDetail", {
 		  google.maps.event.trigger(map, "resize");
 	},
 	
-initialize_map : function () {
+initialize_map : function (sPath) {
 		
+	var oDataModel = this.getView().getModel();
 	
-	  
+	//create temporary jsonModel for Map
+	var jsonModelMap = new sap.ui.model.json.JSONModel();
+	
+	var urlForMap = sPath + "/ProducerLocationsGrouped"
+	oDataModel.read(urlForMap, null, null, false, 
+ 			function(oData, oResponse)
+ 			{	 				
+    	 		jsonModelMap.setData(oData);    			
+ 			},
+ 			function()
+ 			{
+ 				alert("Failed to read Data");
+ 	        });
+	
+	var locations = jsonModelMap.oData.results;
+	  console.log(locations);
 	  /*clean up*/
 	  //delete all markers from map
 	  for(var i = 0; i < markers.length; i++){
@@ -57,9 +75,7 @@ initialize_map : function () {
 	  //delete markers from array
 	  markers = [];
 	
-		//get Model
-		var oModel = this.getView().getModel();	
-		var locations = oModel.oData.Farmfrisch.Farmers[this.farmerID].locations;
+		
 	        
 	        //initialize geoloc marker
 	      //Get GeoLoc
@@ -78,7 +94,7 @@ initialize_map : function () {
 						        icon: pinImage
 						      });
 				        
-				         var meInfowindow = new google.maps.InfoWindow({content: 'Your location'});
+				         var meInfowindow = new google.maps.InfoWindow({content: '<div style="width:150px; height:30px"> Hier bist du! </div>'});
 				         
 				         google.maps.event.addListener(meMarker, 'click', function() {
 				        	    meInfowindow.open(map,meMarker);				        	    
@@ -114,7 +130,7 @@ initialize_map : function () {
 	          google.maps.event.addListener(marker, 'click', (function(marker, i) {
 	            return function() {
 	              
-	              infowindow.setContent('<div style="width:150px; height:30px">'+locations[i].locName+'</div>');
+	              infowindow.setContent('<div style="width:150px; height:50px">'+locations[i].locName+'</div>');
 	              infowindow.open(map, marker);
 	            }
 	          })(marker, i));
@@ -131,34 +147,20 @@ initialize_map : function () {
 		
 		map.setZoom(15);
 		map.panTo(position);
-	},
+	},	
 	
-	back: function(){
-		
-		
-		this._oRouter.navTo("productOV");
-	},
-	
-	/*utility functions*/
-	 goToWebsite: function(){
-		 
-		 alert("Would go to website")
-	 } ,
-	 
-	 helperResizeMap: function(){
-		  google.maps.event.trigger(map, "resize"); 
-	 },
 	
 	 onAfterRendering: function(){
 		
 		var mapDiv = this.getView().byId("map_canvas");				
     	mapDiv.addStyleClass("myMap");
     	//initialize map
+    	//center of the map
 		var  farmerLatLng = [49.4874918,8.5477371];
 		var geocoder = new google.maps.Geocoder();
 	        var mapOptions = {  
 	        	center:  new google.maps.LatLng(farmerLatLng[0], farmerLatLng[1]),  
-	            zoom: 11,  
+	            zoom: 12,  
 	            mapTypeId: google.maps.MapTypeId.ROADMAP  
         	}; 	
 	        var mapDiv = this.getView().byId("map_canvas");
@@ -171,7 +173,23 @@ initialize_map : function () {
 	        	google.maps.event.trigger(map, "resize");
 	        	console.log("loaded")
 	        }, true);
-	        console.log("infarm on after rendering")
+	      
+	},
+	
+	//relevant footer functions
+	navHowItWorks: function(oEvent){
+		
+		this._oRouter.navTo("howItWorks") 
+	},
+	
+	navToMainFarmer: function(oEvent){
+		
+		this._oRouter.navTo("mainFarmer") 
+	},
+
+	navToAnalytics: function(){
+		
+		this._oRouter.navTo("analyticsMaster")
 	}
 
 });

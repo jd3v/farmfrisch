@@ -3,15 +3,17 @@
 	xmlns:html="http://www.w3.org/1999/xhtml">
 	<Page title="Product Detail" showHeader="false">
 		<content>
-			<VBox fitContainer="true" justifyContent="Center" alignItems="Center">  
-							<HBox height="500px" id="map_canvas" fitContainer="true" justifyContent="Center" alignItems="Center" />
-							
-				        </VBox>		
-			
+			<VBox fitContainer="true" justifyContent="Center" alignItems="Center">
+				<HBox height="500px" id="map_canvas" fitContainer="true"
+					justifyContent="Center" alignItems="Center" />
+
+			</VBox>
 
 
-			<ObjectHeader iconDensityAware="false" title="{type}"
-				number="{price}" numberUnit="{unit}">
+
+			<ObjectHeader id="productProfileObjectHeader"
+				iconDensityAware="false" title="{product_name}" number="{price}"
+				numberUnit="{unit}" intro="{description}">
 				<statuses>
 					<ObjectStatus text="Updated" state="Success" />
 				</statuses>
@@ -28,16 +30,16 @@
 
 						<List
 							items="{
-								      path: 'farmers',
+								      path: 'ProductsFarmers',
 								      sorter: {
-								        path: 'Farmer',								       
+								        path: 'surname',								       
 								        group: true
 								      }
 								   }"
 							headerText="Orte an denen das Produkt erworben werden kann">
-							<StandardListItem title="{Location}"
-								description="{Price}" icon="{Picture}" iconDensityAware="false"
-								iconInset="false" type="Navigation" press="navToFarmerProfile" />
+							<StandardListItem title="{locName}" description="{type}"
+								icon="{Picture}" iconDensityAware="false" iconInset="false"
+								type="Navigation" press="navToFarmerProfile" />
 						</List>
 
 					</IconTabFilter>
@@ -50,16 +52,12 @@
 					</IconTabFilter>
 				</items>
 
-</IconTabBar>
+			</IconTabBar>
 
-	</content>
+		</content>
 		<footer>
-      <Toolbar>     	
-        <ToolbarSpacer/> 
-         <Button text="Share" icon="./img/fb_white_150x150.png" />
-         <Button text="Tweet" icon="./img/twitter_white_150x150.png" />
-        <Button icon="sap-icon://settings" />
-      </Toolbar>
-    </footer>
+			<core:Fragment fragmentName="testApp.testlayout.fragments.DetailFooter"
+				type="XML" />
+		</footer>
 	</Page>
 </mvc:View>

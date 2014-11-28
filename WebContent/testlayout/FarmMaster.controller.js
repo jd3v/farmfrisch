@@ -16,7 +16,7 @@ sap.ui.controller("testApp.testlayout.FarmMaster", {
 		this.farmerID = evt.getParameter("arguments").farmerID;	
 		
 		
-		var sPath = "/Farmfrisch/Farmers/"+this.farmerID;	
+		var sPath = "/Producers('"+this.farmerID+"')";	
 		
 		var oModel = this.getView().getModel();
 		
@@ -47,11 +47,13 @@ sap.ui.controller("testApp.testlayout.FarmMaster", {
 		var oObject = this.getView().getModel().getProperty(sPath);
 		
 		var position = {lat: parseFloat(oObject.lat), lng: parseFloat(oObject.lng)}
+		
 		var test ={lat: 49.4882017, lng: 8.4661298};
 		sap.ui.controller("testApp.testlayout.FarmDetail").zoomIntoLoc(position);
 		
 	},
 	
+	//footer functions
 	
 	back: function(){
 		

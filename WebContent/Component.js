@@ -10,7 +10,7 @@ sap.ui.core.UIComponent.extend("testApp.Component", {
 			resourceBundle : "i18n/messageBundle.properties",
 			serviceConfig : {
 				//name : "Northwind",
-				//serviceUrl : "/uilib-sample/proxy/http/services.odata.org/V2/(S(sapuidemotdg))/OData/OData.svc/"
+				serviceUrl : "https://s7hanaxs.hanatrial.ondemand.com/p1914487387trial/jtrial/lunaTrial/services/Products.xsodata"
 			}},
 		routing : {
 			config : {
@@ -29,6 +29,14 @@ sap.ui.core.UIComponent.extend("testApp.Component", {
 						  targetAggregation: "pages",
 						  targetControl : "idAppControl",
 						},
+						{
+							  pattern : "mainFarmer",
+							  name : "mainFarmer",
+							  view : "MainFarmer",
+							  viewType : "XML",
+							  targetAggregation: "pages",
+							  targetControl : "idAppControl",
+							},
 						{
 							  pattern : "farmers",
 							  name : "farmersOV",
@@ -49,6 +57,14 @@ sap.ui.core.UIComponent.extend("testApp.Component", {
 							  pattern : "howItWorks",
 							  name : "howItWorks",
 							  view : "HowItWorks",
+							  viewType : "XML",
+							  targetAggregation: "pages",
+							  targetControl : "idAppControl",
+						},
+						{
+							  pattern : "login",
+							  name : "login",
+							  view : "Login",
 							  viewType : "XML",
 							  targetAggregation: "pages",
 							  targetControl : "idAppControl",
@@ -160,10 +176,12 @@ sap.ui.core.UIComponent.extend("testApp.Component", {
 
 		var sServiceUrl = mConfig.serviceConfig.serviceUrl;
 
-		// Create and set domain model to the component
-		var sPath = "models/mainModel.json"
-		var oModel = new sap.ui.model.json.JSONModel(sPath);
-		this.setModel(oModel);
+		//Odata Model
+		var mainOdataModel =  new sap.ui.model.odata.ODataModel(sServiceUrl, false);
+//		// Create and set domain model to the component
+//		var sPath = "models/mainModel.json"
+//		var oModel = new sap.ui.model.json.JSONModel(sPath);
+		this.setModel(mainOdataModel);
 		// set i18n model
 //		var i18nModel = new sap.ui.model.resource.ResourceModel({
 //			bundleUrl : [oRootPath, mConfig.resourceBundle].join("/")

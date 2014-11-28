@@ -188,6 +188,22 @@ sap.ui.controller("testApp.testlayout.AnalyticsProducts", {
 
 	onDialogCloseButton : function(oEvent) {
 		this.helpDialog.close();
-	}
+	},
+	
+	//relevant footer functions
+	navHowItWorks: function(oEvent){
+		
+		this._oRouter.navTo("howItWorks") 
+	},
+	
+	navToMainFarmer: function(oEvent){
+		
+		this._oRouter.navTo("mainFarmer") 
+	},
+
+	navToAnalytics: function(){
+		
+		this._oRouter.navTo("analyticsMaster")
+	}	
 
 });

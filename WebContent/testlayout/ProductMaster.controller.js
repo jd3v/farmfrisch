@@ -1,3 +1,5 @@
+jQuery.sap.require("testApp.util.Formatter");
+
 sap.ui.controller("testApp.testlayout.ProductMaster", {
 
 	
@@ -15,17 +17,31 @@ sap.ui.controller("testApp.testlayout.ProductMaster", {
 		
 		this.prodGroupID = evt.getParameter("arguments").prodgroupID;	
 		
-		var sPath = "/Farmfrisch/ProductGroups/"+this.prodGroupID+"";	
+		var sPath = "/ProductGroups('"+this.prodGroupID+"')";	
 		
 		var oModel = this.getView().getModel();
 		
 		var oContext = new sap.ui.model.Context(oModel, sPath);		
 		this.getView().setBindingContext(oContext);	
+		console.log(oContext);
+		
 		
 		//make sure the detail page always displays the first item in the master list
 		//this._oRouter.navTo("productDetail",{prodgroupID: this.prodGroupID, prodID: "0"});
 	},
 	
+	afterListUpdated: function(){
+		
+		//navigate to detail page after the list is updated so you can get the productID of the first item in the list
+		//will present problem with back navigation
+		
+		var productList = this.getView().byId("productProfileMasterList");
+		
+		var firstProductId = productList.getItems()[0];
+		
+		productList.setSelectedItem(firstProductId,true);
+	},
+
 	navToProdProfile: function(oEvent){
 		
 		//get selected item
@@ -33,8 +49,8 @@ sap.ui.controller("testApp.testlayout.ProductMaster", {
 		var oObject = this.getView().getModel().getProperty(sPath);
 		
 		//navigate to detail, giving prodGroupID and prodID (see path in Component.js)
-		console.log(oObject.prodID)
-		this._oRouter.navTo("productDetail",{prodgroupID: this.prodGroupID, prodID: oObject.prodID}) 
+		console.log(oObject.productID)
+		this._oRouter.navTo("productDetail",{prodgroupID: this.prodGroupID, prodID: oObject.productID}) 
 		
 	},
 	

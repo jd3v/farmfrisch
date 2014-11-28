@@ -1,0 +1,52 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout" xmlns:m="sap.m" xmlns="sap.suite.ui.commons"
+	controllerName="testApp.testlayout.Login" xmlns:html="http://www.w3.org/1999/xhtml">
+
+
+	<m:Page title="Login" enableScrolling="false" showHeader="false" class="center">
+
+		<m:content>
+
+			<m:HBox class="login">
+
+				<m:items>
+
+					<m:Image
+						src="./img/farmfrisch_logo_184x176.jpg"
+						width="184px">
+						<m:layoutData>
+							<m:FlexItemData growFactor="1" />
+						</m:layoutData>
+					</m:Image>
+
+
+					<m:VBox class="marginBoxContent">
+						<m:items>
+							<m:Input id="userNameField" type="Text" placeholder="Username..." width="350px" />
+							<m:Input id="passwordField" type="Password" placeholder="Password..." width="350px" />
+							<m:Button type="Accept" text="Einloggen" press="handleLogon"
+								width="350px">
+								<m:layoutData>
+									<m:FlexItemData growFactor="1" />
+								</m:layoutData>
+							</m:Button>
+							<m:Button type="Default" text="Registrieren" press="onPress"
+								width="350px">
+								<m:layoutData>
+									<m:FlexItemData growFactor="1" />
+								</m:layoutData>
+							</m:Button>
+						</m:items>
+					</m:VBox>
+
+				</m:items>
+			</m:HBox>
+
+		</m:content>
+
+		<m:footer>
+			<core:Fragment fragmentName="testApp.testlayout.fragments.FullscreenFooter" type="XML" />
+		</m:footer>
+	</m:Page>
+
+</mvc:View>

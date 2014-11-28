@@ -12,19 +12,65 @@ sap.ui.controller("testApp.testlayout.ProductOV", {
 	
 	navProduct: function(oEvent){
 	
+		var oDataModel = this.getView().getModel()
 		//get selected item
 		var sPath = oEvent.getSource().getBindingContext().getPath(); 
-		var oObject = this.getView().getModel().getProperty(sPath);
+		var oObject = oDataModel.getProperty(sPath);
 				
-		this._oRouter.navTo("productMaster",{prodgroupID: oObject.prodgroupID}) 
-		this._oRouter.navTo("productDetail",{prodgroupID: oObject.prodgroupID, prodID: "0"}) 
+		this._oRouter.navTo("productMaster",{prodgroupID: oObject.prodGroupID})
+		
+		//navigate to Detail page , this is done here because of conflict with corss navigation from farmer profie
+		//create model to get first id of the list on the master page
+		
+		
+		//create temporary jsonModel for Map
+		var jsonModelProducts = new sap.ui.model.json.JSONModel();
+		
+		//$orderby parameter for safety reasons
+		var urlForMap = "/ProductGroups('"+oObject.prodGroupID+"')/ProductsGrouped?$orderby=productID"
+		oDataModel.read(urlForMap, null, null, false, 
+	 			function(oData, oResponse)
+	 			{	 				
+	    	 		jsonModelProducts.setData(oData);    			
+	 			},
+	 			function()
+	 			{
+	 				alert("Failed to read Data");
+	 	        });
+		var firstProductId = jsonModelProducts.oData.results[0].productID;
+		
+		this._oRouter.navTo("productDetail",{prodgroupID: oObject.prodGroupID, prodID: firstProductId});
 	},
 	
-	backToLandingPage: function() {
+	//relevant footer functions
+	back: function() {
 		
 		this._oRouter.navTo("_index");
 		
-	}
+	},
+	
+	navHowItWorks: function(oEvent){
+		
+		this._oRouter.navTo("howItWorks") 
+	},
+	
+	navToMainFarmer: function(oEvent){
+		
+		this._oRouter.navTo("mainFarmer") 
+	},
+
+	navToAnalytics: function(){
+		
+		this._oRouter.navTo("analyticsMaster")
+	},
+	
+	navToLogin: function(){
+		
+		this._oRouter.navTo("login")
+	}	
+	
+	
+	
 /**
 * Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered
 * (NOT before the first rendering! onInit() is used for that one!).
