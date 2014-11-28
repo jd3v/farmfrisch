@@ -5,7 +5,11 @@
 	/* 	background-image: url(../img/bg_pattern_traditional.png); */
 	/* 	background-color: white!important; */
 	/* 		background-image: url(../img/bg_pattern_pluses.png); */
-	background-image: url(../img/bg_pattern_light.png);
+/* 	background-image: url(../img/bg_pattern_light.png); */
+/* 	background-image: url(../img/farm_blurred.jpg); */
+	background-image: url(../img/field_blurred.jpg);
+/* 		background-image: url(../img/field_blurred_sw.jpg); */
+	background-position: center;
 }
 
 .center {
