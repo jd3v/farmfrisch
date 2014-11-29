@@ -15,8 +15,9 @@
 				</m:CustomTile>
 
 				<m:CustomTile class="farmFrischTile">
-					<GenericTile size="M" frameType="OneByOne" press="navProductOV"
-						backgroundImage="img/farmers/farmer99.png" info="{prodgroupID}" type="Navigation">
+					<GenericTile size="M" frameType="OneByOne"
+						backgroundImage="img/farmers/farmer99.png" info="{prodgroupID}"
+						type="Navigation">
 						<tileContent>
 							<TileContent size="M">
 								<content>
@@ -29,8 +30,9 @@
 				</m:CustomTile>
 
 				<m:CustomTile class="farmFrischTile">
-					<GenericTile size="M" frameType="OneByOne" press="navProductOV"
-						backgroundImage="img/farmer_products.png" info="{prodgroupID}" type="Navigation">
+					<GenericTile size="M" frameType="OneByOne" press="navMyPortfolio"
+						backgroundImage="img/farmer_products.png" info="{prodgroupID}"
+						type="Navigation">
 						<tileContent>
 							<TileContent size="M">
 								<content>
@@ -41,14 +43,15 @@
 						</tileContent>
 					</GenericTile>
 				</m:CustomTile>
-				
-								<m:CustomTile class="farmFrischTile">
+
+				<m:CustomTile class="farmFrischTile">
 					<GenericTile size="M" frameType="OneByOne" press="navProductOV"
 						backgroundImage="img/farmer_offer.png" info="{prodgroupID}" type="Navigation">
 						<tileContent>
 							<TileContent size="M">
 								<content>
-									<NewsContent size="M" subheader="Sparen Sie heute 25% auf Werbung!">
+									<NewsContent size="M"
+										subheader="Sparen Sie heute 25% auf Werbung!">
 									</NewsContent>
 								</content>
 							</TileContent>
@@ -58,7 +61,7 @@
 
 				<m:CustomTile class="farmFrischTile">
 					<GenericTile size="M" frameType="OneByOne" press="navProductOV"
-						backgroundImage="img/ads_new.png" type="Navigation">
+						backgroundImage="img/werbung.png" type="Navigation">
 						<tileContent>
 							<TileContent size="M">
 								<content>
@@ -220,7 +223,8 @@
 
 		</m:content>
 		<m:footer>
-			<core:Fragment fragmentName="testApp.testlayout.fragments.FullscreenFooter" type="XML" />
+			<core:Fragment fragmentName="testApp.testlayout.fragments.FullscreenFooter"
+				type="XML" />
 		</m:footer>
 	</m:Page>
 

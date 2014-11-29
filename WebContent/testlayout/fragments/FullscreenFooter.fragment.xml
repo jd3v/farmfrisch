@@ -3,7 +3,6 @@
     <Button text="Zurück" icon="sap-icon://nav-back" press="back" />       
   	  <ToolbarSpacer />        
 		<Button id="footerFSProfile" text="My Profile" press="navToMainFarmer" />
-		<Button text="Analytics" press="navToAnalytics" />
 		<Button text="Share" icon="./img/fb_white_150x150.png" />
 		<Button text="Tweet" icon="./img/twitter_white_150x150.png" />
 		<Button icon="sap-icon://settings" />

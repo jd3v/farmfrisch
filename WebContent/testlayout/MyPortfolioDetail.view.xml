@@ -1,0 +1,63 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" controllerName="testApp.testlayout.MyPortfolioDetail"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Product Detail" showHeader="false">
+		<content>
+			<VBox fitContainer="true" justifyContent="Center" alignItems="Center">
+				<HBox height="500px" id="map_canvas" fitContainer="true"
+					justifyContent="Center" alignItems="Center" />
+
+			</VBox>
+
+
+
+			<ObjectHeader id="productProfileObjectHeader"
+				iconDensityAware="false" title="{product_name}" number="{price}"
+				numberUnit="{unit}" intro="{description}">
+				<statuses>
+					<ObjectStatus text="Updated" state="Success" />
+				</statuses>
+
+
+			</ObjectHeader>
+
+
+			<IconTabBar class="iconTabBarPaddingTop" id="idIconTabBarMulti"
+				expanded="{device>/isNoPhone}">
+				<items>
+
+					<IconTabFilter icon="sap-icon://product">
+
+						<List
+							items="{
+								      path: 'ProductsFarmers',
+								      sorter: {
+								        path: 'surname',								       
+								        group: true
+								      }
+								   }"
+							headerText="Orte an denen das Produkt erworben werden kann">
+							<StandardListItem title="{locName}" description="{type}"
+								icon="{Picture}" iconDensityAware="false" iconInset="false"
+								type="Navigation" press="navToFarmerProfile" />
+						</List>
+
+					</IconTabFilter>
+
+					<IconTabFilter icon="sap-icon://hint">
+						<Text
+							text="Der Schöne aus Boskoop, kurz Boskoop oder Boskop (veraltete Bezeichnung: Schöner von Boskoop), 
+					ist eine zu den Renetten zählende Sorte des Kulturapfels und den Winteräpfeln zuzurechnen. Sein ursprünglicher 
+					Name war Renette von Montfort. In Österreich und Bayern wird er zu den Lederäpfeln gezählt." />
+					</IconTabFilter>
+				</items>
+
+			</IconTabBar>
+
+		</content>
+		<footer>
+			<core:Fragment fragmentName="testApp.testlayout.fragments.DetailFooter"
+				type="XML" />
+		</footer>
+	</Page>
+</mvc:View>
