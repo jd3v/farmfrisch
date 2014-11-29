@@ -9,7 +9,8 @@
 				width="700px" class="marginTopLeft howItWorks">
 
 				<c:content>
-					<ui:OverflowContainer overflowHeight="1000px" class="overflow">
+					<ui:OverflowContainer overflowHeight="1000px"
+						class="overflow">
 						<ui:content>
 
 							<f:SimpleForm id="SimpleFormDisplay354" minWidth="1024"
@@ -42,11 +43,29 @@
 						class="overflow">
 						<ui:content>
 							<HBox>
-								<VBox width="400px">
-									<Text text="Das ist unmöglich"></Text>
+								<VBox width="500px">
+									<HBox>
+										<VBox width="150px">
+											<Text class="boldClass marginBottom" text="Kategorie" />
+											<Text class="boldClass marginBottom" text="Produktgruppe" />
+											<Text class="boldClass marginBottom" text="Produkt" />
+											<Text class="boldClass marginBottom" text="Einheit" />
+											<Text class="boldClass marginBottom" text="Preis" />											
+											<Text class="boldClass marginBottom" text="Information" />
+										</VBox>
+										<VBox width="350px">
+											<Text class="marginBottom" text="Obst und Gemüse" />
+											<Text class="marginBottom" text="Gemüse" />
+											<Text class="marginBottom" text="Gurke" />
+											<Text class="marginBottom" text="Stück" />
+											<Text class="marginBottom" text="3,99€" />
+											<Text class="marginBottom" text="Gurken sind vor allem im Sommer eine willkommene Erfrischung, denn durch ihren hohen Wassergehalt versorgen sie unseren Körper mit viel Flüssigkeit. Der hohe Wassergehalt sorgt auch dafür, dass Gurken nur wenige Kalorien haben. Die gesunden Schlankmacher darf man sich also ruhig in größeren Mengen und auch während Diäten ohne Schuldgefühle schmecken lassen. Aufgrund der in Gurken enthaltenen Vitamine und Mineralstoffe tut man seinem Körper außerdem mit jeder Scheibe Gurke etwas Gutes." />
+										</VBox>
+									</HBox>
+
 								</VBox>
 								<VBox>
-									<Image src="./img/products/gurke.png" />
+									<Image width="150px" class="marginLeft" src="./img/products/gurke.png" />
 								</VBox>
 							</HBox>
 							<HBox>

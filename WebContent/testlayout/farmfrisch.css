@@ -152,6 +152,14 @@
 	font-weight: bold !important;
 }
 
+.marginBottom {
+	margin-bottom: 1ex;
+}
+
+.marginLeft {
+	margin-left: 1em;
+}
+
 .overflow {
 	background: none!important;	
 }
@@ -160,6 +168,9 @@
 	background: none!important;	
 }
 
+.sapUiFormResGrid>div {
+	background: none!important;	
+}
 /*********************************
 **	Stuff for the Facet Overview
 **********************************/
