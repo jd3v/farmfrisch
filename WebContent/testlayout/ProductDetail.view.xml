@@ -6,22 +6,17 @@
 			<VBox fitContainer="true" justifyContent="Center" alignItems="Center">
 				<HBox height="500px" id="map_canvas" fitContainer="true"
 					justifyContent="Center" alignItems="Center" />
-
 			</VBox>
-
-
-
 			<ObjectHeader id="productProfileObjectHeader"
 				iconDensityAware="false" title="{product_name}" number="{price}"
-				numberUnit="{unit}" intro="{description}">
+				numberUnit="{unit}">
 				<statuses>
 					<ObjectStatus text="Updated" state="Success" />
 				</statuses>
-
-
+				<attributes>
+					<ObjectAttribute text="{description}" />
+				</attributes>
 			</ObjectHeader>
-
-
 			<IconTabBar class="iconTabBarPaddingTop" id="idIconTabBarMulti"
 				expanded="{device>/isNoPhone}">
 				<items>
@@ -41,14 +36,6 @@
 								icon="{Picture}" iconDensityAware="false" iconInset="false"
 								type="Navigation" press="navToFarmerProfile" />
 						</List>
-
-					</IconTabFilter>
-
-					<IconTabFilter icon="sap-icon://hint">
-						<Text
-							text="Der Schöne aus Boskoop, kurz Boskoop oder Boskop (veraltete Bezeichnung: Schöner von Boskoop), 
-					ist eine zu den Renetten zählende Sorte des Kulturapfels und den Winteräpfeln zuzurechnen. Sein ursprünglicher 
-					Name war Renette von Montfort. In Österreich und Bayern wird er zu den Lederäpfeln gezählt." />
 					</IconTabFilter>
 				</items>
 

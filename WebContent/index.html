@@ -33,14 +33,39 @@
 						window.location.href = homeurl;
 					}})],	
 					headEndItems: [new sap.ui.unified.ShellHeadItem({icon: sap.ui.core.IconPool.getIconURI("log"), press: function(){
-						//hack for router
+						//hack for router , login and logout simulation
+						//database gets queried in login.controller.js, but no session is created
+						if(!username){ 
+							console.log(username)
 						var url = window.location.toString();						
 						var homeurl = url.split('#')[0]+"#";
 						var loginurl = homeurl + "/login";
-						window.location.href = loginurl;
+						window.location.href = loginurl;}
+						else {
+							
+							sap.ui.getCore().byId("Shell").getUser().setUsername("Anonym");
+							
+							var sButtonIdDetail = globalMainView.getId() + "--footerProfileBtn"		
+							
+							sap.ui.getCore().byId(sButtonIdDetail).setVisible(false);
+							
+							//navigate back to home if not at home page
+							var url = window.location.toString();						
+							var homeurl = url.split('#')[0]+"#";
+							
+							//go to index if not already at index
+							if(homeurl.indexOf("index") == -1)
+							//go to index
+							{window.location.href = homeurl;}
+							
+							
+							alert("Sie haben sich ausgeloggt!")
+							
+							
+						}
 					} })],
-					user: new sap.ui.unified.ShellHeadUserItem({image: "./img/user.png",username: "Anonymous"}),
-					search: new sap.m.SearchField(),
+					user: new sap.ui.unified.ShellHeadUserItem({image: "./img/user.png",username: "Anonym"}),
+					search: new sap.m.SearchField({placeholder: "Suche"}),
 					content: [new sap.ui.core.ComponentContainer({name: "testApp"})]
 				}).placeAt('content');
 				});

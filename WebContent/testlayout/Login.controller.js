@@ -8,10 +8,7 @@ sap.ui.controller("testApp.testlayout.Login", {
 	onInit: function() {
 		
 		this._oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-		console.log(sap.ui.getCore().byId("footerDetailProfile"))
-		//var app = sap.ui.jsview("testApp.testlayout.App")
-	//	console.log(sap.ui.getCore().byId("idAppControl"));
-//		new sap.m.SplitContainer("idSplitContainerControl",{height:"500px", width:"500px"});
+	
 	},
 	
 	handleLogon: function(){
@@ -52,20 +49,16 @@ sap.ui.controller("testApp.testlayout.Login", {
 		
 	handleSuccessLogon: function(data){
 		
-		var detailFooter = sap.ui.xmlfragment(
-                "testApp.testlayout.fragments.FullscreenFooter",
-                this.getView().getController() // associate controller with the fragment            
-          );
-		console.log(sap.ui.getCore().byId("footerFSProfile"))
-		
-		console.log(sap.ui.getCore().byId("Shell").getUser())
 		//set global login state
 		username = data.username;
 		type = data.type;
 		
-		sap.ui.getCore().byId("footerFSProfile").setVisible(true)
+		//set button invisible for all footers		
 		
-		detailFooter.rerender();
+		var sButtonIdDetail = globalMainView.getId() + "--footerProfileBtn"		
+		console.log(sButtonIdDetail)
+		sap.ui.getCore().byId(sButtonIdDetail).setVisible(true);
+		
 		sap.ui.getCore().byId("Shell").getUser().setUsername(username)
 		
 		this._oRouter.navTo("_index");
