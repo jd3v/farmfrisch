@@ -83,11 +83,12 @@
 	position: relative;
 	outline: none;
 	-webkit-filter: grayscale(0.1);
+	opacity: 1.0;
 }
 
-/* .sapSuiteGT:hover { */
-/* 	-webkit-filter: grayscale(0); */
-/* } */
+.sapSuiteGT:hover {
+	opacity: 0.8;
+}
 
 .sapMSplitContainer .sapMPage {
 	background: white;
@@ -149,6 +150,14 @@
 
 .boldClass {
 	font-weight: bold !important;
+}
+
+.overflow {
+	background: none!important;	
+}
+
+.sapUiFormResLayout>div {
+	background: none!important;	
 }
 
 /*********************************

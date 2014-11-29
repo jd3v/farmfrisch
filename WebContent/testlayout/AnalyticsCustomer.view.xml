@@ -19,11 +19,11 @@
 			width="500px" class="marginTopLeft howItWorks">
 
 			<c:content>
-				<ui:OverflowContainer overflowHeight="500px">
+				<ui:OverflowContainer overflowHeight="500px" class="overflow">
 					<ui:content>
-						<form:SimpleForm maxContainerCols="1" minWidth="100">
-							<Label text="" />
-							<RatingIndicator maxValue="5" value="5" enabled="false" />
+						<form:SimpleForm maxContainerCols="1" minWidth="100" class="overflow">
+							<Label text="" class="overflow" />
+							<RatingIndicator maxValue="5" value="5" enabled="false" class="overflow" />
 							<Button id="Button1" text="Reviews" press="onPress"></Button>
 							<Label text="" />
 							<RatingIndicator maxValue="5" value="4" enabled="false" />
@@ -51,11 +51,11 @@
 		<c:FacetOverview title="Social Media Activities"
 			heightType="Auto" width="500px" class="marginTopLeft howItWorks">
 			<c:content>
-				<ui:OverflowContainer>
+				<ui:OverflowContainer class="overflow">
 					<ui:content>
 						<List items="{/socialMedia}">
 							<ObjectListItem title="{Website}" type="Active"
-								number="{Postings}" icon="{Icon}">
+								number="{Postings}" icon="{Icon}" class="overflow">
 
 							</ObjectListItem>
 						</List>

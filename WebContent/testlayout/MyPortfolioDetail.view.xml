@@ -9,7 +9,7 @@
 				width="700px" class="marginTopLeft howItWorks">
 
 				<c:content>
-					<ui:OverflowContainer overflowHeight="1000px">
+					<ui:OverflowContainer overflowHeight="1000px" class="overflow">
 						<ui:content>
 
 							<f:SimpleForm id="SimpleFormDisplay354" minWidth="1024"
@@ -38,18 +38,22 @@
 			<c:FacetOverview title="Produktinformationen"
 				heightType="Auto" width="700px" class="marginTopLeft howItWorks">
 				<c:content>
-					<HBox>
-						<VBox>
-												<Button text="Sichern" type="Accept" />
-						
-							<Image src="./img/products/gurke.png" />
-						</VBox>
-						<VBox>
-						</VBox>
-					</HBox>
-					<HBox>
-						<Button text="Sichern" type="Accept" />
-					</HBox>
+					<ui:OverflowContainer overflowHeight="1000px"
+						class="overflow">
+						<ui:content>
+							<HBox>
+								<VBox width="400px">
+									<Text text="Das ist unmöglich"></Text>
+								</VBox>
+								<VBox>
+									<Image src="./img/products/gurke.png" />
+								</VBox>
+							</HBox>
+							<HBox>
+								<Button text="Sichern" type="Accept" />
+							</HBox>
+						</ui:content>
+					</ui:OverflowContainer>
 				</c:content>
 			</c:FacetOverview>
 
