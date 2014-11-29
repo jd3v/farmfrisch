@@ -1,4 +1,4 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" id="mainer"
 	xmlns:l="sap.ui.layout" xmlns:m="sap.m" xmlns="sap.suite.ui.commons"
 	controllerName="testApp.testlayout.Main" xmlns:html="http://www.w3.org/1999/xhtml">
 
@@ -51,7 +51,7 @@
 							<tiles>
 
 								<GenericTile size="M" class="farmFrischTile"
-									frameType="OneByOne" press="navFarmerOV" backgroundImage="img/products/wine.png"
+									frameType="OneByOne" press="navProductOV" backgroundImage="img/products/wine.png"
 									info="{id}" type="Navigation">
 									<tileContent>
 										<TileContent size="M">
@@ -65,7 +65,7 @@
 								</GenericTile>
 
 								<GenericTile size="M" class="farmFrischTile"
-									frameType="OneByOne" press="navProduct" backgroundImage="img/products/salad.png"
+									frameType="OneByOne" press="navProductOV" backgroundImage="img/products/salad.png"
 									info="{id}" type="Navigation">
 									<tileContent>
 										<TileContent size="M">
@@ -81,7 +81,7 @@
 
 
 								<GenericTile size="M" class="farmFrischTile"
-									frameType="OneByOne" press="navFarmerOV" backgroundImage="img/products/radieschen.png"
+									frameType="OneByOne" press="navProductOV" backgroundImage="img/products/radieschen.png"
 									info="{id}" type="Navigation">
 									<tileContent>
 										<TileContent size="M">
@@ -95,7 +95,7 @@
 								</GenericTile>
 
 								<GenericTile size="M" class="farmFrischTile"
-									frameType="OneByOne" press="navFarmerOV" backgroundImage="img/products/beef.png"
+									frameType="OneByOne" press="navProductOV" backgroundImage="img/products/beef.png"
 									info="{id}" type="Navigation">
 									<tileContent>
 										<TileContent size="M">
@@ -138,7 +138,7 @@
 							<tiles>
 
 								<GenericTile size="M" class="farmFrischTile"
-									frameType="OneByOne" press="navProduct" backgroundImage="img/farmers/farmer1.png"
+									frameType="OneByOne" press="navFarmerOV" backgroundImage="img/farmers/farmer1.png"
 									info="{id}" type="Navigation">
 									<tileContent>
 										<TileContent size="M">
@@ -223,7 +223,7 @@
 
 		</m:content>
 		<m:footer>
-			<core:Fragment fragmentName="testApp.testlayout.fragments.DetailFooter" type="XML"/>
+			<core:Fragment fragmentName="testApp.testlayout.fragments.MainFooter" type="XML"/>
 		</m:footer>
 	</m:Page>
 

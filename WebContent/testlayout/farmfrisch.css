@@ -210,3 +210,6 @@ html[dir=rtl] .sapUtiContactsImage {
 .FooterButtonShow {
 	 display: block !important;
 }
+.sapUiUfdShellHeadUsrItmExp {
+    display: none !important;
+}
