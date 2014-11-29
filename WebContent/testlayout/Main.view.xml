@@ -10,7 +10,7 @@
 				<m:CustomTile>
 					<!-- press="navHowItWorks" -->
 					<GenericTile size="M" frameType="OneByOne"
-						backgroundImage="img/farmfrisch_logo_184x176.jpg" type="Navigation">
+						backgroundImage="img/farmfrisch_logo_184x176.png" type="Navigation">
 					</GenericTile>
 				</m:CustomTile>
 

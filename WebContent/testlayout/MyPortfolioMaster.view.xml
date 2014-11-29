@@ -3,12 +3,29 @@
 	xmlns:html="http://www.w3.org/1999/xhtml">
 	<Page title="Product Master" showNavButton="true" navButtonPress="back"
 		showHeader="false">
+		
 		<content>
 
-			<List headerText="Product(s)" items="{path: 'ProductsGrouped'}"
-				id="productProfileMasterList" growing="true" growingThreshold="3"
-				growingScrollToLoad="false" updateFinished="afterListUpdated">
+			<List headerText="Mein Protfolio" id="productProfileMasterList" growing="true" growingThreshold="3"
+				growingScrollToLoad="false" updateFinished="afterListUpdated" mode="Delete"
+				>
 				<items>
+
+		<StandardListItem title="Roggenbrot" type="Navigation" 
+	 press="navToProdProfile"
+	 info="3,99€" 
+	 icon="./img/products/Bread.jpg"
+	description="Verfügbar" iconDensityAware="false" iconInset="false" 
+ 		/> 
+ 		
+ 				<StandardListItem title="Feldsalat" type="Navigation" 
+	 press="navToProdProfile"
+	 info="1,19€" 
+	 icon="./img/products/salad.png"
+	description="Verfügbar" iconDensityAware="false" iconInset="false" 
+ 		/> 
+				
+
 
 <!-- 					<StandardListItem title="{product_name}" type="Navigation" -->
 <!-- 						press="navToProdProfile" -->
@@ -26,16 +43,14 @@
 				
 				<headerToolbar>
 					<Toolbar>
-						<Label text="Products" />
+						<Label text="Mein Portfolio" />
 						<ToolbarSpacer />
-						<Button icon="sap-icon://settings" press="handleButtonPress" />
-						<Button icon="sap-icon://person-placeholder" press="handleButtonPress" />
-						<Button icon="sap-icon://drop-down-list" press="handleButtonPress" />
-					</Toolbar>
+						<Button icon="sap-icon://add-product" text="Produkt hinzufügen" press="handleButtonPress" />
+						</Toolbar>
 				</headerToolbar>
 				<infoToolbar>
 					<Toolbar active="true" press="handleInfobarPress">
-						<Label text="This is the info bar" />
+						<Label text="Gelistete Produkte" />
 					</Toolbar>
 				</infoToolbar>
 			</List>

@@ -1,6 +1,6 @@
 jQuery.sap.require("testApp.util.Formatter");
 
-sap.ui.controller("testApp.testlayout.MyPortfolioMaster", {
+sap.ui.controller("testApp.testlayout.MyPortfolioOverview", {
 
 	
 	

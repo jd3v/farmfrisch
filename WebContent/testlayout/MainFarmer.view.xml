@@ -10,7 +10,7 @@
 				<m:CustomTile class="farmFrischTile">
 					<!-- press="navHowItWorks" -->
 					<GenericTile size="M" frameType="OneByOne"
-						backgroundImage="img/farmfrisch_logo_184x176.jpg" type="Navigation">
+						backgroundImage="img/farmfrisch_logo_184x176.png" type="Navigation">
 					</GenericTile>
 				</m:CustomTile>
 
@@ -30,8 +30,8 @@
 				</m:CustomTile>
 
 				<m:CustomTile class="farmFrischTile">
-					<GenericTile size="M" frameType="OneByOne" press="navMyPortfolio"
-						backgroundImage="img/farmer_products.png" info="{prodgroupID}"
+					<GenericTile size="M" frameType="OneByOne" press="navToMyPortfolio"
+						backgroundImage="img/farmer_products.png"
 						type="Navigation">
 						<tileContent>
 							<TileContent size="M">
@@ -60,7 +60,7 @@
 				</m:CustomTile>
 
 				<m:CustomTile class="farmFrischTile">
-					<GenericTile size="M" frameType="OneByOne" press="navProductOV"
+					<GenericTile size="M" frameType="OneByOne" press="navToPricing"
 						backgroundImage="img/werbung.png" type="Navigation">
 						<tileContent>
 							<TileContent size="M">
@@ -74,7 +74,7 @@
 				</m:CustomTile>
 
 				<m:CustomTile class="farmFrischTile">
-					<GenericTile size="M" frameType="OneByOne" press="navProductOV"
+					<GenericTile size="M" frameType="OneByOne" press="navToAnalytics"
 						backgroundImage="img/analytics.png" info="{prodgroupID}" type="Navigation">
 						<tileContent>
 							<TileContent size="M">

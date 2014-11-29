@@ -1,28 +1,12 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
-	xmlns="sap.m" controllerName="testApp.testlayout.MyPortfolioMaster"
+	xmlns="sap.m" controllerName="testApp.testlayout.MyPortfolioOverview"
 	xmlns:html="http://www.w3.org/1999/xhtml">
 	<Page title="Product Master" showNavButton="true" navButtonPress="back"
-		showHeader="false">
+		showHeader="false" class="analytics">
 		<content>
 
-			<List headerText="Product(s)" items="{path: 'ProductsGrouped'}" id="productProfileMasterList"
-				growing="true" growingThreshold="3" growingScrollToLoad="false" updateFinished="afterListUpdated">
-				<items>
-				<StandardListItem title="{product_name}" type="Navigation"
-					press="navToProdProfile"
-					info="{
-	                  path: 'minPrice',
-	              		  formatter: 'testApp.util.Formatter.CurrencyEuro'
-              		  }
-              		  --
-              		  {
-              		  path: 'maxPrice',
-	              	  formatter: 'testApp.util.Formatter.CurrencyEuro'
-	              	  }"
-					description="{productID}"
-					iconDensityAware="false" iconInset="false" />
-					</items>
-			</List>
+			<Button text="test"></Button>
+			
 		</content>
 		<footer>
 			<core:Fragment fragmentName="testApp.testlayout.fragments.MasterFooter" type="XML"/>

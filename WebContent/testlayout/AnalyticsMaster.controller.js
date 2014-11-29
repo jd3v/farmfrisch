@@ -57,7 +57,7 @@ sap.ui.controller("testApp.testlayout.AnalyticsMaster", {
 	
 back: function() {
 		
-		this._oRouter.navTo("_index");
+		this._oRouter.navTo("mainFarmer");
 		
 	}
 

@@ -21,7 +21,7 @@
 				expanded="{device>/isNoPhone}">
 				<items>
 
-					<IconTabFilter icon="sap-icon://product">
+					<IconTabFilter icon="sap-icon://functional-location">
 
 						<List
 							items="{

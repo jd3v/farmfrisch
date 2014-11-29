@@ -82,7 +82,12 @@
 	border-radius: 25px !important;
 	position: relative;
 	outline: none;
+	-webkit-filter: grayscale(0.1);
 }
+
+/* .sapSuiteGT:hover { */
+/* 	-webkit-filter: grayscale(0); */
+/* } */
 
 .sapMSplitContainer .sapMPage {
 	background: white;
@@ -90,8 +95,9 @@
 
 .analytics {
 	/* 	background-color: #004F49!important; */
-	background-color: #ebebeb !important;
+/* 	background-color: #ebebeb !important; */
 	/* 	background-image: url(../img/bg_orange.png)!important;	 */
+		background-image: url(../img/field_blurred.jpg)!important;
 }
 
 .sapUiUfdShellBrand {

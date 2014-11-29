@@ -12,7 +12,7 @@
 				<m:items>
 
 					<m:Image
-						src="./img/farmfrisch_logo_184x176.jpg"
+						src="./img/farmfrisch_logo_184x176.png"
 						width="184px">
 						<m:layoutData>
 							<m:FlexItemData growFactor="1" />

@@ -115,32 +115,32 @@ sap.ui.core.UIComponent
 													} ]
 												},
 												{
-													pattern : "myPortfolio",
+													pattern : "MyPortfolio",
 													name : "myPortfolio",
 													view : "MyPortfolioMaster",
 													viewType : "XML",
 													targetAggregation : "masterPages",
 													targetControl : "idSplitContainerControl",
 													subroutes : [
-															{
-																pattern : "myPortfolio/MyPortfolioOverview",
-																name : "MyPortfolioOverview",
-																view : "MyPortfolioOverview",
-																viewType : "XML",
-																targetAggregation : "detailPages",
-																targetControl : "idSplitContainerControl"
-
-															}
-//															,
 //															{
-//																pattern : "ProductProfile/{prodgroupID}/product/{prodID}",
-//																name : "productDetail",
-//																view : "ProductDetail",
+//																pattern : "MyPortfolio/MyPortfolioOverview",
+//																name : "myPortfolioOverview",
+//																view : "MyPortfolioOverview",
 //																viewType : "XML",
 //																targetAggregation : "detailPages",
 //																targetControl : "idSplitContainerControl"
 //
-//															} 
+//															}
+//															,
+															{
+																pattern : "MyPortfolio/MyPortfolioDetail",
+																name : "myPortfolioDetail",
+																view : "MyPortfolioDetail",
+																viewType : "XML",
+																targetAggregation : "detailPages",
+																targetControl : "idSplitContainerControl"
+
+															} 
 															]
 												},
 												{

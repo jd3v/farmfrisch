@@ -1,63 +1,61 @@
 jQuery.sap.require("testApp.util.Formatter");
 
 sap.ui.controller("testApp.testlayout.MyPortfolioMaster", {
+	
+	onInit : function() {
 
-	
-	
-	onInit: function() {
+		// get Router
 		this._oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 		this._oRouter.attachRoutePatternMatched(this._handleRouteMatched, this);
+//		// Local ListModel
+//		var jsonString = {
+//			ListItems : [ {
+//				listId : "0",
+//				listName : "Übersicht",
+//				navLink: "analyticsGeneral"
+//			}, {
+//				listId : "1",
+//				listName : "Produkte",
+//				navLink: "analyticsProducts"
+//			}, {
+//				listId : "2",
+//				listName : "Kunden",
+//				navLink: "analyticsCustomer"
+//			} ]
+//		};
+//		this.listModel = new sap.ui.model.json.JSONModel();
+//		this.listModel.setData(jsonString);
+//		this.getView().setModel(this.listModel);
+		
+		this._oRouter.navTo("myPortfolioDetail");		
+		
 	},
 	
-
 	_handleRouteMatched: function(evt){
-		if("productMaster" !== evt.getParameter("name")){			
+		
+		if("analyticsMaster" !== evt.getParameter("name")){			
+			
 			return;
 		}
 		
-		this.prodGroupID = evt.getParameter("arguments").prodgroupID;	
-		
-		var sPath = "/ProductGroups('"+this.prodGroupID+"')";	
-		
-		var oModel = this.getView().getModel();
-		
-		var oContext = new sap.ui.model.Context(oModel, sPath);		
-		this.getView().setBindingContext(oContext);	
-		console.log(oContext);
 		
 		
-		//make sure the detail page always displays the first item in the master list
-		//this._oRouter.navTo("productDetail",{prodgroupID: this.prodGroupID, prodID: "0"});
+		//navigate
+		this._oRouter.navTo("analyticsGeneral");
 	},
 	
-	afterListUpdated: function(){
+	navigateToDetail: function(oEvent){
 		
-		//navigate to detail page after the list is updated so you can get the productID of the first item in the list
-		//will present problem with back navigation
-		
-		var productList = this.getView().byId("productProfileMasterList");
-		
-		var firstProductId = productList.getItems()[0];
-		
-		productList.setSelectedItem(firstProductId,true);
-	},
-
-	navToProdProfile: function(oEvent){
-		
-		//get selected item
-		var sPath = oEvent.getSource().getBindingContext().getPath(); 
-		var oObject = this.getView().getModel().getProperty(sPath);
-		
-		//navigate to detail, giving prodGroupID and prodID (see path in Component.js)
-		console.log(oObject.productID)
-		this._oRouter.navTo("productDetail",{prodgroupID: this.prodGroupID, prodID: oObject.productID}) 
-		
+		var item = oEvent.getParameter("listItem");		
+		var sPath = item.getBindingContext().getPath(); 		
+		var oObject = this.getView().getModel().getProperty(sPath);		
+		this._oRouter.navTo(oObject.navLink);
 	},
 	
 	back: function(){
 		
 		
-		this._oRouter.navTo("productOV");
+		this._oRouter.navTo("mainFarmer");
 	}
 
 });
