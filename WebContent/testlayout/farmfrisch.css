@@ -199,8 +199,8 @@
 **********************************/
 .howItWorks {
 	display: block !important;
-	margin-top: 1.5!important;
-	margin-bottom: 1.5!important;
+	margin-top: 1.5em!important;
+	margin-bottom: 1.5em!important;
 	margin-left: auto;
 	margin-right: auto;
 	/* 	padding: 2em!important; */
