@@ -65,6 +65,14 @@ sap.ui.core.UIComponent
 										targetControl : "idAppControl",
 									},
 									{
+										pattern : "pricing",
+										name : "pricing",
+										view : "Pricing",
+										viewType : "XML",
+										targetAggregation : "pages",
+										targetControl : "idAppControl",
+									},
+									{
 										pattern : "login",
 										name : "login",
 										view : "Login",

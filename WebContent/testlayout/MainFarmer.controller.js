@@ -76,7 +76,7 @@ sap.ui.controller("testApp.testlayout.MainFarmer", {
 
 	navToPricing: function(oEvent) {
 
-		this._oRouter.navTo("myPortfolio")
+		this._oRouter.navTo("pricing")
 	},
 
 	navToAnalytics : function() {

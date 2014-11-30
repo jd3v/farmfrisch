@@ -79,7 +79,6 @@
 									</tileContent>
 								</GenericTile>
 
-
 								<GenericTile size="M" class="farmFrischTile specialTile"
 									frameType="OneByOne" press="navProductOV" backgroundImage="img/products/radieschen.png"
 									info="{id}" type="Navigation">
@@ -181,7 +180,7 @@
 									</tileContent>
 								</GenericTile>
 
-								<GenericTile size="M" class="farmFrischTile"
+								<GenericTile size="M" class="farmFrischTile specialTile"
 									frameType="OneByOne" press="navFarmerOV" backgroundImage="img/farmers/farmer2.png"
 									info="{id}" type="Navigation">
 									<tileContent>
