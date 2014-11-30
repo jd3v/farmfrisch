@@ -57,6 +57,8 @@
 	overflow: hidden !important;
 	color: black !important;
 	white-space: normal !important;
+	margin:	none!important;
+	padding: none!important;
 }
 
 .farmFrischTile .sapSuiteGT .News {
@@ -69,22 +71,43 @@
 }
 
 .sapSuiteDC.M.OneByOne {
-	width: 188rem !important;
-	height: 180rem !important;
-}
-
-.sapSuiteGT {
-	display: inline-block;
-	overflow: hidden;
-	border-style: solid;
-	border-width: 2px;
+	width: 184px !important;
+	height: 176px !important;
+	border-style: solid!important;
+	border-width: 2px!important;
 	border-color: #666666 !important;
 	border-radius: 25px !important;
+	margin:	none!important;
+	padding: none!important;
+}
+
+.sapSuiteGT{
+	display: inline-block;
+	overflow: hidden;
+	margin:	none!important;
+	padding: none!important;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #666666;
+	border-radius: 15px!important;
 	position: relative;
 	outline: none;
 	-webkit-filter: grayscale(0.1);
 	opacity: 1.0;
 }
+
+.specialTile{
+	display: inline-block;
+	overflow: hidden;
+	margin:	none!important;
+	padding: none!important;
+	border: none!important;
+	position: relative;
+	outline: none;
+	-webkit-filter: grayscale(0.1);
+	opacity: 1.0;
+}
+
 
 .sapSuiteGT:hover {
 	opacity: 0.8;

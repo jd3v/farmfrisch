@@ -50,7 +50,7 @@
 
 							<tiles>
 
-								<GenericTile size="M" class="farmFrischTile"
+								<GenericTile size="M" class="farmFrischTile specialTile"
 									frameType="OneByOne" press="navProductOV" backgroundImage="img/products/wine.png"
 									info="{id}" type="Navigation">
 									<tileContent>
@@ -64,7 +64,7 @@
 									</tileContent>
 								</GenericTile>
 
-								<GenericTile size="M" class="farmFrischTile"
+								<GenericTile size="M" class="farmFrischTile specialTile"
 									frameType="OneByOne" press="navProductOV" backgroundImage="img/products/salad.png"
 									info="{id}" type="Navigation">
 									<tileContent>
@@ -80,7 +80,7 @@
 								</GenericTile>
 
 
-								<GenericTile size="M" class="farmFrischTile"
+								<GenericTile size="M" class="farmFrischTile specialTile"
 									frameType="OneByOne" press="navProductOV" backgroundImage="img/products/radieschen.png"
 									info="{id}" type="Navigation">
 									<tileContent>
@@ -94,7 +94,7 @@
 									</tileContent>
 								</GenericTile>
 
-								<GenericTile size="M" class="farmFrischTile"
+								<GenericTile size="M" class="farmFrischTile specialTile"
 									frameType="OneByOne" press="navProductOV" backgroundImage="img/products/beef.png"
 									info="{id}" type="Navigation">
 									<tileContent>
@@ -137,7 +137,7 @@
 
 							<tiles>
 
-								<GenericTile size="M" class="farmFrischTile"
+								<GenericTile size="M" class="farmFrischTile specialTile"
 									frameType="OneByOne" press="navFarmerOV" backgroundImage="img/farmers/farmer1.png"
 									info="{id}" type="Navigation">
 									<tileContent>
@@ -153,7 +153,7 @@
 								</GenericTile>
 
 
-								<GenericTile size="M" class="farmFrischTile"
+								<GenericTile size="M" class="farmFrischTile specialTile"
 									frameType="OneByOne" press="navFarmerOV" backgroundImage="img/farmers/farmer3.png"
 									info="{id}" type="Navigation">
 									<tileContent>
@@ -167,7 +167,7 @@
 									</tileContent>
 								</GenericTile>
 
-								<GenericTile size="M" class="farmFrischTile"
+								<GenericTile size="M" class="farmFrischTile specialTile"
 									frameType="OneByOne" press="navFarmerOV" backgroundImage="img/farmers/farmer4.png"
 									info="{id}" type="Navigation">
 									<tileContent>
