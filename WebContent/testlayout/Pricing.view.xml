@@ -5,33 +5,65 @@
 	<Page title="Product Detail" showHeader="false" class="analytics">
 		<content>
 
-			<c:FacetOverview title="farmfrisch. BASIC" heightType="Auto"
-				width="700px" class="marginTopLeft howItWorks">
+			<c:FacetOverview title="farmfrisch. BASIC"
+				heightType="Auto" width="700px" class="marginTopLeft howItWorks">
 
 				<c:content>
 					<ui:OverflowContainer overflowHeight="1000px"
 						class="overflow">
 						<ui:content>
 
+							<VBox>
+								<HBox>
+									<VBox></VBox>
+									<VBox>
+										<Text text="farmfrisch. BASIC" />
+									</VBox>
+									<VBox>
+										<Text text="farmfrisch. ADVANCED" />
+									</VBox>
+									<VBox>
+										<Text text="farmfrisch. PREMIUM" />
+									</VBox>
+								</HBox>
+								<HBox>
+									<VBox>
+										<Text text="Profilanlage" />
+									</VBox>
+									<VBox>
+										<Text text="check" />
+									</VBox>
+									<VBox>
+										<Text text="check" />
+									</VBox>
+									<VBox>
+										<Text text="check" />
+									</VBox>
+								</HBox>
+
+							</VBox>
+
+
 							<f:SimpleForm id="SimpleFormDisplay354" minWidth="1024"
 								maxContainerCols="2" editable="false" layout="ResponsiveGridLayout"
-								title="Lernen Sie uns unverbindlich kennen!" labelSpanL="3" labelSpanM="3" emptySpanL="4"
-								emptySpanM="4" columnsL="1" columnsM="1">
+								title="Lernen Sie uns unverbindlich kennen!" labelSpanL="3"
+								labelSpanM="3" emptySpanL="4" emptySpanM="4" columnsL="1"
+								columnsM="1">
 								<f:content>
-<!-- 									<Label text="Produktgruppe" /> -->
-<!-- 									<Text text="Gemüse" /> -->
-<!-- 									<Label text="Produkt" /> -->
-<!-- 									<Text text="Gurke" /> -->
-<!-- 									<Label text="Preis" /> -->
-<!-- 									<Text text="3,99€" /> -->
-<!-- 									<Label text="Verfügbar" /> -->
-<!-- 									<CheckBox selected="true" /> -->
+									<!-- <Label text="Produktgruppe" /> -->
+									<!-- <Text text="Gemüse" /> -->
+									<!-- <Label text="Produkt" /> -->
+									<!-- <Text text="Gurke" /> -->
+									<!-- <Label text="Preis" /> -->
+									<!-- <Text text="3,99€" /> -->
+									<!-- <Label text="Verfügbar" /> -->
+									<!-- <CheckBox selected="true" /> -->
 
 
 								</f:content>
 							</f:SimpleForm>
-							
-														<HBox>
+
+							<HBox>
 								<VBox width="500px">
 									<HBox>
 										<VBox width="150px">
@@ -39,7 +71,7 @@
 											<Text class="boldClass marginBottom" text="Produktgruppe" />
 											<Text class="boldClass marginBottom" text="Produkt" />
 											<Text class="boldClass marginBottom" text="Einheit" />
-											<Text class="boldClass marginBottom" text="Preis" />											
+											<Text class="boldClass marginBottom" text="Preis" />
 											<Text class="boldClass marginBottom" text="Information" />
 										</VBox>
 										<VBox width="350px">
@@ -48,7 +80,8 @@
 											<Text class="marginBottom" text="Gurke" />
 											<Text class="marginBottom" text="Stück" />
 											<Text class="marginBottom" text="3,99€" />
-											<Text class="marginBottom" text="Gurken sind vor allem im Sommer eine willkommene Erfrischung, denn durch ihren hohen Wassergehalt versorgen sie unseren Körper mit viel Flüssigkeit. Der hohe Wassergehalt sorgt auch dafür, dass Gurken nur wenige Kalorien haben. Die gesunden Schlankmacher darf man sich also ruhig in größeren Mengen und auch während Diäten ohne Schuldgefühle schmecken lassen. Aufgrund der in Gurken enthaltenen Vitamine und Mineralstoffe tut man seinem Körper außerdem mit jeder Scheibe Gurke etwas Gutes." />
+											<Text class="marginBottom"
+												text="Gurken sind vor allem im Sommer eine willkommene Erfrischung, denn durch ihren hohen Wassergehalt versorgen sie unseren Körper mit viel Flüssigkeit. Der hohe Wassergehalt sorgt auch dafür, dass Gurken nur wenige Kalorien haben. Die gesunden Schlankmacher darf man sich also ruhig in größeren Mengen und auch während Diäten ohne Schuldgefühle schmecken lassen. Aufgrund der in Gurken enthaltenen Vitamine und Mineralstoffe tut man seinem Körper außerdem mit jeder Scheibe Gurke etwas Gutes." />
 										</VBox>
 									</HBox>
 
@@ -82,7 +115,7 @@
 											<Text class="boldClass marginBottom" text="Produktgruppe" />
 											<Text class="boldClass marginBottom" text="Produkt" />
 											<Text class="boldClass marginBottom" text="Einheit" />
-											<Text class="boldClass marginBottom" text="Preis" />											
+											<Text class="boldClass marginBottom" text="Preis" />
 											<Text class="boldClass marginBottom" text="Information" />
 										</VBox>
 										<VBox width="350px">
@@ -91,7 +124,8 @@
 											<Text class="marginBottom" text="Gurke" />
 											<Text class="marginBottom" text="Stück" />
 											<Text class="marginBottom" text="3,99€" />
-											<Text class="marginBottom" text="Gurken sind vor allem im Sommer eine willkommene Erfrischung, denn durch ihren hohen Wassergehalt versorgen sie unseren Körper mit viel Flüssigkeit. Der hohe Wassergehalt sorgt auch dafür, dass Gurken nur wenige Kalorien haben. Die gesunden Schlankmacher darf man sich also ruhig in größeren Mengen und auch während Diäten ohne Schuldgefühle schmecken lassen. Aufgrund der in Gurken enthaltenen Vitamine und Mineralstoffe tut man seinem Körper außerdem mit jeder Scheibe Gurke etwas Gutes." />
+											<Text class="marginBottom"
+												text="Gurken sind vor allem im Sommer eine willkommene Erfrischung, denn durch ihren hohen Wassergehalt versorgen sie unseren Körper mit viel Flüssigkeit. Der hohe Wassergehalt sorgt auch dafür, dass Gurken nur wenige Kalorien haben. Die gesunden Schlankmacher darf man sich also ruhig in größeren Mengen und auch während Diäten ohne Schuldgefühle schmecken lassen. Aufgrund der in Gurken enthaltenen Vitamine und Mineralstoffe tut man seinem Körper außerdem mit jeder Scheibe Gurke etwas Gutes." />
 										</VBox>
 									</HBox>
 
@@ -107,19 +141,19 @@
 					</ui:OverflowContainer>
 				</c:content>
 			</c:FacetOverview>
-			
-						<c:FacetOverview title="farmfrisch. PREMIUM" heightType="Auto"
-				width="700px" class="marginTopLeft howItWorks">
+
+			<c:FacetOverview title="farmfrisch. PREMIUM"
+				heightType="Auto" width="700px" class="marginTopLeft howItWorks">
 
 				<c:content>
 					<ui:OverflowContainer overflowHeight="1000px"
 						class="overflow">
 						<ui:content>
 
-							<f:SimpleForm minWidth="1024"
-								maxContainerCols="2" editable="false" layout="ResponsiveGridLayout"
-								title="Ihre Eingaben" labelSpanL="3" labelSpanM="3" emptySpanL="4"
-								emptySpanM="4" columnsL="1" columnsM="1">
+							<f:SimpleForm minWidth="1024" maxContainerCols="2"
+								editable="false" layout="ResponsiveGridLayout" title="Ihre Eingaben"
+								labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4"
+								columnsL="1" columnsM="1">
 								<f:content>
 									<Label text="Produktgruppe" />
 									<Text text="Gemüse" />
@@ -140,7 +174,8 @@
 
 		</content>
 		<footer>
-			<core:Fragment fragmentName="testApp.testlayout.fragments.FullscreenFooter" type="XML"/>
+			<core:Fragment fragmentName="testApp.testlayout.fragments.FullscreenFooter"
+				type="XML" />
 		</footer>
 	</Page>
 </mvc:View>
