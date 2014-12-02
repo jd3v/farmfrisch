@@ -20,14 +20,22 @@
 
 						<FlexBox alignItems="Start" justifyContent="SpaceBetween">
 							<items>
-
-								<Text text="{description}" />
-
 								<HBox>
-									<Image src="{profile_picture}" height="100%" width="100%">
-									</Image>
-								</HBox>
+									<VBox width="70%">
+										<Text text="{description}" />
+									</VBox>
+									<VBox width="190px" class="centered">
+										<HBox class="centered">
+											<Image src="{profile_picture}" width="184px" />
+										</HBox>
+										<HBox class="centered">
+											<Button text="Kontaktieren Sie mich!"	type="Accept" icon="sap-icon://email"/>
 
+										</HBox>
+
+									</VBox>
+
+								</HBox>
 							</items>
 						</FlexBox>
 					</Panel>
@@ -64,10 +72,10 @@
 								<ui:content>
 									<List items="{ path: 'ProducerReviews'}">
 										<items>
-											<FeedListItem  timestamp="{timestamp}" text="{text}" />
+											<FeedListItem timestamp="{timestamp}" text="{text}" />
 										</items>
 									</List>
-									<FeedInput post="onPost" icon="img/gurke.png"
+									<FeedInput post="onPost" icon="img/farmfrisch_logo_184x176.png"
 										class="sapUiExploredFeedMargin" />
 								</ui:content>
 							</ui:OverflowContainer>
@@ -102,7 +110,8 @@
 			</IconTabBar>
 		</content>
 		<footer>
-			<core:Fragment fragmentName="testApp.testlayout.fragments.DetailFooter" type="XML" />
+			<core:Fragment fragmentName="testApp.testlayout.fragments.DetailFooter"
+				type="XML" />
 		</footer>
 	</Page>
 </core:View>

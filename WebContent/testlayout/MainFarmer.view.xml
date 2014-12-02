@@ -45,8 +45,7 @@
 				</m:CustomTile>
 
 				<m:CustomTile class="farmFrischTile">
-					<GenericTile size="M" frameType="OneByOne" press="navProductOV"
-						backgroundImage="img/farmer_offer.png" info="{prodgroupID}" type="Navigation">
+					<GenericTile size="M" frameType="OneByOne" backgroundImage="img/farmer_offer.png" info="{prodgroupID}" type="Navigation">
 						<tileContent>
 							<TileContent size="M">
 								<content>

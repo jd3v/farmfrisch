@@ -16,6 +16,11 @@
 	align: center;
 }
 
+.centered .sapM {
+	margin-left: auto!important;
+	margin-right: auto!important;
+}
+
 .pricing_hbox {
 	display: block;
 	width: 600px;

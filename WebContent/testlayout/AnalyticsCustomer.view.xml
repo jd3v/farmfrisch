@@ -16,7 +16,7 @@
 			</content>
 		</Panel>
 
-		<c:FacetOverview title="Ratings" heightType="Auto"
+		<c:FacetOverview title="Bewertungen" heightType="Auto"
 			width="500px" class="marginTopLeft howItWorks">
 
 			<c:content>
@@ -25,22 +25,22 @@
 						<form:SimpleForm maxContainerCols="1" minWidth="100" class="overflow">
 							<Label text="" class="overflow" />
 							<RatingIndicator maxValue="5" value="5" enabled="false" class="overflow" />
-							<Button id="Button1" text="Reviews" press="onPress"></Button>
+							<Button id="Button1" text="Bewertungen" press="onPress"></Button>
 							<Label text="" />
 							<RatingIndicator maxValue="5" value="4" enabled="false" />
-							<Button id="Button2" text="Reviews" press="onPress">
+							<Button id="Button2" text="Bewertungen" press="onPress">
 							</Button>
 							<Label text="" />
 							<RatingIndicator maxValue="5" value="3" enabled="false" />
-							<Button id="Button3" text="Reviews" press="onPress">
+							<Button id="Button3" text="Bewertungen" press="onPress">
 							</Button>
 							<Label text="" />
 							<RatingIndicator maxValue="5" value="2" enabled="false" />
-							<Button id="Button4" text="Reviews" press="onPress">
+							<Button id="Button4" text="Bewertungen" press="onPress">
 							</Button>
 							<Label text="" />
 							<RatingIndicator maxValue="5" value="1" enabled="false" />
-							<Button id="Button5" text="Reviews" press="onPress">
+							<Button id="Button5" text="Bewertungen" press="onPress">
 							</Button>
 						</form:SimpleForm>
 					</ui:content>
@@ -49,7 +49,7 @@
 			</c:content>
 		</c:FacetOverview>
 
-		<c:FacetOverview title="Social Media Activities"
+		<c:FacetOverview title="Social Media Aktivitäten"
 			heightType="Auto" width="500px" class="marginTopLeft howItWorks">
 			<c:content>
 				<ui:OverflowContainer class="overflow">
