@@ -8,7 +8,7 @@
 			<m:TileContainer id="container" tileDelete="handleTileDelete">
 
 				<m:CustomTile class="farmFrischTile">
-					<!-- press="navHowItWorks" -->
+					
 					<GenericTile size="M" frameType="OneByOne"
 						backgroundImage="img/farmfrisch_logo_184x176.png" type="Navigation">
 					</GenericTile>

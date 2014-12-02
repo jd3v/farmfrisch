@@ -62,10 +62,9 @@
 						<content>
 							<ui:OverflowContainer overflowHeight="200px">
 								<ui:content>
-									<List items="{ path: 'reviews'}">
+									<List items="{ path: 'ProducerReviews'}">
 										<items>
-											<FeedListItem sender="{Sender}" icon="{Icon}"
-												info="{Request}" timestamp="{Timestamp}" text="{Text}" />
+											<FeedListItem  timestamp="{timestamp}" text="{text}" />
 										</items>
 									</List>
 									<FeedInput post="onPost" icon="img/gurke.png"

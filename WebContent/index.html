@@ -35,7 +35,7 @@
 					headEndItems: [new sap.ui.unified.ShellHeadItem({icon: sap.ui.core.IconPool.getIconURI("log"), press: function(){
 						//hack for router , login and logout simulation
 						//database gets queried in login.controller.js, but no session is created
-						if(!username){ 
+						if(username == "Anonym"){ 
 							console.log(username)
 						var url = window.location.toString();						
 						var homeurl = url.split('#')[0]+"#";
@@ -44,7 +44,9 @@
 						else {
 							
 							sap.ui.getCore().byId("Shell").getUser().setUsername("Anonym");
-							
+							sap.ui.getCore().byId("Shell").getUser().setImage("img/user.png");
+							username = "Anonym"
+							profilePic = "img/user.png"
 							var sButtonIdDetail = globalMainView.getId() + "--footerProfileBtn"		
 							
 							sap.ui.getCore().byId(sButtonIdDetail).setVisible(false);
@@ -64,7 +66,7 @@
 							
 						}
 					} })],
-					user: new sap.ui.unified.ShellHeadUserItem({image: "./img/user.png",username: "Anonym"}),
+					user: new sap.ui.unified.ShellHeadUserItem({image: "img/user.png", username: "Anonym"}),
 					search: new sap.m.SearchField({placeholder: "Suche"}),
 					content: [new sap.ui.core.ComponentContainer({name: "testApp"})]
 				}).placeAt('content');
