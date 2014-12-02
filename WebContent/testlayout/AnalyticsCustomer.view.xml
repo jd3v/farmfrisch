@@ -2,7 +2,8 @@
 	xmlns:ui="sap.ca.ui" xmlns:form="sap.ui.layout.form" xmlns="sap.m"
 	xmlns:c="sap.suite.ui.commons" controllerName="testApp.testlayout.AnalyticsCustomer"
 	xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page title="Customer" class="analytics">
+	<Page title="Customer" enableScrolling="false"
+		showHeader="false" class="analytics">
 		<Panel text="Account Overview Information">
 			<content>
 				<c:KpiTile value="Premium Account" description="Account Status"
