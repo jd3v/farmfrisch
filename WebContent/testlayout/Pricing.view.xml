@@ -5,7 +5,7 @@
 	<Page title="Product Detail" showHeader="false" class="analytics">
 		<content>
 
-			<c:FacetOverview title="farmfrisch. BASIC"
+			<c:FacetOverview title="farmfrisch. Pricing-Modell"
 				heightType="Auto" width="700px" class="marginTopLeft howItWorks">
 
 				<c:content>
@@ -15,36 +15,38 @@
 
 							<VBox class="pricing_hbox">
 								<HBox>
-									<VBox class="pricing_vbox" />
-									<VBox class="pricing_vbox">
+									<VBox class="pricing_vbox_left" />
+									<VBox class="pricing_vbox boldClass">
 										<Text text="farmfrisch. BASIC" />
 									</VBox>
-									<VBox class="pricing_vbox">
+									<VBox class="pricing_vbox boldClass">
 										<Text text="farmfrisch. PLUS" />
 									</VBox>
-									<VBox class="pricing_vbox">
+									<VBox class="pricing_vbox boldClass">
 										<Text text="farmfrisch. PREMIUM" />
 									</VBox>
 								</HBox>
 
 								<HBox>
-									<VBox class="pricing_vbox">
+									<VBox class="pricing_vbox_left">
 										<Text text="Profilanlage" />
 									</VBox>
 									<VBox class="pricing_vbox">
-										<core:Icon src="sap-icon://accept" class="size1 vbox_pricing"
+										<core:Icon src="sap-icon://accept" class="size1"
 											color="#1d8345" />
 									</VBox>
 									<VBox class="pricing_vbox">
-										<Text text="check" />
+										<core:Icon src="sap-icon://accept" class="size1"
+											color="#1d8345" />
 									</VBox>
 									<VBox class="pricing_vbox">
-										<Text text="check" />
+										<core:Icon src="sap-icon://accept" class="size1"
+											color="#1d8345" />
 									</VBox>
 								</HBox>
 
 								<HBox class="light_grey">
-									<VBox class="pricing_vbox">
+									<VBox class="pricing_vbox_left">
 										<Text text="Lokationspflege" />
 									</VBox>
 									<VBox class="pricing_vbox">
@@ -52,58 +54,72 @@
 											color="#1d8345" />
 									</VBox>
 									<VBox class="pricing_vbox">
-										<Text text="check" />
+										<core:Icon src="sap-icon://accept" class="size1"
+											color="#1d8345" />
 									</VBox>
 									<VBox class="pricing_vbox">
-										<Text text="check" />
+										<core:Icon src="sap-icon://accept" class="size1"
+											color="#1d8345" />
 									</VBox>
 								</HBox>
 
 								<HBox>
-									<VBox class="pricing_vbox">
+									<VBox class="pricing_vbox_left">
 										<Text text="Produktportfolio" />
 									</VBox>
 									<VBox class="pricing_vbox">
+									</VBox>
+									<VBox class="pricing_vbox">
 										<core:Icon src="sap-icon://accept" class="size1"
 											color="#1d8345" />
 									</VBox>
 									<VBox class="pricing_vbox">
-										<Text text="check" />
-									</VBox>
-									<VBox class="pricing_vbox">
-										<Text text="check" />
+										<core:Icon src="sap-icon://accept" class="size1"
+											color="#1d8345" />
 									</VBox>
 								</HBox>
 
-								<HBox>
-									<VBox class="pricing_vbox">
-										<Text text="Profilanlage" />
+								<HBox class="light_grey">
+									<VBox class="pricing_vbox_left">
+										<Text text="Großaufträge" />
 									</VBox>
 									<VBox class="pricing_vbox">
-										<core:Icon src="sap-icon://accept" class="pricing_icon"
-											color="#1d8345" />
 									</VBox>
 									<VBox class="pricing_vbox vbox_center">
-										<Text text="check" />
-									</VBox>
-									<VBox class="pricing_vbox">
-										<Text text="check" />
-									</VBox>
-								</HBox>
-
-								<HBox>
-									<VBox class="pricing_vbox">
-										<Text text="Produktpflege" />
+										<core:Icon src="sap-icon://accept" class="size1"
+											color="#1d8345" />
 									</VBox>
 									<VBox class="pricing_vbox">
 										<core:Icon src="sap-icon://accept" class="size1"
 											color="#1d8345" />
 									</VBox>
-									<VBox class="pricing_vbox">
-										<Text text="check" />
+								</HBox>
+
+								<HBox>
+									<VBox class="pricing_vbox_left">
+										<Text text="Landingpagewerbung" />
 									</VBox>
 									<VBox class="pricing_vbox">
-										<Text text="check" />
+									</VBox>
+									<VBox class="pricing_vbox">
+									</VBox>
+									<VBox class="pricing_vbox">
+										<core:Icon src="sap-icon://accept" class="size1"
+											color="#1d8345" />
+									</VBox>
+								</HBox>
+
+								<HBox class="light_grey">
+									<VBox class="pricing_vbox_left">
+										<Text text="farmfrisch. Analytics" />
+									</VBox>
+									<VBox class="pricing_vbox">
+									</VBox>
+									<VBox class="pricing_vbox">
+									</VBox>
+									<VBox class="pricing_vbox">
+										<core:Icon src="sap-icon://accept" class="size1"
+											color="#1d8345" />
 									</VBox>
 								</HBox>
 
@@ -111,7 +127,7 @@
 							<VBox />
 							<VBox>
 								<HBox>
-									<VBox class="pricing_vbox" />
+									<VBox width="180px" />
 									<VBox class="pricing_vbox">
 										<Button text="Kostenlos" type="Accept" />
 									</VBox>

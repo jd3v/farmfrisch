@@ -28,15 +28,25 @@
 }
 
 .pricing_vbox {
+	margin-top: 5px;
+	margin-botton: 5px;
 	width: 150px;
 }
 
-.pricing_vbox_center {
+.pricing_vbox_left {
+	margin-left: none!important;
+	margin-right: auto!important;
+}
+
+.pricing_vbox>.sapMFlexItem {
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.pricing_vbox_center .sap
+.pricing_vbox>.sapMBtnContent{
+	margin-left: auto;
+	margin-right: auto;
+}
 
 .login {
 	display: block;
