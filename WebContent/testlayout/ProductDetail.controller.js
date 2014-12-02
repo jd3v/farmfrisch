@@ -11,6 +11,7 @@ sap.ui.controller("testApp.testlayout.ProductDetail", {
 		
 		//define global variable for markers in product map
 		markersProd = []; 
+		mapProduct = null;
 	},
 	
 
