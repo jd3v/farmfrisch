@@ -12,7 +12,7 @@
 					<ui:OverflowContainer overflowHeight="1000px"
 						class="overflow">
 						<ui:content>
-
+											
 							<VBox class="pricing_hbox">
 								<HBox>
 									<VBox class="pricing_vbox_left" />
@@ -34,6 +34,40 @@
 									<VBox class="pricing_vbox">
 										<core:Icon src="sap-icon://accept" class="size1"
 											color="#1d8345" />
+									</VBox>
+									<VBox class="pricing_vbox">
+										<core:Icon src="sap-icon://accept" class="size1"
+											color="#1d8345" />
+									</VBox>
+									<VBox class="pricing_vbox">
+										<core:Icon src="sap-icon://accept" class="size1"
+											color="#1d8345" />
+									</VBox>
+								</HBox>
+
+								<HBox class="light_grey">
+									<VBox class="pricing_vbox_left">
+										<Text text="Profilbild" />
+									</VBox>
+									<VBox class="pricing_vbox">
+										<core:Icon src="sap-icon://accept" class="size1"
+											color="#1d8345" />
+									</VBox>
+									<VBox class="pricing_vbox">
+										<core:Icon src="sap-icon://accept" class="size1"
+											color="#1d8345" />
+									</VBox>
+									<VBox class="pricing_vbox">
+										<core:Icon src="sap-icon://accept" class="size1"
+											color="#1d8345" />
+									</VBox>
+								</HBox>
+
+								<HBox>
+									<VBox class="pricing_vbox_left">
+										<Text text="Diverse Profilbilder" />
+									</VBox>
+									<VBox class="pricing_vbox">
 									</VBox>
 									<VBox class="pricing_vbox">
 										<core:Icon src="sap-icon://accept" class="size1"
@@ -138,6 +172,10 @@
 										<Button text="49,99 € / Monat" type="Accept" />
 									</VBox>
 								</HBox>
+							</VBox>
+							
+														<VBox>
+								<Image src="img/QualityIcon.png" width="150px"/>
 							</VBox>
 
 						</ui:content>
