@@ -15,6 +15,7 @@ sap.ui.controller("testApp.testlayout.MyPortfolioMaster", {
           );	
 		
 		//associate different model with this fragment's selector
+		/**Hana Connection**/
 		this.ProductModel =  new sap.ui.model.odata.ODataModel("https://s7hanaxs.hanatrial.ondemand.com/p1914487387trial/jtrial/lunaTrial/services/Products.xsodata", false);
 		this.ProductModel.setDefaultCountMode(); 
 		console.log(this.ProductModel)
@@ -52,6 +53,7 @@ sap.ui.controller("testApp.testlayout.MyPortfolioMaster", {
 		//Temporary JSON Model
 		var jsonModelProducts = new sap.ui.model.json.JSONModel();
 		//get first product in list
+		/**Hana Connection**/
 		var urlForFirstItem = "/Producers('"+this.farmerID+"')/ProducersProducts?$orderby=productID"
 		oModel.read(urlForFirstItem, null, null, false, 
 	 			function(oData, oResponse)
@@ -127,7 +129,7 @@ sap.ui.controller("testApp.testlayout.MyPortfolioMaster", {
 		//get selected item
 		var sPath = oEvent.getParameters().listItem.getBindingContext().getPath();		
 		var oObject = this.getView().getModel().getProperty(sPath);		
-		
+		/**Hana Connection**/
 		var jURL = 'https://s7hanaxs.hanatrial.ondemand.com/p1914487387trial/jtrial/lunaTrial/services/DeleteProduct.xsjs';
 	    jQuery.ajax({
 	    	
@@ -173,7 +175,7 @@ sap.ui.controller("testApp.testlayout.MyPortfolioMaster", {
 		
 		//now make sure whitespace and empty strings don't work
 		if (isNaN(parseInt(newPrice)) == true){alert("Geben sie bitte eine Zahl ein als Preis"); return;}
-	
+		/**Hana Connection**/
 		var jURL = 'https://s7hanaxs.hanatrial.ondemand.com/p1914487387trial/jtrial/lunaTrial/services/InsertProduct.xsjs';
 	    jQuery.ajax({
 	    	

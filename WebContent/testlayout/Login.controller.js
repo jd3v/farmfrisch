@@ -21,7 +21,7 @@ sap.ui.controller("testApp.testlayout.Login", {
 		//simple validation
 		if (!localUsername){alert("Username ist nicht korrekt"); return;}
 		if (!localPassword){alert("Password ist nicht korrekt"); return;}
-		
+		/**Hana Connection**/
 		var jURL = 'https://s7hanaxs.hanatrial.ondemand.com/p1914487387trial/jtrial/lunaTrial/services/userLogon.xsjs';
 	    jQuery.ajax({
 	        url:jURL,

@@ -57,7 +57,7 @@ initialize_map : function (sPath) {
 	
 	//create temporary jsonModel for Map
 	var jsonModelMap = new sap.ui.model.json.JSONModel();
-	
+	/**Hana Connection**/
 	var urlForMap = sPath + "/ProducerLocationsGrouped"
 	oDataModel.read(urlForMap, null, null, false, 
  			function(oData, oResponse)

@@ -208,21 +208,13 @@ sap.ui.core.UIComponent
 						var sServiceUrl = mConfig.serviceConfig.serviceUrl;
 
 						// Odata Model
+						/**Hana Connection**/
 						var mainOdataModel = new sap.ui.model.odata.ODataModel(
 								sServiceUrl, false);						
 						// // Create and set domain model to the component
-						// var sPath = "models/mainModel.json"
-						// var oModel = new sap.ui.model.json.JSONModel(sPath);
+						
 						this.setModel(mainOdataModel);
-						// set i18n model
-						// var i18nModel = new
-						// sap.ui.model.resource.ResourceModel({
-						// bundleUrl : [oRootPath,
-						// mConfig.resourceBundle].join("/")
-						// });
-						// this.setModel(i18nModel, "i18n");
-
-						//		
+					
 
 						// set device model
 						var oDeviceModel = new sap.ui.model.json.JSONModel(

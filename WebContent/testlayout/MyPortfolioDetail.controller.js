@@ -90,7 +90,7 @@ sap.ui.controller("testApp.testlayout.MyPortfolioDetail", {
 		
 		//now make sure whitespace and empty strings don't work
 		if (isNaN(parseInt(newPrice)) == true){alert("Geben sie bitte eine Zahl ein als Preis"); return;}
-		
+		/**Hana Connection**/
 		//call service to update new price in the database
 		var jURL = 'https://s7hanaxs.hanatrial.ondemand.com/p1914487387trial/jtrial/lunaTrial/services/UpdateProduct.xsjs';
 	    jQuery.ajax({
