@@ -16,12 +16,16 @@ sap.ui.controller("testApp.testlayout.FarmDetail", {
 			return;
 		}
 		
+		var oModel = this.getView().getModel();
+		
+		//oModel.refresh(true);
+		
 		this.farmerID = evt.getParameter("arguments").farmerID;	
 		
 			
 		var sPath = "/Producers('"+this.farmerID+"')";	
 		
-		var oModel = this.getView().getModel();
+		
 		
 		var oContext = new sap.ui.model.Context(oModel, sPath);		
 		this.getView().setBindingContext(oContext);	

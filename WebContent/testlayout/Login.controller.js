@@ -25,7 +25,6 @@ sap.ui.controller("testApp.testlayout.Login", {
 		var jURL = 'https://s7hanaxs.hanatrial.ondemand.com/p1914487387trial/jtrial/lunaTrial/services/userLogon.xsjs';
 	    jQuery.ajax({
 	        url:jURL,
-	        //jsonpCallback: 'myCallback',
 	        dataType: 'json',
 	        data: {uName : localUsername, PW: localPassword},
 	        type: 'GET',
@@ -33,7 +32,7 @@ sap.ui.controller("testApp.testlayout.Login", {
 	        	
 	        	if(data.username == "none")
 	        		{alert("This User / Password Kombination existiert nicht")}
-	        	//console.log(jQuery.parseJSON( data ));
+	        	
 	        	else {that.handleSuccessLogon(data);}
 	        
 	        },
@@ -58,7 +57,7 @@ sap.ui.controller("testApp.testlayout.Login", {
 		//set button invisible for all footers		
 		
 		var sButtonIdDetail = globalMainView.getId() + "--footerProfileBtn"		
-		console.log(sButtonIdDetail)
+		
 		sap.ui.getCore().byId(sButtonIdDetail).setVisible(true);
 		
 		sap.ui.getCore().byId("Shell").getUser().setUsername(username)

@@ -1,6 +1,6 @@
 
 //variables used for identifying user , type either farmer or customer
-var username = "TRiley";
+var username = "Anonym";
 var type;
-var loggedInFarmer = "F1"; 
+var loggedInFarmer = ""; 
 var profilePic = "";
