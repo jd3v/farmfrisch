@@ -123,25 +123,15 @@ sap.ui.core.UIComponent
 													} ]
 												},
 												{
-													pattern : "MyPortfolio",
+													pattern : "MyPortfolio/{farmerID}",
 													name : "myPortfolio",
 													view : "MyPortfolioMaster",
 													viewType : "XML",
 													targetAggregation : "masterPages",
 													targetControl : "idSplitContainerControl",
 													subroutes : [
-//															{
-//																pattern : "MyPortfolio/MyPortfolioOverview",
-//																name : "myPortfolioOverview",
-//																view : "MyPortfolioOverview",
-//																viewType : "XML",
-//																targetAggregation : "detailPages",
-//																targetControl : "idSplitContainerControl"
-//
-//															}
-//															,
 															{
-																pattern : "MyPortfolio/MyPortfolioDetail",
+																pattern : "MyPortfolio/{farmerID}/MyPortfolioDetail/{prodID}",
 																name : "myPortfolioDetail",
 																view : "MyPortfolioDetail",
 																viewType : "XML",
@@ -219,7 +209,7 @@ sap.ui.core.UIComponent
 
 						// Odata Model
 						var mainOdataModel = new sap.ui.model.odata.ODataModel(
-								sServiceUrl, false);
+								sServiceUrl, false);						
 						// // Create and set domain model to the component
 						// var sPath = "models/mainModel.json"
 						// var oModel = new sap.ui.model.json.JSONModel(sPath);

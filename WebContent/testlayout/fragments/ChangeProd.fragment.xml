@@ -1,0 +1,42 @@
+<core:FragmentDefinition
+  xmlns="sap.m"
+  xmlns:l="sap.ui.layout"
+  xmlns:f="sap.ui.layout.form"
+  xmlns:core="sap.ui.core"
+  xmlns:ui="sap.ca.ui"
+  xmlns:c="sap.suite.ui.commons">
+  <c:FacetOverview title="Produktpflege" heightType="Auto" id="facetOverviewChange"
+				width="700px" class="marginTopLeft howItWorks">
+
+				<c:content>
+				
+					<ui:OverflowContainer overflowHeight="1000px" 
+						class="overflow">
+						<ui:content>
+
+<Button text="Preis Update" type="Accept" press="handleDonePress"></Button>
+
+
+							<f:SimpleForm id="editForm" minWidth="1024"
+								maxContainerCols="2" editable="false" layout="ResponsiveGridLayout"
+								title="Ihre Eingaben" labelSpanL="3" labelSpanM="3" emptySpanL="4"
+								emptySpanM="4" columnsL="1" columnsM="1">
+								<f:content>
+									<Label text="Produktgruppe" />
+									<Text text="{name}" />
+									<Label text="Produkt" />
+									<Text text="{product_name}" />
+									<Label text="Preis" />									
+									<Input id="priceInputId" value="" />																	
+								</f:content>
+							</f:SimpleForm>
+							
+						</ui:content>
+					</ui:OverflowContainer>
+
+				</c:content>
+			</c:FacetOverview>
+							
+
+					
+</core:FragmentDefinition>

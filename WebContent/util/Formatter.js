@@ -21,11 +21,11 @@ testApp.util.Formatter = {
 		}
 	},
 	
-	Percentage: function(value){ 
+	Available: function(value){ 
 	try {
-			return (value) ? parseInt(value) + '%' : value;
+			return (value) ? value = "Verfügbar": value = "";
 		} catch (err) {
-			return "Not-A-Number";
+			return "Not-A-Sting";
 		}
 	}
 };

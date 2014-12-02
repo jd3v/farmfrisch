@@ -1,0 +1,56 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:ui="sap.ca.ui"
+	xmlns:c="sap.suite.ui.commons">
+	<c:FacetOverview title="Produktpflege" heightType="Auto"
+		id="facetOverviewNew" width="700px" class="marginTopLeft howItWorks">
+
+		<c:content>
+			<ui:OverflowContainer overflowHeight="1000px"
+				class="overflow">
+				<ui:content>
+
+	<Button text="Produkt hinzufügen" type="Accept" press="handleInsertProduct"></Button>
+
+					<f:SimpleForm minWidth="1024" maxContainerCols="2"
+						editable="false" layout="ResponsiveGridLayout" title="Ihre Eingaben"
+						labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4"
+						columnsL="1" columnsM="1">
+						<f:content>
+							<Label text="Produktgruppe" />
+							<Select autoAdjustWidth="true" id="prodGroupSelect"
+								items="{
+							            path: '/ProductGroups',
+							            sorter: { path: 'prodGroupID' }
+							          }"
+								change="handleSelectProdGroup">
+								<core:Item key="{prodGroupID}" text="{name}" />
+							</Select>
+							<Label text="Produkt" />
+							<Select autoAdjustWidth="true" id="productSelect"
+								items="{
+							            path: 'ProductsGrouped',
+							            sorter: { path: 'product_name' }
+							          }"
+								change="handleSelectProduct">
+								<core:Item key="{productID}" text="{product_name}" />
+							</Select>
+							<Label text="Preis" />
+							<Input id="newProdPrice"
+								value="{
+										                  path: 'price',
+										              		  formatter: 'testApp.util.Formatter.CurrencyEuro'
+									              		  }" />
+							<Label text="Verfügbar" />
+							<CheckBox selected="true" enabled="true" />
+						</f:content>
+					</f:SimpleForm>
+
+				</ui:content>
+			</ui:OverflowContainer>
+
+		</c:content>
+	</c:FacetOverview>
+
+
+
+</core:FragmentDefinition>

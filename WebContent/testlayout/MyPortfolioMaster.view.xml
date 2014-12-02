@@ -1,52 +1,37 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m" controllerName="testApp.testlayout.MyPortfolioMaster"
 	xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page title="Product Master" showNavButton="true" navButtonPress="back"
+	<Page title="Product Master" 
 		showHeader="false">
-		
+
 		<content>
 
-			<List headerText="Mein Protfolio" id="productProfileMasterList" growing="true" growingThreshold="3"
-				growingScrollToLoad="false" updateFinished="afterListUpdated" mode="Delete"
-				>
+			<List headerText="Mein Protfolio" id="productProfileMasterList" items="{path: 'ProducersProducts'}"
+				growing="true" growingThreshold="3" growingScrollToLoad="false" 
+				updateFinished="afterListUpdated" mode="Delete" delete="handleDeleteProduct">
 				<items>
 
-		<StandardListItem title="Roggenbrot" type="Navigation" 
-	 press="navToProdProfile"
-	 info="3,99€" 
-	 icon="./img/products/Bread.jpg"
-	description="Verfügbar" iconDensityAware="false" iconInset="false" 
- 		/> 
- 		
- 				<StandardListItem title="Feldsalat" type="Navigation" 
-	 press="navToProdProfile"
-	 info="1,19€" 
-	 icon="./img/products/salad.png"
-	description="Verfügbar" iconDensityAware="false" iconInset="false" 
- 		/> 
-				
-
-
-<!-- 					<StandardListItem title="{product_name}" type="Navigation" -->
-<!-- 						press="navToProdProfile" -->
-<!-- 						info="{ -->
-<!-- 	                  path: 'minPrice', -->
-<!-- 	              		  formatter: 'testApp.util.Formatter.CurrencyEuro' -->
-<!--               		  } -->
-<!--               		  - -->
-<!--               		  { -->
-<!--               		  path: 'maxPrice', -->
-<!-- 	              	  formatter: 'testApp.util.Formatter.CurrencyEuro' -->
-<!-- 	              	  }" -->
-<!-- 						description="{productID}" iconDensityAware="false" iconInset="false" /> -->
+					<StandardListItem title="{product_name}" type="Navigation"
+						press="handleListPress"
+						info="{
+										                  path: 'price',
+										              		  formatter: 'testApp.util.Formatter.CurrencyEuro'
+									              		  }"
+						icon="{product_price}"
+						description="{
+										                  path: 'available',
+										              		  formatter: 'testApp.util.Formatter.Available'
+									              		  }"
+						iconDensityAware="false" iconInset="false" />
 				</items>
-				
+
 				<headerToolbar>
 					<Toolbar>
 						<Label text="Mein Portfolio" />
 						<ToolbarSpacer />
-						<Button icon="sap-icon://add-product" text="Produkt hinzufügen" press="handleButtonPress" />
-						</Toolbar>
+						<Button icon="sap-icon://add-product" text="Produkt hinzufügen"
+							press="handleAddProduct" />
+					</Toolbar>
 				</headerToolbar>
 				<infoToolbar>
 					<Toolbar active="true" press="handleInfobarPress">

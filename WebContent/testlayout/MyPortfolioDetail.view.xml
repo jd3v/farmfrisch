@@ -2,79 +2,10 @@
 	xmlns="sap.m" xmlns:ui="sap.ca.ui" xmlns:f="sap.ui.layout.form"
 	xmlns:l="sap.ui.layout.form" xmlns:c="sap.suite.ui.commons"
 	controllerName="testApp.testlayout.MyPortfolioDetail" xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page title="Product Detail" showHeader="false" class="analytics">
+	<Page title="Product Detail" showHeader="false" class="analytics"
+		id="detailPageProfile">
 		<content>
-
-			<c:FacetOverview title="Produktpflege" heightType="Auto"
-				width="700px" class="marginTopLeft howItWorks">
-
-				<c:content>
-					<ui:OverflowContainer overflowHeight="1000px"
-						class="overflow">
-						<ui:content>
-
-							<f:SimpleForm id="SimpleFormDisplay354" minWidth="1024"
-								maxContainerCols="2" editable="false" layout="ResponsiveGridLayout"
-								title="Ihre Eingaben" labelSpanL="3" labelSpanM="3" emptySpanL="4"
-								emptySpanM="4" columnsL="1" columnsM="1">
-								<f:content>
-									<Label text="Produktgruppe" />
-									<Text text="Gemüse" />
-									<Label text="Produkt" />
-									<Text text="Gurke" />
-									<Label text="Preis" />
-									<Text text="3,99€" />
-									<Label text="Verfügbar" />
-									<CheckBox selected="true" />
-								</f:content>
-							</f:SimpleForm>
-
-						</ui:content>
-					</ui:OverflowContainer>
-
-				</c:content>
-			</c:FacetOverview>
-
-
-			<c:FacetOverview title="Produktinformationen"
-				heightType="Auto" width="700px" class="marginTopLeft howItWorks">
-				<c:content>
-					<ui:OverflowContainer overflowHeight="1000px"
-						class="overflow">
-						<ui:content>
-							<HBox>
-								<VBox width="500px">
-									<HBox>
-										<VBox width="150px">
-											<Text class="boldClass marginBottom" text="Kategorie" />
-											<Text class="boldClass marginBottom" text="Produktgruppe" />
-											<Text class="boldClass marginBottom" text="Produkt" />
-											<Text class="boldClass marginBottom" text="Einheit" />
-											<Text class="boldClass marginBottom" text="Preis" />											
-											<Text class="boldClass marginBottom" text="Information" />
-										</VBox>
-										<VBox width="350px">
-											<Text class="marginBottom" text="Obst und Gemüse" />
-											<Text class="marginBottom" text="Gemüse" />
-											<Text class="marginBottom" text="Gurke" />
-											<Text class="marginBottom" text="Stück" />
-											<Text class="marginBottom" text="3,99€" />
-											<Text class="marginBottom" text="Gurken sind vor allem im Sommer eine willkommene Erfrischung, denn durch ihren hohen Wassergehalt versorgen sie unseren Körper mit viel Flüssigkeit. Der hohe Wassergehalt sorgt auch dafür, dass Gurken nur wenige Kalorien haben. Die gesunden Schlankmacher darf man sich also ruhig in größeren Mengen und auch während Diäten ohne Schuldgefühle schmecken lassen. Aufgrund der in Gurken enthaltenen Vitamine und Mineralstoffe tut man seinem Körper außerdem mit jeder Scheibe Gurke etwas Gutes." />
-										</VBox>
-									</HBox>
-
-								</VBox>
-								<VBox>
-									<Image width="150px" class="marginLeft" src="./img/products/gurke.png" />
-								</VBox>
-							</HBox>
-							<HBox>
-								<Button text="Sichern" type="Accept" />
-							</HBox>
-						</ui:content>
-					</ui:OverflowContainer>
-				</c:content>
-			</c:FacetOverview>
+			
 
 		</content>
 		<footer>

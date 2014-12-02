@@ -5,9 +5,9 @@
 		showHeader="false">
 		<content>
 
-			<List headerText="Product(s)" items="{path: 'ProductsGrouped'}" id="productProfileMasterList"
-				growing="true" growingThreshold="3" growingScrollToLoad="false" updateFinished="afterListUpdated">
-				<items>
+			<List headerText="Produkte" items="{path: 'ProductsGrouped'}" id="productProfileMasterList"
+				growing="true" growingThreshold="3" growingScrollToLoad="false">
+				
 				<StandardListItem title="{product_name}" type="Navigation"
 					press="navToProdProfile"
 					info="{
@@ -19,9 +19,9 @@
               		  path: 'maxPrice',
 	              	  formatter: 'testApp.util.Formatter.CurrencyEuro'
 	              	  }"
-					description="{productID}"
+					
 					iconDensityAware="false" iconInset="false" />
-					</items>
+					
 			</List>
 		</content>
 		<footer>

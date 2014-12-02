@@ -1,0 +1,42 @@
+<core:FragmentDefinition
+  xmlns="sap.m"
+  xmlns:l="sap.ui.layout"
+  xmlns:f="sap.ui.layout.form"
+  xmlns:core="sap.ui.core"
+  xmlns:ui="sap.ca.ui"
+  xmlns:c="sap.suite.ui.commons">
+  <c:FacetOverview title="Produktinformationen" id="facetOverviewDescr"
+				heightType="Auto" width="700px" class="marginTopLeft howItWorks">
+				<c:content>
+					<ui:OverflowContainer overflowHeight="1000px"
+						class="overflow">
+						<ui:content>
+							<HBox id="hboxFragment">
+								<VBox width="500px">
+									<HBox>
+										<VBox width="150px">
+											<Text class="boldClass marginBottom" text="Kategorie" />
+											<Text class="boldClass marginBottom" text="Produktgruppe" />
+											<Text class="boldClass marginBottom" text="Produkt" />
+											<Text class="boldClass marginBottom" text="Einheit" />
+											<Text class="boldClass marginBottom" text="Information" />
+										</VBox>
+										<VBox width="350px">
+											<Text class="marginBottom" text="{category}" />
+											<Text class="marginBottom" text="{name}" />
+											<Text class="marginBottom" text="{product_name}" />
+											<Text class="marginBottom" text="{unit}" />
+											<Text class="marginBottom" text="{description}" />
+										</VBox>
+									</HBox>
+								</VBox>
+								<VBox>
+									<Image id="prodImage" width="150px" class="marginLeft"
+										src="{product_picture}" />
+								</VBox>
+							</HBox>							
+						</ui:content>
+					</ui:OverflowContainer>
+				</c:content>
+			</c:FacetOverview>					
+</core:FragmentDefinition>

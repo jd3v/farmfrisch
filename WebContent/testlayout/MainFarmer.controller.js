@@ -69,9 +69,11 @@ sap.ui.controller("testApp.testlayout.MainFarmer", {
 		this._oRouter.navTo("howItWorks")
 	},
 
-	navToMyPortfolio : function(oEvent) {
+	navToMyPortfolio : function(oEvent) {				
 
-		this._oRouter.navTo("myPortfolio")
+		//farmerID is global var set when user logged in
+		this._oRouter.navTo("myPortfolio", {farmerID: loggedInFarmer})
+			
 	},
 
 	navToPricing: function(oEvent) {

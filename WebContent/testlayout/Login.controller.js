@@ -13,14 +13,13 @@ sap.ui.controller("testApp.testlayout.Login", {
 	
 	handleLogon: function(){
 		
-		that = this;
-		
+			
 		var localUsername = this.getView().byId("userNameField").getValue();
 		var localPassword = this.getView().byId("passwordField").getValue();
 		
 		//simple validation
-		if (!localUsername){alert("Please insert your username"); return;}
-		if (!localPassword){alert("Please insert your password"); return;}
+		if (!localUsername){alert("Username ist nicht korrekt"); return;}
+		if (!localPassword){alert("Password ist nicht korrekt"); return;}
 		
 		var jURL = 'https://s7hanaxs.hanatrial.ondemand.com/p1914487387trial/jtrial/lunaTrial/services/userLogon.xsjs';
 	    jQuery.ajax({
@@ -30,9 +29,9 @@ sap.ui.controller("testApp.testlayout.Login", {
 	        data: {uName : localUsername, PW: localPassword},
 	        type: 'GET',
 	        success: function(data){
-	        	console.log(data.username)
+	        	
 	        	if(data.username == "none")
-	        		{alert("This User / Password Combination does not exist")}
+	        		{alert("This User / Password Kombination existiert nicht")}
 	        	//console.log(jQuery.parseJSON( data ));
 	        	else {that.handleSuccessLogon(data);}
 	        
@@ -52,6 +51,7 @@ sap.ui.controller("testApp.testlayout.Login", {
 		//set global login state
 		username = data.username;
 		type = data.type;
+		loggedInFarmer = data.farmerID;
 		
 		//set button invisible for all footers		
 		

@@ -22,12 +22,8 @@ sap.ui.controller("testApp.testlayout.ProductMaster", {
 		var oModel = this.getView().getModel();
 		
 		var oContext = new sap.ui.model.Context(oModel, sPath);		
-		this.getView().setBindingContext(oContext);	
-		console.log(oContext);
+		this.getView().setBindingContext(oContext);			
 		
-		
-		//make sure the detail page always displays the first item in the master list
-		//this._oRouter.navTo("productDetail",{prodgroupID: this.prodGroupID, prodID: "0"});
 	},
 	
 	afterListUpdated: function(){
