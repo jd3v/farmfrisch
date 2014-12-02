@@ -5,16 +5,38 @@
 	/* 	background-image: url(../img/bg_pattern_traditional.png); */
 	/* 	background-color: white!important; */
 	/* 		background-image: url(../img/bg_pattern_pluses.png); */
-/* 	background-image: url(../img/bg_pattern_light.png); */
-/* 	background-image: url(../img/farm_blurred.jpg); */
+	/* 	background-image: url(../img/bg_pattern_light.png); */
+	/* 	background-image: url(../img/farm_blurred.jpg); */
 	background-image: url(../img/field_blurred.jpg);
-/* 		background-image: url(../img/field_blurred_sw.jpg); */
+	/* 		background-image: url(../img/field_blurred_sw.jpg); */
 	background-position: center;
 }
 
 .center {
 	align: center;
 }
+
+.pricing_hbox {
+	display: block;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.light_grey {
+	background-color: #EAEAEA;
+}
+
+.pricing_vbox {
+	width: 150px;
+}
+
+.pricing_vbox_center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.pricing_vbox_center .sap
 
 .login {
 	display: block;
@@ -57,8 +79,8 @@
 	overflow: hidden !important;
 	color: black !important;
 	white-space: normal !important;
-	margin:	none!important;
-	padding: none!important;
+	margin: none !important;
+	padding: none !important;
 }
 
 .farmFrischTile .sapSuiteGT .News {
@@ -73,41 +95,40 @@
 .sapSuiteDC.M.OneByOne {
 	width: 184px !important;
 	height: 176px !important;
-	border-style: solid!important;
-	border-width: 2px!important;
+	border-style: solid !important;
+	border-width: 2px !important;
 	border-color: #666666 !important;
 	border-radius: 25px !important;
-	margin:	none!important;
-	padding: none!important;
+	margin: none !important;
+	padding: none !important;
 }
 
-.sapSuiteGT{
+.sapSuiteGT {
 	display: inline-block;
 	overflow: hidden;
-	margin:	none!important;
-	padding: none!important;
+	margin: none !important;
+	padding: none !important;
 	border-style: solid;
 	border-width: 2px;
 	border-color: #666666;
-	border-radius: 15px!important;
+	border-radius: 15px !important;
 	position: relative;
 	outline: none;
 	-webkit-filter: grayscale(0.1);
 	opacity: 1.0;
 }
 
-.specialTile{
+.specialTile {
 	display: inline-block;
 	overflow: hidden;
-	margin:	none!important;
-	padding: none!important;
-	border: none!important;
+	margin: none !important;
+	padding: none !important;
+	border: none !important;
 	position: relative;
 	outline: none;
 	-webkit-filter: grayscale(0.1);
 	opacity: 1.0;
 }
-
 
 .sapSuiteGT:hover {
 	opacity: 0.8;
@@ -119,9 +140,9 @@
 
 .analytics {
 	/* 	background-color: #004F49!important; */
-/* 	background-color: #ebebeb !important; */
+	/* 	background-color: #ebebeb !important; */
 	/* 	background-image: url(../img/bg_orange.png)!important;	 */
-		background-image: url(../img/field_blurred.jpg)!important;
+	background-image: url(../img/field_blurred.jpg) !important;
 }
 
 .sapUiUfdShellBrand {
@@ -184,23 +205,23 @@
 }
 
 .overflow {
-	background: none!important;	
+	background: none !important;
 }
 
 .sapUiFormResLayout>div {
-	background: none!important;	
+	background: none !important;
 }
 
 .sapUiFormResGrid>div {
-	background: none!important;	
+	background: none !important;
 }
 /*********************************
 **	Stuff for the Facet Overview
 **********************************/
 .howItWorks {
 	display: block !important;
-	margin-top: 1.5em!important;
-	margin-bottom: 1.5em!important;
+	margin-top: 1.5em !important;
+	margin-bottom: 1.5em !important;
 	margin-left: auto;
 	margin-right: auto;
 	/* 	padding: 2em!important; */
@@ -255,12 +276,15 @@ html[dir=rtl] .sapUtiContactsImage {
 	width: 100% !important;;
 	white-space: nowrap !important;;
 }
+
 .FooterButtonHide {
-	 display: none !important;
+	display: none !important;
 }
+
 .FooterButtonShow {
-	 display: block !important;
+	display: block !important;
 }
+
 .sapUiUfdShellHeadUsrItmExp {
-    display: none !important;
+	display: none !important;
 }

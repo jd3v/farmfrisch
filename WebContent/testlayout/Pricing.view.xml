@@ -13,86 +13,116 @@
 						class="overflow">
 						<ui:content>
 
-							<VBox>
+							<VBox class="pricing_hbox">
 								<HBox>
-									<VBox></VBox>
-									<VBox>
+									<VBox class="pricing_vbox" />
+									<VBox class="pricing_vbox">
 										<Text text="farmfrisch. BASIC" />
 									</VBox>
-									<VBox>
-										<Text text="farmfrisch. ADVANCED" />
+									<VBox class="pricing_vbox">
+										<Text text="farmfrisch. PLUS" />
 									</VBox>
-									<VBox>
+									<VBox class="pricing_vbox">
 										<Text text="farmfrisch. PREMIUM" />
 									</VBox>
 								</HBox>
+
 								<HBox>
-									<VBox>
+									<VBox class="pricing_vbox">
 										<Text text="Profilanlage" />
 									</VBox>
-									<VBox>
+									<VBox class="pricing_vbox">
+										<core:Icon src="sap-icon://accept" class="size1 vbox_pricing"
+											color="#1d8345" />
+									</VBox>
+									<VBox class="pricing_vbox">
 										<Text text="check" />
 									</VBox>
-									<VBox>
+									<VBox class="pricing_vbox">
 										<Text text="check" />
 									</VBox>
-									<VBox>
+								</HBox>
+
+								<HBox class="light_grey">
+									<VBox class="pricing_vbox">
+										<Text text="Lokationspflege" />
+									</VBox>
+									<VBox class="pricing_vbox">
+										<core:Icon src="sap-icon://accept" class="size1"
+											color="#1d8345" />
+									</VBox>
+									<VBox class="pricing_vbox">
+										<Text text="check" />
+									</VBox>
+									<VBox class="pricing_vbox">
+										<Text text="check" />
+									</VBox>
+								</HBox>
+
+								<HBox>
+									<VBox class="pricing_vbox">
+										<Text text="Produktportfolio" />
+									</VBox>
+									<VBox class="pricing_vbox">
+										<core:Icon src="sap-icon://accept" class="size1"
+											color="#1d8345" />
+									</VBox>
+									<VBox class="pricing_vbox">
+										<Text text="check" />
+									</VBox>
+									<VBox class="pricing_vbox">
+										<Text text="check" />
+									</VBox>
+								</HBox>
+
+								<HBox>
+									<VBox class="pricing_vbox">
+										<Text text="Profilanlage" />
+									</VBox>
+									<VBox class="pricing_vbox">
+										<core:Icon src="sap-icon://accept" class="pricing_icon"
+											color="#1d8345" />
+									</VBox>
+									<VBox class="pricing_vbox vbox_center">
+										<Text text="check" />
+									</VBox>
+									<VBox class="pricing_vbox">
+										<Text text="check" />
+									</VBox>
+								</HBox>
+
+								<HBox>
+									<VBox class="pricing_vbox">
+										<Text text="Produktpflege" />
+									</VBox>
+									<VBox class="pricing_vbox">
+										<core:Icon src="sap-icon://accept" class="size1"
+											color="#1d8345" />
+									</VBox>
+									<VBox class="pricing_vbox">
+										<Text text="check" />
+									</VBox>
+									<VBox class="pricing_vbox">
 										<Text text="check" />
 									</VBox>
 								</HBox>
 
 							</VBox>
-
-
-							<f:SimpleForm id="SimpleFormDisplay354" minWidth="1024"
-								maxContainerCols="2" editable="false" layout="ResponsiveGridLayout"
-								title="Lernen Sie uns unverbindlich kennen!" labelSpanL="3"
-								labelSpanM="3" emptySpanL="4" emptySpanM="4" columnsL="1"
-								columnsM="1">
-								<f:content>
-									<!-- <Label text="Produktgruppe" /> -->
-									<!-- <Text text="Gemüse" /> -->
-									<!-- <Label text="Produkt" /> -->
-									<!-- <Text text="Gurke" /> -->
-									<!-- <Label text="Preis" /> -->
-									<!-- <Text text="3,99€" /> -->
-									<!-- <Label text="Verfügbar" /> -->
-									<!-- <CheckBox selected="true" /> -->
-
-
-								</f:content>
-							</f:SimpleForm>
-
-							<HBox>
-								<VBox width="500px">
-									<HBox>
-										<VBox width="150px">
-											<Text class="boldClass marginBottom" text="Kategorie" />
-											<Text class="boldClass marginBottom" text="Produktgruppe" />
-											<Text class="boldClass marginBottom" text="Produkt" />
-											<Text class="boldClass marginBottom" text="Einheit" />
-											<Text class="boldClass marginBottom" text="Preis" />
-											<Text class="boldClass marginBottom" text="Information" />
-										</VBox>
-										<VBox width="350px">
-											<Text class="marginBottom" text="Obst und Gemüse" />
-											<Text class="marginBottom" text="Gemüse" />
-											<Text class="marginBottom" text="Gurke" />
-											<Text class="marginBottom" text="Stück" />
-											<Text class="marginBottom" text="3,99€" />
-											<Text class="marginBottom"
-												text="Gurken sind vor allem im Sommer eine willkommene Erfrischung, denn durch ihren hohen Wassergehalt versorgen sie unseren Körper mit viel Flüssigkeit. Der hohe Wassergehalt sorgt auch dafür, dass Gurken nur wenige Kalorien haben. Die gesunden Schlankmacher darf man sich also ruhig in größeren Mengen und auch während Diäten ohne Schuldgefühle schmecken lassen. Aufgrund der in Gurken enthaltenen Vitamine und Mineralstoffe tut man seinem Körper außerdem mit jeder Scheibe Gurke etwas Gutes." />
-										</VBox>
-									</HBox>
-
-								</VBox>
-								<VBox>
-									<Image width="150px" class="marginLeft" src="./img/products/gurke.png" />
-								</VBox>
-							</HBox>
-							<HBox>
-								<Button text="Sichern" type="Accept" />
-							</HBox>
+							<VBox />
+							<VBox>
+								<HBox>
+									<VBox class="pricing_vbox" />
+									<VBox class="pricing_vbox">
+										<Button text="Kostenlos" type="Accept" />
+									</VBox>
+									<VBox class="pricing_vbox">
+										<Button text="5,99€ / Monat" type="Accept" />
+									</VBox>
+									<VBox class="pricing_vbox">
+										<Button text="8,99€ / Monat" type="Accept" />
+									</VBox>
+								</HBox>
+							</VBox>
 
 						</ui:content>
 					</ui:OverflowContainer>
@@ -101,76 +131,6 @@
 			</c:FacetOverview>
 
 
-			<c:FacetOverview title="farmfrisch. ADVANCED"
-				heightType="Auto" width="700px" class="marginTopLeft howItWorks">
-				<c:content>
-					<ui:OverflowContainer overflowHeight="1000px"
-						class="overflow">
-						<ui:content>
-							<HBox>
-								<VBox width="500px">
-									<HBox>
-										<VBox width="150px">
-											<Text class="boldClass marginBottom" text="Kategorie" />
-											<Text class="boldClass marginBottom" text="Produktgruppe" />
-											<Text class="boldClass marginBottom" text="Produkt" />
-											<Text class="boldClass marginBottom" text="Einheit" />
-											<Text class="boldClass marginBottom" text="Preis" />
-											<Text class="boldClass marginBottom" text="Information" />
-										</VBox>
-										<VBox width="350px">
-											<Text class="marginBottom" text="Obst und Gemüse" />
-											<Text class="marginBottom" text="Gemüse" />
-											<Text class="marginBottom" text="Gurke" />
-											<Text class="marginBottom" text="Stück" />
-											<Text class="marginBottom" text="3,99€" />
-											<Text class="marginBottom"
-												text="Gurken sind vor allem im Sommer eine willkommene Erfrischung, denn durch ihren hohen Wassergehalt versorgen sie unseren Körper mit viel Flüssigkeit. Der hohe Wassergehalt sorgt auch dafür, dass Gurken nur wenige Kalorien haben. Die gesunden Schlankmacher darf man sich also ruhig in größeren Mengen und auch während Diäten ohne Schuldgefühle schmecken lassen. Aufgrund der in Gurken enthaltenen Vitamine und Mineralstoffe tut man seinem Körper außerdem mit jeder Scheibe Gurke etwas Gutes." />
-										</VBox>
-									</HBox>
-
-								</VBox>
-								<VBox>
-									<Image width="150px" class="marginLeft" src="./img/products/gurke.png" />
-								</VBox>
-							</HBox>
-							<HBox>
-								<Button text="Sichern" type="Accept" />
-							</HBox>
-						</ui:content>
-					</ui:OverflowContainer>
-				</c:content>
-			</c:FacetOverview>
-
-			<c:FacetOverview title="farmfrisch. PREMIUM"
-				heightType="Auto" width="700px" class="marginTopLeft howItWorks">
-
-				<c:content>
-					<ui:OverflowContainer overflowHeight="1000px"
-						class="overflow">
-						<ui:content>
-
-							<f:SimpleForm minWidth="1024" maxContainerCols="2"
-								editable="false" layout="ResponsiveGridLayout" title="Ihre Eingaben"
-								labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4"
-								columnsL="1" columnsM="1">
-								<f:content>
-									<Label text="Produktgruppe" />
-									<Text text="Gemüse" />
-									<Label text="Produkt" />
-									<Text text="Gurke" />
-									<Label text="Preis" />
-									<Text text="3,99€" />
-									<Label text="Verfügbar" />
-									<CheckBox selected="true" />
-								</f:content>
-							</f:SimpleForm>
-
-						</ui:content>
-					</ui:OverflowContainer>
-
-				</c:content>
-			</c:FacetOverview>
 
 		</content>
 		<footer>
