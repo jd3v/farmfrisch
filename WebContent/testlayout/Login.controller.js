@@ -13,6 +13,7 @@ sap.ui.controller("testApp.testlayout.Login", {
 	
 	handleLogon: function(){
 		
+		that = this;
 			
 		var localUsername = this.getView().byId("userNameField").getValue();
 		var localPassword = this.getView().byId("passwordField").getValue();
@@ -52,6 +53,7 @@ sap.ui.controller("testApp.testlayout.Login", {
 		username = data.username;
 		type = data.type;
 		loggedInFarmer = data.farmerID;
+		profilePic = data.profilePic
 		
 		//set button invisible for all footers		
 		
@@ -60,6 +62,7 @@ sap.ui.controller("testApp.testlayout.Login", {
 		sap.ui.getCore().byId(sButtonIdDetail).setVisible(true);
 		
 		sap.ui.getCore().byId("Shell").getUser().setUsername(username)
+		sap.ui.getCore().byId("Shell").getUser().setImage(profilePic)
 		
 		this._oRouter.navTo("_index");
 	},

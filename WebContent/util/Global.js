@@ -3,3 +3,4 @@
 var username = "TRiley";
 var type;
 var loggedInFarmer = "F1"; 
+var profilePic = "";
