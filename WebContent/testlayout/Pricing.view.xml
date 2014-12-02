@@ -129,13 +129,13 @@
 								<HBox>
 									<VBox width="180px" />
 									<VBox class="pricing_vbox">
-										<Button text="Kostenlos" type="Accept" />
+										<Button text="9,99 € / Monat" type="Accept" />
 									</VBox>
 									<VBox class="pricing_vbox">
-										<Button text="5,99€ / Monat" type="Accept" />
+										<Button text="29,99 € / Monat" type="Accept" />
 									</VBox>
 									<VBox class="pricing_vbox">
-										<Button text="8,99€ / Monat" type="Accept" />
+										<Button text="49,99 € / Monat" type="Accept" />
 									</VBox>
 								</HBox>
 							</VBox>

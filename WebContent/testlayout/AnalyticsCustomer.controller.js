@@ -37,20 +37,20 @@ sap.ui.controller("testApp.testlayout.AnalyticsCustomer", {
 
 		   var reviews5 =[{
 				"ReviewId" : "0",
-				"Sender" : "Giselle Ashante-Ramirez",
+				"Sender" : "Claudia Thomann",
 				"Icon" : "img/Customers/Sender1.jpg",
 				"Info" : "Request",
 				"Timestamp" : "November 11, 2014",
-				"Text" :"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. At vero eos et accusam et justo duo dolores et ea rebum."	
+				"Text" :"Die Waren sind super frisch! Auch der nette Plausch am Marktstand wertet einfach jedes Mal wieder meinen Samstagmorgen auf."
 			} ,
 			
 			{
 				"ReviewId" : "1",
-				"Sender" : "johannes Schaffensteiger",
-				"Icon" : "img/Customers/Sender2.jpg",
+				"Sender" : "Johanna Schmidt",
+				"Icon" : "img/Customers/Sender A.jpg",
 				"Info" : "Reply",
 				"Timestamp" : "October 10, 2014",
-				"Text" :"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. At vero eos et accusam et justo duo dolores et ea rebum."	
+				"Text" :"Das beste Gemüse Mannheims! Wer qualitativ hochwertiges Gemüse oder Zutaten für einen frischen Salat sucht ist hier genau richtig!"
 			}
 
 		];
@@ -59,78 +59,60 @@ sap.ui.controller("testApp.testlayout.AnalyticsCustomer", {
 
 		var reviews4 =               [{
 			"ReviewId" : "0",
-			"Sender" : "Sender A",
-			"Icon" : "img/Customers/Sender A.jpg",
+			"Sender" : "Carlolin Müller",
+			"Icon" : "img/Customers/Sender B.jpg",
 			"Info" : "Request",
 			"Timestamp" : "August 15, 2014",
-			"Text" :"Review for 4 Stars"	
+			"Text" :"Tolle Waren und nette Mitarbeiter. Als Stammkunde bekommt sogar hin und wieder ein kleines Goodie gratis dazu :)"	
 		} ,
 
 		{
 			"ReviewId" : "1",
-			"Sender" : "Sender B",
-			"Icon" : "img/Customers/Sender B.jpg",
+			"Sender" : "Jason Paulheim",
+			"Icon" : "img/Customers/Sender C.jpg",
 			"Info" : "Reply",
 			"Timestamp" : "September 08, 2014",
-			"Text" :"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. At vero eos et accusam et justo duo dolores et ea rebum."	
+			"Text" :"Zuverlässige Qualität!"	
 		}
 
 		];	
 
 		var reviews3 = [{
 			"ReviewId" : "0",
-			"Sender" : "Sender C",
-			"Icon" : "img/Customers/Sender C.jpg",
+			"Sender" : "Kathy Uhlmann",
+			"Icon" : "img/Customers/Sender A.jpg",
 			"Info" : "Request",
 			"Timestamp" : "March 03, 2013",
-			"Text" :"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. At vero eos et accusam et justo duo dolores et ea rebum."	
+			"Text" :"Vielen Dank."	
 		} ,
 
 		{
 			"ReviewId" : "1",
-			"Sender" : "Sender D",
+			"Sender" : "Ching Chong",
 			"Icon" : "img/Customers/Sender D.jpg",
 			"Info" : "Reply",
 			"Timestamp" : "March 04, 2013",
-			"Text" :"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. At vero eos et accusam et justo duo dolores et ea rebum."	
+			"Text" :"Letztes Mal hatte ich etwas Pech mit meinen Äpfeln, einer war schon angefault. Wenigstens ist es ein Indiz für die biologische Anbauweise und den Verzicht auf Pestizide ;)"	
 		}
 
 		];	
 
 		var reviews2        =        [{
 			"ReviewId" : "0",
-			"Sender" : "Sender E",
-			"Icon" : "img/Customers/Sender1.jpg",
+			"Sender" : "David Meyer",
+			"Icon" : "img/Customers/Sender C.jpg",
 			"Info" : "Request",
 			"Timestamp" : "March 03, 2013",
-			"Text" :"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. At vero eos et accusam et justo duo dolores et ea rebum."	
-		} ,
-
-		{
-			"ReviewId" : "1",
-			"Sender" : "Sender F",
-			"Icon" : "img/Customers/Sender2.jpg",
-			"Info" : "Reply",
-			"Timestamp" : "March 04, 2013",
-			"Text" :"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. At vero eos et accusam et justo duo dolores et ea rebum."	
+			"Text" :"Ich war nicht zufrieden mit der Auswahl. Außerdem entsprach der Preis nicht dem angegebenen. Hier bitte in Zukunft mehr Sorgfalt walten lassen."	
 		}];
 		
 		 var reviews1 = [{
 				"ReviewId" : "0",
-				"Sender" : "Sender G",
-				"Icon" : "img/Customers/Sender1.jpg",
+				"Sender" : "Anna Bitter",
+				"Icon" : "img/Customers/Sender B.jpg",
 				"Info" : "Request",
 				"Timestamp" : "March 03, 2013",
-				"Text" :"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. At vero eos et accusam et justo duo dolores et ea rebum."	
-			} ,
-
-			{
-				"ReviewId" : "1",
-				"Sender" : "Sender H",
-				"Icon" : "img/Customers/Sender2.jpg",
-				"Info" : "Reply",
-				"Timestamp" : "March 04, 2013",
-				"Text" :"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. At vero eos et accusam et justo duo dolores et ea rebum."	
+				"Text" :"Das Angebot entsprach leider nicht den Informationen auf ihrem Portfolio, bitte in Zukunft hier etwas mehr aufpassen! :("	
 			}];
 		  
 
