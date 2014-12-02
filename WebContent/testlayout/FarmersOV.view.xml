@@ -17,7 +17,7 @@
 						<tileContent>
 							<TileContent size="M">
 								<content>
-									<NewsContent size="M" subheader="{surname},{lastname}">
+									<NewsContent size="M" subheader="{surname} {lastname}">
 									</NewsContent>
 								</content>
 							</TileContent>
